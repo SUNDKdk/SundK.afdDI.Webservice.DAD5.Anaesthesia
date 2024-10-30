@@ -1508,7 +1508,7 @@
     "creationTS": "2024-10-28T11:43:01.029Z",
     "GUID": "375bd5c8-de62-4483-892a-7b86573eea2c",
     "isLineageEnabled": false,
-    "lastModifTS": "2024-10-29T09:07:20.772Z",
+    "lastModifTS": "2024-10-29T12:08:33.077Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
@@ -1816,6 +1816,11 @@
                     "4f320b6c-8511-448b-b909-3ed1d23bb0f1",
                     "04e87c8e-7275-4211-8049-ef90c66beb9f",
                     "5f68f2a6-3965-407b-81c5-09dbd6d8dddd"
+                ],
+                [
+                    "4f320b6c-8511-448b-b909-3ed1d23bb0f1",
+                    "04e87c8e-7275-4211-8049-ef90c66beb9f",
+                    "5ae24b6f-a3d0-4e05-bb74-4ce9f23f29cb"
                 ]
             ],
             "shouldDistributeCollections": false
