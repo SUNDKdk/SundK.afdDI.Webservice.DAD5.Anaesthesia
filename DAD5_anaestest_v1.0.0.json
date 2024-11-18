@@ -165,7 +165,7 @@
                                     "error": {}
                                 }
                             ],
-                            "ChangeLogID": "MISSING",
+                            "ChangeLogID": "51c36965-d1b7-4eaa-963d-50ee7a18a136",
                             "childType": "Base_Object",
                             "type": "document",
                             "GUID": "ed79d39e-2d3c-4d95-8d70-42c07e9c278f",
@@ -230,7 +230,7 @@
                                     "error": {}
                                 }
                             ],
-                            "ChangeLogID": "MISSING",
+                            "ChangeLogID": "4f4e0dc5-fc79-4ec1-98e9-4ffdcc9013c0",
                             "childType": "Base_Object",
                             "type": "document",
                             "GUID": "7d66a113-7a34-45c7-bf36-8202d660cc28",
@@ -297,7 +297,7 @@
                                     "error": {}
                                 }
                             ],
-                            "ChangeLogID": "MISSING",
+                            "ChangeLogID": "abb3cb33-caa5-421c-8881-ea70e9ed5317",
                             "childType": "Base_Object",
                             "type": "document",
                             "GUID": "9b2f786f-b7d6-42e9-a063-594dabbb8689",
@@ -360,7 +360,7 @@
                                     "error": {}
                                 }
                             ],
-                            "ChangeLogID": "MISSING",
+                            "ChangeLogID": "ce1b94ad-2f2e-4d98-bf2b-7760451f67ee",
                             "childType": "Base_Object",
                             "type": "document",
                             "GUID": "96ecc10a-334f-4711-8b3d-6951ce35944a",
@@ -496,7 +496,7 @@
                                     "error": {}
                                 }
                             ],
-                            "ChangeLogID": "MISSING",
+                            "ChangeLogID": "82a33e6f-f343-4e61-bc0c-b75fc58a6189",
                             "childType": "Base_Object",
                             "type": "document",
                             "GUID": "4fcc10ae-a668-42c9-81aa-c8c8e4c3c586",
@@ -628,7 +628,7 @@
                                     "error": {}
                                 }
                             ],
-                            "ChangeLogID": "MISSING",
+                            "ChangeLogID": "0f674318-2765-4c09-97aa-5c3f90dadfcf",
                             "childType": "Base_Object",
                             "type": "document",
                             "GUID": "26715a99-9c59-4086-b115-ba4d91264abe",
@@ -679,7 +679,7 @@
                                     "error": {}
                                 }
                             ],
-                            "ChangeLogID": "MISSING",
+                            "ChangeLogID": "434c049c-cc69-4ca1-97a9-21e2517c9231",
                             "childType": "Base_Object",
                             "type": "document",
                             "GUID": "c36a4a94-c2c1-4ccf-9c2e-9c4532565e4a",
@@ -821,7 +821,7 @@
                                     "error": {}
                                 }
                             ],
-                            "ChangeLogID": "MISSING",
+                            "ChangeLogID": "58cd1613-4a74-4332-b0cc-e1e89f22787c",
                             "childType": "Base_Object",
                             "type": "document",
                             "GUID": "6445c8c8-a1b5-4e4e-a1e4-12e687b74a72",
@@ -887,7 +887,7 @@
                             "GUID": "ccb89e27-110b-4f1b-9e4f-0c7b89bd945c",
                             "realName": "ASA score",
                             "description": "Patientens ASA-score",
-                            "ChangeLogID": "MISSING",
+                            "ChangeLogID": "c087e7c4-7c25-4556-8a72-59565dca3cc9",
                             "error": {}
                         },
                         {
@@ -936,7 +936,7 @@
                                     "error": {}
                                 }
                             ],
-                            "ChangeLogID": "MISSING",
+                            "ChangeLogID": "7ab5970e-b90b-4ca0-bcff-1c22c777affa",
                             "childType": "Base_Object",
                             "type": "document",
                             "GUID": "2ceaf789-1bca-4f8e-83d3-c4df93dba7d0",
@@ -982,7 +982,7 @@
                                     "error": {}
                                 }
                             ],
-                            "ChangeLogID": "MISSING",
+                            "ChangeLogID": "dda810fc-b9b6-4db5-8aa3-a0eac8280cc4",
                             "childType": "Base_Object",
                             "type": "document",
                             "GUID": "2ad77a31-7b52-46a5-977c-19c4daa12469",
@@ -1010,8 +1010,6 @@
                                             "childType": "Base_Value_Numeric",
                                             "type": "numeric",
                                             "GUID": "a3555319-87e6-4ef9-a083-55d34981f0a2",
-                                            "gt": -1,
-                                            "lt": 11,
                                             "ge": 0,
                                             "le": 10,
                                             "error": {}
@@ -1024,7 +1022,7 @@
                                     "error": {}
                                 }
                             ],
-                            "ChangeLogID": "MISSING",
+                            "ChangeLogID": "3b46f83a-04ba-444a-a4fc-20a2cf14cbe5",
                             "childType": "Base_Object",
                             "type": "document",
                             "GUID": "1ce41f53-268d-4fe1-a081-22789e4dee11",
@@ -1064,7 +1062,7 @@
                                     "error": {}
                                 }
                             ],
-                            "ChangeLogID": "MISSING",
+                            "ChangeLogID": "e08f3548-b280-434d-a0da-61160bb8926f",
                             "childType": "Base_Object",
                             "type": "document",
                             "GUID": "fa6b6383-24dd-4f75-8e8d-97c3dfcf9d47",
@@ -1104,7 +1102,7 @@
                                     "error": {}
                                 }
                             ],
-                            "ChangeLogID": "MISSING",
+                            "ChangeLogID": "b0f2232c-1009-4949-a875-bdd56f8e2c5b",
                             "childType": "Base_Object",
                             "type": "document",
                             "GUID": "6d64b4d8-bcf2-4bb0-9d98-2db99f40492a",
@@ -1144,7 +1142,7 @@
                                     "error": {}
                                 }
                             ],
-                            "ChangeLogID": "MISSING",
+                            "ChangeLogID": "4d8e820e-00ec-4a5d-b438-a6c8f8567322",
                             "childType": "Base_Object",
                             "type": "document",
                             "GUID": "e0c70805-17ed-4a59-b682-9ac73ad09570",
@@ -1181,7 +1179,7 @@
                                     "error": {}
                                 }
                             ],
-                            "ChangeLogID": "MISSING",
+                            "ChangeLogID": "669ce892-de75-4e82-9cc7-197183272054",
                             "childType": "Base_Object",
                             "type": "document",
                             "GUID": "06225d05-9795-446e-bf98-06a82036e8e8",
@@ -1252,7 +1250,7 @@
                                     "error": {}
                                 }
                             ],
-                            "ChangeLogID": "MISSING",
+                            "ChangeLogID": "a3b5d9eb-e81d-4c77-b012-ccf95c2d57df",
                             "childType": "Base_Object",
                             "type": "document",
                             "GUID": "5ae24b6f-a3d0-4e05-bb74-4ce9f23f29cb",
@@ -1295,7 +1293,8 @@
             "GUID": "4f320b6c-8511-448b-b909-3ed1d23bb0f1",
             "bucketId": "267119f5-2b8f-40ae-be68-d615cf232d35",
             "dbNameShort": "DAD5",
-            "dbSchema": "Anaestesi"
+            "dbSchema": "Anaestesi",
+            "dbImplementationGuide": "Alle anæstesier udført på danske offentlige og private hospitaler og klinikker indgår i populationen til Dansk Anæstesi Database.\n\nDatateknisk trigger for en anæstesi: Er der oprettet et anæstesiskema/anæstesiprocedure på patienten med et starttidspunkt for anæstesien, betragtes det som en anæstesi. "
         }
     ],
     "buckets": [
@@ -1386,7 +1385,7 @@
     "creationTS": "2024-10-28T11:43:01.029Z",
     "GUID": "375bd5c8-de62-4483-892a-7b86573eea2c",
     "isLineageEnabled": false,
-    "lastModifTS": "2024-11-18T10:10:15.163Z",
+    "lastModifTS": "2024-11-18T10:30:21.678Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
