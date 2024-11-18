@@ -349,7 +349,7 @@
                                                         <tbody class="table-group-divider">
                                                             <tr>
                                                                 <th scope="row">MethodCode</th>
-                                                                <td scope="row"><p>Ekstra oplysninger til variabler: </p>
+                                                                <td scope="row"><p>Ekstra oplysninger til udfald: </p>
 <ul>
 <li>sctid41700002 = Spontan respiation</li>
 <li>BGDA60 ? Maskeventilation</li>
@@ -392,8 +392,7 @@
                                                     <p class="table_view_hider" style="height: 1rem !important; margin: 0px !important;"></p>
                                                     <div class="objectDescription alert alert-warning">
                                                         <p><strong>Luftvejshåndtering sidste forsøg</strong></p>
-                                                        <p><p>Sidste forsøg på håndtering af patientens luftveje</p>
-<p>lma = alle typer</p></p>
+                                                        <p><p>Sidste forsøg på håndtering af patientens luftveje</p></p>
                                                     </div>
                                                     <table class="table table-bordered table-striped table-hover ">
                                                         <thead>
@@ -459,14 +458,14 @@
                                                         <tbody class="table-group-divider">
                                                             <tr>
                                                                 <th scope="row">DateTimeEnd</th>
-                                                                <td scope="row"><p>Sluttidspunkt (datotid) for opvågning</p></td>
+                                                                <td scope="row"><p>Sluttidspunkt for opvågning</p></td>
                                                                 <td scope="row">DateTime</td>
                                                                 <td scope="row"></td>
                                                                 <td scope="row"></td>
                                                             </tr>
                                                             <tr>
                                                                 <th scope="row">DateTimeStart</th>
-                                                                <td scope="row"><p>Starttidspunkt (datotid) for opvågning</p></td>
+                                                                <td scope="row"><p>Starttidspunkt for opvågning</p></td>
                                                                 <td scope="row">DateTime</td>
                                                                 <td scope="row"></td>
                                                                 <td scope="row"></td>
@@ -604,15 +603,15 @@
                                                         <tbody class="table-group-divider">
                                                             <tr>
                                                                 <th scope="row">ResultCode</th>
-                                                                <td scope="row"><p><em>Kun relevant hvis Luftvejshåndtering == Intubation</em></p>
-<p>Ekstra oplysninger til udfald: </p>
+                                                                <td scope="row"><p>Ekstra oplysninger til udfald: </p>
 <ul>
 <li>laryngoskopi_max2 = Højest 2 forsøg, seneste ved direkte laryngoskopi</li>
 <li>videolaryngoskopi_max2 = Højest 2 forsøg, seneste ved videolaryngoskopi</li>
 <li>fleksibel_skopi_max2 = Højest 2 forsøg, seneste ved fleksibel skopi</li>
 <li>andet_max2 = Højest 2 forsøg seneste ved andet end ovennævnte metoder</li>
 <li>mere_end_3 = 3 forsøg eller flere uanset metode</li>
-</ul></td>
+</ul>
+<p><em>Kun relevant hvis Luftvejshåndtering == Intubation</em></p></td>
                                                                 <td scope="row">str, Enum</td>
                                                                 <td scope="row">
                                                                     <p style="margin:0px; font-weight: bold;">Udfald:</p>
@@ -652,7 +651,7 @@
                                                     <p class="table_view_hider" style="height: 1rem !important; margin: 0px !important;"></p>
                                                     <div class="objectDescription alert alert-warning">
                                                         <p><strong>Procedurekode</strong></p>
-                                                        <p><p>SKS-kode for den **vigtigste ** procedure foretaget under anæstesien</p></p>
+                                                        <p><p>SKS-kode for den <strong>vigtigste</strong> procedure foretaget under anæstesien</p></p>
                                                     </div>
                                                     <table class="table table-bordered table-striped table-hover ">
                                                         <thead>
@@ -710,13 +709,13 @@
                                                         <tbody class="table-group-divider">
                                                             <tr>
                                                                 <th scope="row">ResultCode</th>
-                                                                <td scope="row"><p>Kun relevant hvis Luftvejshåndtering = Intubation</p>
-<p>Ekstra oplysninger til udfald:</p>
+                                                                <td scope="row"><p>Ekstra oplysninger til udfald:</p>
 <ul>
 <li>vv00003  = nej</li>
 <li>sctid22587006 = Depolariserende</li>
 <li>sctid59594008 = Non-depolariserende</li>
-</ul></td>
+</ul>
+<p><em>Kun relevant hvis Luftvejshåndtering = Intubation</em></p></td>
                                                                 <td scope="row">str, Enum</td>
                                                                 <td scope="row">
                                                                     <p style="margin:0px; font-weight: bold;">Udfald:</p>
@@ -876,13 +875,13 @@
                                                         <tbody class="table-group-divider">
                                                             <tr>
                                                                 <th scope="row">ResultCode</th>
-                                                                <td scope="row"><p><em>Kun relevant hvis komplikationer = Nej</em></p>
-<p>Ekstra oplysninger til udfald:</p>
+                                                                <td scope="row"><p>Ekstra oplysninger til udfald:</p>
 <ul>
 <li>di46 = Hjertestop</li>
 <li>dt883 = Malign Hypertermi mistanke</li>
 <li>dt884a = Tandskade</li>
-</ul></td>
+</ul>
+<p><em>Kun relevant hvis komplikationer = Nej</em></p></td>
                                                                 <td scope="row">str, Enum</td>
                                                                 <td scope="row">
                                                                     <p style="margin:0px; font-weight: bold;">Udfald:</p>
@@ -937,7 +936,8 @@
                                                         <tbody class="table-group-divider">
                                                             <tr>
                                                                 <th scope="row">ResultCode</th>
-                                                                <td scope="row"><ul>
+                                                                <td scope="row"><p>Ekstra oplysninger til udfald:</p>
+<ul>
 <li>sctid103390000 = Elektiv</li>
 <li>fremskyndet  = Fremskyndet (dage)</li>
 <li>hastende = Hastende (timer)</li>
@@ -1079,7 +1079,7 @@ Intubation opgivet</p>
                                                     <p class="table_view_hider" style="height: 1rem !important; margin: 0px !important;"></p>
                                                     <div class="objectDescription alert alert-warning">
                                                         <p><strong>Kvalme udskrivelse</strong></p>
-                                                        <p><p>Kvalme-score mindre end 15 minutter før udskrivelse og transport fra observationsstedet</p></p>
+                                                        <p><p>Kvalme-score mindre end 15 minutter før udskrivelse og transport fra opvågningen</p></p>
                                                     </div>
                                                     <table class="table table-bordered table-striped table-hover ">
                                                         <thead>
@@ -1094,8 +1094,7 @@ Intubation opgivet</p>
                                                         <tbody class="table-group-divider">
                                                             <tr>
                                                                 <th scope="row">ResultValue</th>
-                                                                <td scope="row"><p>Kvalme-score mindre end 15 minutter før udskrivelse og transport fra opvågningen </p>
-<p><em>Kun relevant hvis Observationssted = Centralt observationsafsnit
+                                                                <td scope="row"><p><em>Kun relevant hvis Observationssted = Centralt observationsafsnit
 ELLER
 Observationssted = Andet observationsafsnit</em></p></td>
                                                                 <td scope="row">Integer</td>
@@ -1132,7 +1131,7 @@ Observationssted = Andet observationsafsnit</em></p></td>
                                                     <p class="table_view_hider" style="height: 1rem !important; margin: 0px !important;"></p>
                                                     <div class="objectDescription alert alert-warning">
                                                         <p><strong>Kvalme ankomst</strong></p>
-                                                        <p><p>Kvalme-score mindre end 15 minutter efter ankomst til observationsstedet</p></p>
+                                                        <p><p>Kvalme-score mindre end 15 minutter efter ankomst til opvågningen</p></p>
                                                     </div>
                                                     <table class="table table-bordered table-striped table-hover ">
                                                         <thead>
@@ -1147,8 +1146,7 @@ Observationssted = Andet observationsafsnit</em></p></td>
                                                         <tbody class="table-group-divider">
                                                             <tr>
                                                                 <th scope="row">ResultValue</th>
-                                                                <td scope="row"><p>Kvalme-score mindre end 15 minutter efter ankomst til opvågningen</p>
-<p><em>Kun relevant hvis Observationssted = Centralt observationsafsnit
+                                                                <td scope="row"><p><em>Kun relevant hvis Observationssted = Centralt observationsafsnit
 ELLER
 Observationssted = Andet observationsafsnit</em></p></td>
                                                                 <td scope="row">Integer</td>
@@ -1185,7 +1183,7 @@ Observationssted = Andet observationsafsnit</em></p></td>
                                                     <p class="table_view_hider" style="height: 1rem !important; margin: 0px !important;"></p>
                                                     <div class="objectDescription alert alert-warning">
                                                         <p><strong>Observations-komplikationer</strong></p>
-                                                        <p><p>Komplikationer opstået under observationen</p></p>
+                                                        <p><p>Komplikationer opstået under opvågningen</p></p>
                                                     </div>
                                                     <table class="table table-bordered table-striped table-hover ">
                                                         <thead>
@@ -1200,8 +1198,7 @@ Observationssted = Andet observationsafsnit</em></p></td>
                                                         <tbody class="table-group-divider">
                                                             <tr>
                                                                 <th scope="row">ResultCode</th>
-                                                                <td scope="row"><p>Komplikationer opstået under opvågningen</p>
-<p>Ekstra oplysninger til udfald:</p>
+                                                                <td scope="row"><p>Ekstra oplysninger til udfald:</p>
 <ul>
 <li>di46 = Hjertestop</li>
 <li>dt884a = Tandskade</li>
@@ -1244,7 +1241,7 @@ Observationssted = Andet observationsafsnit</em></p></td>
                                                     <p class="table_view_hider" style="height: 1rem !important; margin: 0px !important;"></p>
                                                     <div class="objectDescription alert alert-warning">
                                                         <p><strong>Smerter udskrivelse</strong></p>
-                                                        <p><p>Smerte-score (NRS eller FLACC)  mindre end 15 minutter før udskrivelse og transport fra observationsstedet</p></p>
+                                                        <p><p>Smerte-score (NRS eller FLACC)  mindre end 15 minutter før udskrivelse og transport fra opvågningen</p></p>
                                                     </div>
                                                     <table class="table table-bordered table-striped table-hover ">
                                                         <thead>
@@ -1259,8 +1256,7 @@ Observationssted = Andet observationsafsnit</em></p></td>
                                                         <tbody class="table-group-divider">
                                                             <tr>
                                                                 <th scope="row">ResultValue</th>
-                                                                <td scope="row"><p>Smerte-score (NRS eller FLACC)  mindre end 15 minutter før udskrivelse og transport fra opvågningen</p>
-<p><em>Kun relevant hvis Observationssted = Centralt observationsafsnit
+                                                                <td scope="row"><p><em>Kun relevant hvis Observationssted = Centralt observationsafsnit
 ELLER
 Observationssted = Andet observationsafsnit</em></p></td>
                                                                 <td scope="row">Integer</td>
@@ -1297,7 +1293,7 @@ Observationssted = Andet observationsafsnit</em></p></td>
                                                     <p class="table_view_hider" style="height: 1rem !important; margin: 0px !important;"></p>
                                                     <div class="objectDescription alert alert-warning">
                                                         <p><strong>Smerter ankomst</strong></p>
-                                                        <p><p>Smerte-score (NRS eller FLACC) mindre end 15 minutter efter ankomst til observationsstedet</p></p>
+                                                        <p><p>Smerte-score (NRS eller FLACC) mindre end 15 minutter efter ankomst til opvågningen</p></p>
                                                     </div>
                                                     <table class="table table-bordered table-striped table-hover ">
                                                         <thead>
@@ -1312,8 +1308,7 @@ Observationssted = Andet observationsafsnit</em></p></td>
                                                         <tbody class="table-group-divider">
                                                             <tr>
                                                                 <th scope="row">ResultValue</th>
-                                                                <td scope="row"><p>Smerte-score (NRS eller FLACC) mindre end 15 minutter efter ankomst til opvågningen</p>
-<p><em>Kun relevant hvis Observationssted = Centralt observationsafsnit
+                                                                <td scope="row"><p><em>Kun relevant hvis Observationssted = Centralt observationsafsnit
 ELLER
 Observationssted = Andet observationsafsnit</em></p></td>
                                                                 <td scope="row">Integer</td>
@@ -1509,7 +1504,7 @@ Observationssted = Andet observationsafsnit</em></p></td>
                                     <textarea class="form-control textarea-tabs bg-body-tertiary current_json" id="json_post_textarea" style="height: 1000px">{
     "Report": {
         "Patient": {
-            "CivilRegistrationNumber": "2002524Cw9"
+            "CivilRegistrationNumber": "2404238896"
         },
         "Organization": {
             "OrganizationType": "regionskode",
@@ -1518,46 +1513,46 @@ Observationssted = Andet observationsafsnit</em></p></td>
         "Data": {
             "Activity": {
                 "SOR_anesthesia": {
-                    "OrganizationCode": "ZlcNMNrJLrzaryRNWSDM"
+                    "OrganizationCode": "qHakvXvawVlAxeAtoXkr"
                 },
                 "airaway_plan": {
-                    "MethodCode": "tracheostomi_lokalanaestesi"
+                    "MethodCode": "intubation_laryngoskopi"
                 },
                 "airway_management": {
-                    "MethodCode": "larynxmaske"
+                    "MethodCode": "andet"
                 },
                 "airway_management_last_attempt": {
                     "MethodCode": "anden_teknik"
                 },
                 "anesthesia_observation": {
-                    "OrganizationCode": "operationsgangen",
-                    "ResultCode": "sctid310032008",
-                    "DateTimeEnd": "10-12-2016 16:26:26",
-                    "DateTimeStart": "05-02-2001 02:40:49"
+                    "OrganizationCode": "andet_observationsafsnit",
+                    "ResultCode": "sctid261554009",
+                    "DateTimeStart": "10-12-2012 22:41:55",
+                    "DateTimeEnd": "11-01-2010 12:15:18"
                 },
                 "anesthesia_service": {
-                    "ResultCode": "central_blokade"
+                    "ResultCode": "sctid225419007"
                 },
                 "intubation": {
                     "ResultCode": "videolaryngoskopi_max2"
                 },
                 "procedure_code": {
-                    "ResultCode": "HXdZOuAUWztNOhJLWvFQ"
+                    "ResultCode": "oIEtWgPbObjjbGBZufnz"
                 },
                 "relaxation_intubation": {
-                    "ResultCode": "sctid22587006"
+                    "ResultCode": "vv00003"
                 },
                 "service_time": {
-                    "DateTimeEnd": "19-04-2008 04:13:15",
-                    "DateTimeStart": "26-01-2009 02:54:58"
+                    "DateTimeStart": "23-04-2005 10:11:47",
+                    "DateTimeEnd": "14-06-2008 17:21:53"
                 }
             },
             "Observation": {
                 "ASA_score": {
-                    "ResultCode": "asa_vi"
+                    "ResultCode": "asa_ii"
                 },
                 "anesthesia_complications": {
-                    "ResultCode": "anafylaktisk_reaktion_shock"
+                    "ResultCode": "di46"
                 },
                 "anesthesia_prioritization": {
                     "ResultCode": "fremskyndet"
@@ -1566,25 +1561,25 @@ Observationssted = Andet observationsafsnit</em></p></td>
                     "ResultCode": "grad_4"
                 },
                 "blockade_sufficiency": {
-                    "ResultCode": "vv00003"
+                    "ResultCode": "vv00002"
                 },
                 "nausea_at_discharge": {
-                    "ResultValue": 6
+                    "ResultValue": 1
                 },
                 "nausea_on_arrival": {
-                    "ResultValue": 8
+                    "ResultValue": 1
                 },
                 "observation_complications": {
-                    "ResultCode": "neuromuskulaer_blokade_forlaenget_virkning"
+                    "ResultCode": "dt884a"
                 },
                 "pain_at_discharge": {
-                    "ResultValue": 3
+                    "ResultValue": 5
                 },
                 "pain_on_arrival": {
-                    "ResultValue": 2
+                    "ResultValue": 8
                 },
                 "temperature": {
-                    "ResultValue": 14133903463.2603
+                    "ResultValue": 181189.932921824
                 }
             }
         }
@@ -1598,7 +1593,7 @@ Observationssted = Andet observationsafsnit</em></p></td>
                                     <textarea class="form-control textarea-tabs bg-body-tertiary" id="json_put_textarea" style="height: 1000px">{
     "Report": {
         "Patient": {
-            "CivilRegistrationNumber": "1001456651"
+            "CivilRegistrationNumber": "2409602387"
         },
         "Organization": {
             "OrganizationType": "regionskode",
@@ -1607,73 +1602,73 @@ Observationssted = Andet observationsafsnit</em></p></td>
         "Data": {
             "Activity": {
                 "SOR_anesthesia": {
-                    "OrganizationCode": "leKeVJiqmldptbLBSVjZ"
+                    "OrganizationCode": "NvcMkqVZEVikcKNqlUCt"
                 },
                 "airaway_plan": {
-                    "MethodCode": "sctid241700002"
+                    "MethodCode": "tracheostomi_lokalanaestesi"
                 },
                 "airway_management": {
-                    "MethodCode": "kgbb00"
+                    "MethodCode": "andet"
                 },
                 "airway_management_last_attempt": {
-                    "MethodCode": "sctid257268009"
+                    "MethodCode": "kgba00a"
                 },
                 "anesthesia_observation": {
-                    "OrganizationCode": "operationsgangen",
-                    "ResultCode": "sctid261554009",
-                    "DateTimeEnd": "02-11-2018 16:02:19",
-                    "DateTimeStart": "12-12-2008 01:46:48"
+                    "OrganizationCode": "intensiv",
+                    "ResultCode": "stamafdeling",
+                    "DateTimeStart": "19-10-2020 00:28:07",
+                    "DateTimeEnd": "14-07-2006 13:06:36"
                 },
                 "anesthesia_service": {
-                    "ResultCode": "naac1"
+                    "ResultCode": "sctid225419007"
                 },
                 "intubation": {
-                    "ResultCode": "fleksibel_skopi_max2"
+                    "ResultCode": "videolaryngoskopi_max2"
                 },
                 "procedure_code": {
-                    "ResultCode": "nElZKdzyCtxboJitUYXf"
+                    "ResultCode": "PZdqAbOFbMRURCkqVcEb"
                 },
                 "relaxation_intubation": {
                     "ResultCode": "vv00003"
                 },
                 "service_time": {
-                    "DateTimeEnd": "20-03-2008 19:31:41",
-                    "DateTimeStart": "07-02-2001 22:12:49"
+                    "DateTimeStart": "15-11-2014 07:21:53",
+                    "DateTimeEnd": "10-10-2000 14:57:35"
                 }
             },
             "Observation": {
                 "ASA_score": {
-                    "ResultCode": "asa_iii"
+                    "ResultCode": "asa_i"
                 },
                 "anesthesia_complications": {
-                    "ResultCode": "neuromuskulaer_blokade_forlaenget_virkning"
+                    "ResultCode": "aspiration"
                 },
                 "anesthesia_prioritization": {
-                    "ResultCode": "hastende"
+                    "ResultCode": "livstruende"
                 },
                 "best_achieved_laryngoscopy_grade": {
-                    "ResultCode": "grad_4"
+                    "ResultCode": "grad_1"
                 },
                 "blockade_sufficiency": {
-                    "ResultCode": "vv00002"
+                    "ResultCode": "vv00003"
                 },
                 "nausea_at_discharge": {
-                    "ResultValue": 2
-                },
-                "nausea_on_arrival": {
-                    "ResultValue": 10
-                },
-                "observation_complications": {
-                    "ResultCode": "durapunktur_accidentel"
-                },
-                "pain_at_discharge": {
-                    "ResultValue": 4
-                },
-                "pain_on_arrival": {
                     "ResultValue": 3
                 },
+                "nausea_on_arrival": {
+                    "ResultValue": 4
+                },
+                "observation_complications": {
+                    "ResultCode": "neuromuskulaer_blokade_forlaenget_virkning"
+                },
+                "pain_at_discharge": {
+                    "ResultValue": 2
+                },
+                "pain_on_arrival": {
+                    "ResultValue": 1
+                },
                 "temperature": {
-                    "ResultValue": -7.7872748117767
+                    "ResultValue": -7038216080992.12
                 }
             }
         }
