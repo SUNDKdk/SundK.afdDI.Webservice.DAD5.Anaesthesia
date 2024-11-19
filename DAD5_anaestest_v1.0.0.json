@@ -535,7 +535,7 @@
                             "childType": "Base_Object",
                             "type": "document",
                             "GUID": "39222525-adf6-46c2-a6e5-06911db78418",
-                            "realName": "SOR anæestesi",
+                            "realName": "SOR anæstesi",
                             "description": "SOR-koden for anæstesiafdelingen",
                             "required": true,
                             "error": {}
@@ -1389,7 +1389,7 @@
     "creationTS": "2024-10-28T11:43:01.029Z",
     "GUID": "375bd5c8-de62-4483-892a-7b86573eea2c",
     "isLineageEnabled": false,
-    "lastModifTS": "2024-11-19T10:13:41.545Z",
+    "lastModifTS": "2024-11-19T10:56:33.080Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
@@ -1925,10 +1925,6 @@
                 ],
                 [
                     "4f320b6c-8511-448b-b909-3ed1d23bb0f1",
-                    "64dccd07-f9a5-4d21-bc85-ce561abe3481"
-                ],
-                [
-                    "4f320b6c-8511-448b-b909-3ed1d23bb0f1",
                     "04e87c8e-7275-4211-8049-ef90c66beb9f",
                     "505191a8-5282-421d-911d-b42047223bee",
                     "b0465750-bb0e-4170-b687-9e4b5e17ca8f"
@@ -2043,6 +2039,60 @@
                     "04e87c8e-7275-4211-8049-ef90c66beb9f",
                     "5ae24b6f-a3d0-4e05-bb74-4ce9f23f29cb",
                     "f030ae78-03bc-49cd-96ef-9a54a4286926"
+                ],
+                [
+                    "4f320b6c-8511-448b-b909-3ed1d23bb0f1",
+                    "04e87c8e-7275-4211-8049-ef90c66beb9f"
+                ],
+                [
+                    "4f320b6c-8511-448b-b909-3ed1d23bb0f1",
+                    "64dccd07-f9a5-4d21-bc85-ce561abe3481",
+                    "ed79d39e-2d3c-4d95-8d70-42c07e9c278f"
+                ],
+                [
+                    "4f320b6c-8511-448b-b909-3ed1d23bb0f1",
+                    "64dccd07-f9a5-4d21-bc85-ce561abe3481",
+                    "7d66a113-7a34-45c7-bf36-8202d660cc28"
+                ],
+                [
+                    "4f320b6c-8511-448b-b909-3ed1d23bb0f1",
+                    "64dccd07-f9a5-4d21-bc85-ce561abe3481",
+                    "96ecc10a-334f-4711-8b3d-6951ce35944a"
+                ],
+                [
+                    "4f320b6c-8511-448b-b909-3ed1d23bb0f1",
+                    "64dccd07-f9a5-4d21-bc85-ce561abe3481",
+                    "9b2f786f-b7d6-42e9-a063-594dabbb8689"
+                ],
+                [
+                    "4f320b6c-8511-448b-b909-3ed1d23bb0f1",
+                    "64dccd07-f9a5-4d21-bc85-ce561abe3481",
+                    "49a29ea2-5eec-4e2a-9268-c20da5f54bfd"
+                ],
+                [
+                    "4f320b6c-8511-448b-b909-3ed1d23bb0f1",
+                    "64dccd07-f9a5-4d21-bc85-ce561abe3481",
+                    "4fcc10ae-a668-42c9-81aa-c8c8e4c3c586"
+                ],
+                [
+                    "4f320b6c-8511-448b-b909-3ed1d23bb0f1",
+                    "64dccd07-f9a5-4d21-bc85-ce561abe3481",
+                    "39222525-adf6-46c2-a6e5-06911db78418"
+                ],
+                [
+                    "4f320b6c-8511-448b-b909-3ed1d23bb0f1",
+                    "64dccd07-f9a5-4d21-bc85-ce561abe3481",
+                    "826cfa0c-d067-40bd-bdb4-1b4a85855c4c"
+                ],
+                [
+                    "4f320b6c-8511-448b-b909-3ed1d23bb0f1",
+                    "64dccd07-f9a5-4d21-bc85-ce561abe3481",
+                    "26715a99-9c59-4086-b115-ba4d91264abe"
+                ],
+                [
+                    "4f320b6c-8511-448b-b909-3ed1d23bb0f1",
+                    "64dccd07-f9a5-4d21-bc85-ce561abe3481",
+                    "c36a4a94-c2c1-4ccf-9c2e-9c4532565e4a"
                 ]
             ],
             "shouldDistributeCollections": false
