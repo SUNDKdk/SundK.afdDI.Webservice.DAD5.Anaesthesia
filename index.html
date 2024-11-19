@@ -100,7 +100,7 @@
                             <div class="container-fluid">
                                 <div class="row d-flex align-items-center">
                                     <div class="col-md-8">
-                                        <h1>Dansk_Anaestesi_Database - DAD5</h1>
+                                        <h1>Dansk Anæstesi Database</h1>
                                     </div>
                                     <div class="col-md-4 d-flex justify-content-end">
                                         <ul class="nav ">
@@ -131,11 +131,10 @@
                                 </div>
                                 <div class="row">
                                     <div class="col">
-                                        <h4>DAD5</h4>
-                                        <h6>Dokumentation til endpoint version: v1.0.0
+                                        <h4>DAD5 - Anaestesi</h4>
+                                        <h6>Dokumentation til endpoint version: 1.0.0
                                             <span class="badge bg-success hidden" style="vertical-align: super !important;font-size: 12px;">Newest version</span>
                                         </h6>
-                                        <p>Dette er endpoint dokumentation til databasen Dansk_Anaestesi_Database - DAD5.</p>
                                         <hr />
                                         <h5>Implementeringsguide</h5>
                                         <p><p>Alle anæstesier udført på danske offentlige og private hospitaler og klinikker indgår i populationen til Dansk Anæstesi Database.</p>
@@ -200,10 +199,10 @@
                                     <div class="alert alert-danger m-3" role="alert">
                                         <div class="d-flex align-items-center">
                                             <h6 style="position: relative; top: 2px;">Bemærk: </h6>
-                                        </div>
-                                        <div class="badge rounded-pill text-bg-danger ms-2 me-2 d-inline-flex align-items-center">
-                                            <i class="bi bi-exclamation-diamond me-1" style="margin-top: -2px;"></i>
-                                            <span class=""> Required</span>
+                                            <div class="badge rounded-pill text-bg-danger ms-2 me-2 d-inline-flex align-items-center" style="margin-top: -3px;">
+                                                <i class="bi bi-exclamation-diamond me-1" style="margin-top: -2px;"></i>
+                                                <span> Required</span>
+                                            </div>
                                         </div>
                                         <p>Alle felter skal som udgangspunkt indberettes. Felter markeret som <strong>required</strong> er påkrævet for at kunne oprette en indberetning.</p>
                                     </div>
@@ -217,10 +216,12 @@
                                                     <li class="breadcrumb-item active">SOR_anesthesia</li>
                                                     <li class="mx-2"> - </li>
                                                     <li><strong>SOR anæestesi</strong></li>
-                                                    <div class="badge rounded-pill text-bg-danger ms-auto">
-                                                        <i class="bi bi-exclamation-diamond"></i>
-                                                        <span class=""> Required</span>
-                                                    </div>
+                                                    <span class="d-flex ms-auto align-content-center">
+                                                        <div class="badge rounded-pill text-bg-danger ms-2 me-2 d-inline-flex align-items-center" style="margin-top: -3px;">
+                                                            <i class="bi bi-exclamation-diamond me-1" style="margin-top: -2px;"></i>
+                                                            <span> Required</span>
+                                                        </div>
+                                                    </span>
                                                 </ol>
                                             </a>
                                             <div class="collapse m-3 objectBodyMain" id="SOR_anesthesia1">
@@ -247,7 +248,10 @@
                                                                 <td scope="row">String</td>
                                                                 <td scope="row"></td>
                                                                 <td scope="row">
-                                                                    <span class="badge rounded-pill text-bg-danger ms-auto">* Required</span>
+                                                                    <div class="badge rounded-pill text-bg-danger ms-2 me-2 d-inline-flex align-items-center" style="margin-top: -3px;">
+                                                                        <i class="bi bi-exclamation-diamond me-1" style="margin-top: -2px;"></i>
+                                                                        <span> Required</span>
+                                                                    </div>
                                                                 </td>
                                                             </tr>
                                                         </tbody>
@@ -256,132 +260,17 @@
                                             </div>
                                         </div>
                                         <div class="dataObject">
-                                            <a data-bs-toggle='collapse' aria-expanded='false' href="#airway_management2" class="ObjectHeaderWrapper">
+                                            <a data-bs-toggle='collapse' aria-expanded='false' href="#airaway_plan2" class="ObjectHeaderWrapper">
                                                 <ol class="breadcrumb objectHeaderMain objectHeaderColor">
                                                     <i class="bi bi-folder2 me-2"></i>
                                                     <li class="breadcrumb-item">DAD5</li>
                                                     <li class="breadcrumb-item">Activity</li>
-                                                    <li class="breadcrumb-item active">airway_management</li>
-                                                    <li class="mx-2"> - </li>
-                                                    <li><strong>Luftvejshåndtering</strong></li>
-                                                </ol>
-                                            </a>
-                                            <div class="collapse m-3 objectBodyMain" id="airway_management2">
-                                                <div class="object_margin">
-                                                    <p class="table_view_hider" style="height: 1rem !important; margin: 0px !important;"></p>
-                                                    <div class="objectDescription alert alert-warning">
-                                                        <p><strong>Luftvejshåndtering</strong></p>
-                                                        <p><p>Håndtering af patientens luftveje</p></p>
-                                                    </div>
-                                                    <table class="table table-bordered table-striped table-hover ">
-                                                        <thead>
-                                                            <tr>
-                                                                <th scope="col" class="fst-italic th-attribute">Attribute</th>
-                                                                <th scope="col" class="fst-italic th-description">Description</th>
-                                                                <th scope="col" class="fst-italic th-type">Type</th>
-                                                                <th scope="col" class="fst-italic th-value">Constraints</th>
-                                                                <th scope="col" class="fst-italic th-required">Required</th>
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody class="table-group-divider">
-                                                            <tr>
-                                                                <th scope="row">MethodCode</th>
-                                                                <td scope="row"><p>Ekstra oplysninger til udfald: </p>
-<ul>
-<li>sctid41700002 = Spontan respiation</li>
-<li>BGDA60 ? Maskeventilation</li>
-<li>larynxmaske = Larynxmaske (alle typer)</li>
-<li>kgbb00 = tracheostomi</li>
-<li>andet = Ikke relevant/pt er Intuberet/tracheostomeret</li>
-</ul></td>
-                                                                <td scope="row">str, Enum</td>
-                                                                <td scope="row">
-                                                                    <p style="margin:0px; font-weight: bold;">Udfald:</p>
-                                                                    <ul class="list-group list-group-flush">
-                                                                        <li class="list-group-item">"sctid41700002"</li>
-                                                                        <li class="list-group-item">"bgda60"</li>
-                                                                        <li class="list-group-item">"larynxmaske"</li>
-                                                                        <li class="list-group-item">"intubation"</li>
-                                                                        <li class="list-group-item">"kgbb00"</li>
-                                                                        <li class="list-group-item">"andet"</li>
-                                                                    </ul>
-                                                                </td>
-                                                                <td scope="row"></td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="dataObject">
-                                            <a data-bs-toggle='collapse' aria-expanded='false' href="#airway_management_last_attempt3" class="ObjectHeaderWrapper">
-                                                <ol class="breadcrumb objectHeaderMain objectHeaderColor">
-                                                    <i class="bi bi-folder2 me-2"></i>
-                                                    <li class="breadcrumb-item">DAD5</li>
-                                                    <li class="breadcrumb-item">Activity</li>
-                                                    <li class="breadcrumb-item active">airway_management_last_attempt</li>
-                                                    <li class="mx-2"> - </li>
-                                                    <li><strong>Luftvejshåndtering sidste forsøg</strong></li>
-                                                </ol>
-                                            </a>
-                                            <div class="collapse m-3 objectBodyMain" id="airway_management_last_attempt3">
-                                                <div class="object_margin">
-                                                    <p class="table_view_hider" style="height: 1rem !important; margin: 0px !important;"></p>
-                                                    <div class="objectDescription alert alert-warning">
-                                                        <p><strong>Luftvejshåndtering sidste forsøg</strong></p>
-                                                        <p><p>Sidste forsøg på håndtering af patientens luftveje</p></p>
-                                                    </div>
-                                                    <table class="table table-bordered table-striped table-hover ">
-                                                        <thead>
-                                                            <tr>
-                                                                <th scope="col" class="fst-italic th-attribute">Attribute</th>
-                                                                <th scope="col" class="fst-italic th-description">Description</th>
-                                                                <th scope="col" class="fst-italic th-type">Type</th>
-                                                                <th scope="col" class="fst-italic th-value">Constraints</th>
-                                                                <th scope="col" class="fst-italic th-required">Required</th>
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody class="table-group-divider">
-                                                            <tr>
-                                                                <th scope="row">MethodCode</th>
-                                                                <td scope="row"><p>Ekstra oplysninger til udfald:</p>
-<ul>
-<li>sctid257268009 = LMA (alle typer)</li>
-<li>sctid78121007 = Direkte laryngoskopi</li>
-<li>kgba00a  = Nødtracheostomi</li>
-</ul></td>
-                                                                <td scope="row">str, Enum</td>
-                                                                <td scope="row">
-                                                                    <p style="margin:0px; font-weight: bold;">Udfald:</p>
-                                                                    <ul class="list-group list-group-flush">
-                                                                        <li class="list-group-item">"sctid257268009"</li>
-                                                                        <li class="list-group-item">"sctid78121007"</li>
-                                                                        <li class="list-group-item">"videolaryngoskopi"</li>
-                                                                        <li class="list-group-item">"fleksibelt_skopi"</li>
-                                                                        <li class="list-group-item">"vaekning_af_patient"</li>
-                                                                        <li class="list-group-item">"kgba00a"</li>
-                                                                        <li class="list-group-item">"anden_teknik"</li>
-                                                                    </ul>
-                                                                </td>
-                                                                <td scope="row"></td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="dataObject">
-                                            <a data-bs-toggle='collapse' aria-expanded='false' href="#airway_plan4" class="ObjectHeaderWrapper">
-                                                <ol class="breadcrumb objectHeaderMain objectHeaderColor">
-                                                    <i class="bi bi-folder2 me-2"></i>
-                                                    <li class="breadcrumb-item">DAD5</li>
-                                                    <li class="breadcrumb-item">Activity</li>
-                                                    <li class="breadcrumb-item active">airway_plan</li>
+                                                    <li class="breadcrumb-item active">airaway_plan</li>
                                                     <li class="mx-2"> - </li>
                                                     <li><strong>Luftvejsplan</strong></li>
                                                 </ol>
                                             </a>
-                                            <div class="collapse m-3 objectBodyMain" id="airway_plan4">
+                                            <div class="collapse m-3 objectBodyMain" id="airaway_plan2">
                                                 <div class="object_margin">
                                                     <p class="table_view_hider" style="height: 1rem !important; margin: 0px !important;"></p>
                                                     <div class="objectDescription alert alert-warning">
@@ -401,18 +290,18 @@
                                                         <tbody class="table-group-divider">
                                                             <tr>
                                                                 <th scope="row">MethodCode</th>
-                                                                <td scope="row"><ul>
-<li>sctid241700002 = Spontan_respiration</li>
-<li>bgda60 = Maskeventilation</li>
-<li>sctid257268009 = Larynxmaske(alle typer)</li>
-<li>intubation_laryngoskopi = Intubation ved direkte laryngoskopi</li>
-<li>intubation_videolaryngoskopi = Intubation med videolaryngoskopi</li>
-<li>intubation_fleksibelt_skop = Intubation med fleksibelt skop</li>
-<li>intubation_anden_metode = Intubation ved anden metode</li>
-<li>tracheostomi_lokalanæstesi = Tracheostomi i lokalanæstesi</li>
-<li>intuberet_tracheostomeret = Er intuberet/tracheostomeret</li>
-</ul></td>
-                                                                <td scope="row">str, Enum</td>
+                                                                <td scope="row"><p>Ekstra oplysninger til udfald:
+<br>
+- sctid241700002 = Spontan_respiration
+- bgda60 = Maskeventilation
+- sctid257268009 = Larynxmaske(alle typer)
+- intubation_laryngoskopi = Intubation ved direkte laryngoskopi
+- intubation_videolaryngoskopi = Intubation med videolaryngoskopi
+- intubation_fleksibelt_skop = Intubation med fleksibelt skop
+- intubation_anden_metode = Intubation ved anden metode
+- tracheostomi_lokalanæstesi = Tracheostomi i lokalanæstesi
+- intuberet_tracheostomeret = Er intuberet/tracheostomeret</p></td>
+                                                                <td scope="row">List/Array of str, Enum</td>
                                                                 <td scope="row">
                                                                     <p style="margin:0px; font-weight: bold;">Udfald:</p>
                                                                     <ul class="list-group list-group-flush">
@@ -424,6 +313,119 @@
                                                                         <li class="list-group-item">"intubation_anden_metode"</li>
                                                                         <li class="list-group-item">"tracheostomi_lokalanaestesi"</li>
                                                                         <li class="list-group-item">"intuberet_tracheostomeret"</li>
+                                                                    </ul>
+                                                                </td>
+                                                                <td scope="row"></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="dataObject">
+                                            <a data-bs-toggle='collapse' aria-expanded='false' href="#airway_management3" class="ObjectHeaderWrapper">
+                                                <ol class="breadcrumb objectHeaderMain objectHeaderColor">
+                                                    <i class="bi bi-folder2 me-2"></i>
+                                                    <li class="breadcrumb-item">DAD5</li>
+                                                    <li class="breadcrumb-item">Activity</li>
+                                                    <li class="breadcrumb-item active">airway_management</li>
+                                                    <li class="mx-2"> - </li>
+                                                    <li><strong>Luftvejshåndtering</strong></li>
+                                                </ol>
+                                            </a>
+                                            <div class="collapse m-3 objectBodyMain" id="airway_management3">
+                                                <div class="object_margin">
+                                                    <p class="table_view_hider" style="height: 1rem !important; margin: 0px !important;"></p>
+                                                    <div class="objectDescription alert alert-warning">
+                                                        <p><strong>Luftvejshåndtering</strong></p>
+                                                        <p><p>Håndtering af patientens luftveje</p></p>
+                                                    </div>
+                                                    <table class="table table-bordered table-striped table-hover ">
+                                                        <thead>
+                                                            <tr>
+                                                                <th scope="col" class="fst-italic th-attribute">Attribute</th>
+                                                                <th scope="col" class="fst-italic th-description">Description</th>
+                                                                <th scope="col" class="fst-italic th-type">Type</th>
+                                                                <th scope="col" class="fst-italic th-value">Constraints</th>
+                                                                <th scope="col" class="fst-italic th-required">Required</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody class="table-group-divider">
+                                                            <tr>
+                                                                <th scope="row">MethodCode</th>
+                                                                <td scope="row"><p>Ekstra oplysninger til udfald: 
+<br>
+- sctid41700002 = Spontan respiation
+- BGDA60 ? Maskeventilation
+- larynxmaske = Larynxmaske (alle typer)
+- kgbb00 = tracheostomi
+- andet = Ikke relevant/pt er Intuberet/tracheostomeret</p></td>
+                                                                <td scope="row">List/Array of str, Enum</td>
+                                                                <td scope="row">
+                                                                    <p style="margin:0px; font-weight: bold;">Udfald:</p>
+                                                                    <ul class="list-group list-group-flush">
+                                                                        <li class="list-group-item">"sctid41700002"</li>
+                                                                        <li class="list-group-item">"bgda60"</li>
+                                                                        <li class="list-group-item">"larynxmaske"</li>
+                                                                        <li class="list-group-item">"intubation"</li>
+                                                                        <li class="list-group-item">"kgbb00"</li>
+                                                                        <li class="list-group-item">"andet"</li>
+                                                                    </ul>
+                                                                </td>
+                                                                <td scope="row"></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="dataObject">
+                                            <a data-bs-toggle='collapse' aria-expanded='false' href="#airway_management_last_attempt4" class="ObjectHeaderWrapper">
+                                                <ol class="breadcrumb objectHeaderMain objectHeaderColor">
+                                                    <i class="bi bi-folder2 me-2"></i>
+                                                    <li class="breadcrumb-item">DAD5</li>
+                                                    <li class="breadcrumb-item">Activity</li>
+                                                    <li class="breadcrumb-item active">airway_management_last_attempt</li>
+                                                    <li class="mx-2"> - </li>
+                                                    <li><strong>Luftvejshåndtering sidste forsøg</strong></li>
+                                                </ol>
+                                            </a>
+                                            <div class="collapse m-3 objectBodyMain" id="airway_management_last_attempt4">
+                                                <div class="object_margin">
+                                                    <p class="table_view_hider" style="height: 1rem !important; margin: 0px !important;"></p>
+                                                    <div class="objectDescription alert alert-warning">
+                                                        <p><strong>Luftvejshåndtering sidste forsøg</strong></p>
+                                                        <p><p>Sidste forsøg på håndtering af patientens luftveje</p></p>
+                                                    </div>
+                                                    <table class="table table-bordered table-striped table-hover ">
+                                                        <thead>
+                                                            <tr>
+                                                                <th scope="col" class="fst-italic th-attribute">Attribute</th>
+                                                                <th scope="col" class="fst-italic th-description">Description</th>
+                                                                <th scope="col" class="fst-italic th-type">Type</th>
+                                                                <th scope="col" class="fst-italic th-value">Constraints</th>
+                                                                <th scope="col" class="fst-italic th-required">Required</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody class="table-group-divider">
+                                                            <tr>
+                                                                <th scope="row">MethodCode</th>
+                                                                <td scope="row"><p>Ekstra oplysninger til udfald:
+<br>
+- sctid257268009 = LMA (alle typer)
+- sctid78121007 = Direkte laryngoskopi
+- kgba00a  = Nødtracheostomi</p></td>
+                                                                <td scope="row">List/Array of str, Enum</td>
+                                                                <td scope="row">
+                                                                    <p style="margin:0px; font-weight: bold;">Udfald:</p>
+                                                                    <ul class="list-group list-group-flush">
+                                                                        <li class="list-group-item">"sctid257268009"</li>
+                                                                        <li class="list-group-item">"sctid78121007"</li>
+                                                                        <li class="list-group-item">"videolaryngoskopi"</li>
+                                                                        <li class="list-group-item">"fleksibelt_skopi"</li>
+                                                                        <li class="list-group-item">"vaekning_af_patient"</li>
+                                                                        <li class="list-group-item">"kgba00a"</li>
+                                                                        <li class="list-group-item">"anden_teknik"</li>
                                                                     </ul>
                                                                 </td>
                                                                 <td scope="row"></td>
@@ -552,7 +554,7 @@
 <li>NAAC3 =  IV og inhalation</li>
 <li>NAAC1 = TIVA</li>
 </ul></td>
-                                                                <td scope="row">str, Enum</td>
+                                                                <td scope="row">List/Array of str, Enum</td>
                                                                 <td scope="row">
                                                                     <p style="margin:0px; font-weight: bold;">Udfald:</p>
                                                                     <ul class="list-group list-group-flush">
@@ -640,10 +642,12 @@
                                                     <li class="breadcrumb-item active">procedure_code</li>
                                                     <li class="mx-2"> - </li>
                                                     <li><strong>Procedurekode</strong></li>
-                                                    <div class="badge rounded-pill text-bg-danger ms-auto">
-                                                        <i class="bi bi-exclamation-diamond"></i>
-                                                        <span class=""> Required</span>
-                                                    </div>
+                                                    <span class="d-flex ms-auto align-content-center">
+                                                        <div class="badge rounded-pill text-bg-danger ms-2 me-2 d-inline-flex align-items-center" style="margin-top: -3px;">
+                                                            <i class="bi bi-exclamation-diamond me-1" style="margin-top: -2px;"></i>
+                                                            <span> Required</span>
+                                                        </div>
+                                                    </span>
                                                 </ol>
                                             </a>
                                             <div class="collapse m-3 objectBodyMain" id="procedure_code8">
@@ -670,7 +674,10 @@
                                                                 <td scope="row">String</td>
                                                                 <td scope="row"></td>
                                                                 <td scope="row">
-                                                                    <span class="badge rounded-pill text-bg-danger ms-auto">* Required</span>
+                                                                    <div class="badge rounded-pill text-bg-danger ms-2 me-2 d-inline-flex align-items-center" style="margin-top: -3px;">
+                                                                        <i class="bi bi-exclamation-diamond me-1" style="margin-top: -2px;"></i>
+                                                                        <span> Required</span>
+                                                                    </div>
                                                                 </td>
                                                             </tr>
                                                         </tbody>
@@ -709,12 +716,11 @@
                                                         <tbody class="table-group-divider">
                                                             <tr>
                                                                 <th scope="row">ResultCode</th>
-                                                                <td scope="row"><p>Ekstra oplysninger til udfald:</p>
-<ul>
-<li>vv00003  = nej</li>
-<li>sctid22587006 = Depolariserende</li>
-<li>sctid59594008 = Non-depolariserende</li>
-</ul>
+                                                                <td scope="row"><p>Ekstra oplysninger til udfald:
+<br>
+- vv00003  = nej
+- sctid22587006 = Depolariserende
+- sctid59594008 = Non-depolariserende</p>
 <p><em>Kun relevant hvis Luftvejshåndtering = Intubation</em></p></td>
                                                                 <td scope="row">str, Enum</td>
                                                                 <td scope="row">
@@ -741,10 +747,12 @@
                                                     <li class="breadcrumb-item active">service_time</li>
                                                     <li class="mx-2"> - </li>
                                                     <li><strong>Ydelses tidspunkt</strong></li>
-                                                    <div class="badge rounded-pill text-bg-danger ms-auto">
-                                                        <i class="bi bi-exclamation-diamond"></i>
-                                                        <span class=""> Required</span>
-                                                    </div>
+                                                    <span class="d-flex ms-auto align-content-center">
+                                                        <div class="badge rounded-pill text-bg-danger ms-2 me-2 d-inline-flex align-items-center" style="margin-top: -3px;">
+                                                            <i class="bi bi-exclamation-diamond me-1" style="margin-top: -2px;"></i>
+                                                            <span> Required</span>
+                                                        </div>
+                                                    </span>
                                                 </ol>
                                             </a>
                                             <div class="collapse m-3 objectBodyMain" id="service_time10">
@@ -771,7 +779,10 @@
                                                                 <td scope="row">DateTime</td>
                                                                 <td scope="row"></td>
                                                                 <td scope="row">
-                                                                    <span class="badge rounded-pill text-bg-danger ms-auto">* Required</span>
+                                                                    <div class="badge rounded-pill text-bg-danger ms-2 me-2 d-inline-flex align-items-center" style="margin-top: -3px;">
+                                                                        <i class="bi bi-exclamation-diamond me-1" style="margin-top: -2px;"></i>
+                                                                        <span> Required</span>
+                                                                    </div>
                                                                 </td>
                                                             </tr>
                                                             <tr>
@@ -780,7 +791,10 @@
                                                                 <td scope="row">DateTime</td>
                                                                 <td scope="row"></td>
                                                                 <td scope="row">
-                                                                    <span class="badge rounded-pill text-bg-danger ms-auto">* Required</span>
+                                                                    <div class="badge rounded-pill text-bg-danger ms-2 me-2 d-inline-flex align-items-center" style="margin-top: -3px;">
+                                                                        <i class="bi bi-exclamation-diamond me-1" style="margin-top: -2px;"></i>
+                                                                        <span> Required</span>
+                                                                    </div>
                                                                 </td>
                                                             </tr>
                                                         </tbody>
@@ -875,19 +889,18 @@
                                                         <tbody class="table-group-divider">
                                                             <tr>
                                                                 <th scope="row">ResultCode</th>
-                                                                <td scope="row"><p>Ekstra oplysninger til udfald:</p>
-<ul>
-<li>di46 = Hjertestop</li>
-<li>dt883 = Malign Hypertermi mistanke</li>
-<li>dt884a = Tandskade</li>
-</ul>
+                                                                <td scope="row"><p>Ekstra oplysninger til udfald:
+<br>
+- di46 = Hjertestop
+- dt883 = Malign Hypertermi mistanke
+- dt884a = Tandskade</p>
 <p><em>Kun relevant hvis komplikationer = Nej</em></p></td>
-                                                                <td scope="row">str, Enum</td>
+                                                                <td scope="row">List/Array of str, Enum</td>
                                                                 <td scope="row">
                                                                     <p style="margin:0px; font-weight: bold;">Udfald:</p>
                                                                     <ul class="list-group list-group-flush">
                                                                         <li class="list-group-item">"anafylaktisk_reaktion_shock"</li>
-                                                                        <li class="list-group-item">"_anaestesi_afbrudt"</li>
+                                                                        <li class="list-group-item">"anaestesi_afbrudt"</li>
                                                                         <li class="list-group-item">"aspiration"</li>
                                                                         <li class="list-group-item">"durapunktur_accidentel"</li>
                                                                         <li class="list-group-item">"di46"</li>
@@ -1043,11 +1056,10 @@ Intubation opgivet</p>
                                                         <tbody class="table-group-divider">
                                                             <tr>
                                                                 <th scope="row">ResultCode</th>
-                                                                <td scope="row"><p>Ekstra oplysninger til udfald: </p>
-<ul>
-<li>vv00002 = ja</li>
-<li>vv00003  = nej</li>
-</ul></td>
+                                                                <td scope="row"><p>Ekstra oplysninger til udfald: 
+<br>
+- vv00002 = ja
+- vv00003  = nej</p></td>
                                                                 <td scope="row">str, Enum</td>
                                                                 <td scope="row">
                                                                     <p style="margin:0px; font-weight: bold;">Udfald:</p>
@@ -1198,13 +1210,12 @@ Observationssted = Andet observationsafsnit</em></p></td>
                                                         <tbody class="table-group-divider">
                                                             <tr>
                                                                 <th scope="row">ResultCode</th>
-                                                                <td scope="row"><p>Ekstra oplysninger til udfald:</p>
-<ul>
-<li>di46 = Hjertestop</li>
-<li>dt884a = Tandskade</li>
-</ul>
+                                                                <td scope="row"><p>Ekstra oplysninger til udfald:
+<br>
+- di46 = Hjertestop
+- dt884a = Tandskade</p>
 <p><em>Kun relevant hvis Observation ingen komplikationer = Nej</em></p></td>
-                                                                <td scope="row">str, Enum</td>
+                                                                <td scope="row">List/Array of str, Enum</td>
                                                                 <td scope="row">
                                                                     <p style="margin:0px; font-weight: bold;">Udfald:</p>
                                                                     <ul class="list-group list-group-flush">
@@ -1379,13 +1390,17 @@ Observationssted = Andet observationsafsnit</em></p></td>
                                                     <li class="breadcrumb-item">DAD5</li>
                                                     <li class="breadcrumb-item">Report</li>
                                                     <li aria-current='page' class="breadcrumb-item active">Organization</li>
-                                                    <span class="badge rounded-pill text-bg-danger ms-auto">* Required</span>
+                                                    <span class="d-flex ms-auto align-content-center">
+                                                        <div class="badge rounded-pill text-bg-danger ms-2 me-2 d-inline-flex align-items-center" style="margin-top: -3px;">
+                                                            <i class="bi bi-exclamation-diamond me-1" style="margin-top: -2px;"></i>
+                                                            <span> Required</span>
+                                                        </div>
+                                                    </span>
                                                 </ol>
                                             </a>
                                             <div class="collapse m-3 objectBodyMain" id="Organization">
                                                 <div class="object_margin">
                                                     <p class="table_view_hider" style="height: 1rem !important; margin: 0px !important;"></p>
-                                                    <h2 class="table_view_hider">Attributes</h2>
                                                     <table class="table table-bordered table-striped table-hover ">
                                                         <thead>
                                                             <tr>
@@ -1413,7 +1428,10 @@ Observationssted = Andet observationsafsnit</em></p></td>
                                                                     </ul>
                                                                 </td>
                                                                 <td scope="row">
-                                                                    <span class="badge rounded-pill text-bg-danger ms-auto">* Required</span>
+                                                                    <div class="badge rounded-pill text-bg-danger ms-2 me-2 d-inline-flex align-items-center" style="margin-top: -3px;">
+                                                                        <i class="bi bi-exclamation-diamond me-1" style="margin-top: -2px;"></i>
+                                                                        <span> Required</span>
+                                                                    </div>
                                                                 </td>
                                                             </tr>
                                                             <tr>
@@ -1422,7 +1440,10 @@ Observationssted = Andet observationsafsnit</em></p></td>
                                                                 <td scope="row">string</td>
                                                                 <td scope="row"></td>
                                                                 <td scope="row">
-                                                                    <span class="badge rounded-pill text-bg-danger ms-auto">* Required</span>
+                                                                    <div class="badge rounded-pill text-bg-danger ms-2 me-2 d-inline-flex align-items-center" style="margin-top: -3px;">
+                                                                        <i class="bi bi-exclamation-diamond me-1" style="margin-top: -2px;"></i>
+                                                                        <span> Required</span>
+                                                                    </div>
                                                                 </td>
                                                             </tr>
                                                         </tbody>
@@ -1437,13 +1458,17 @@ Observationssted = Andet observationsafsnit</em></p></td>
                                                     <li class="breadcrumb-item">DAD5</li>
                                                     <li class="breadcrumb-item">Report</li>
                                                     <li aria-current='page' class="breadcrumb-item active">Patient</li>
-                                                    <span class="badge rounded-pill text-bg-danger ms-auto">* Required</span>
+                                                    <span class="d-flex ms-auto align-content-center">
+                                                        <div class="badge rounded-pill text-bg-danger ms-2 me-2 d-inline-flex align-items-center" style="margin-top: -3px;">
+                                                            <i class="bi bi-exclamation-diamond me-1" style="margin-top: -2px;"></i>
+                                                            <span> Required</span>
+                                                        </div>
+                                                    </span>
                                                 </ol>
                                             </a>
                                             <div class="collapse m-3 objectBodyMain" id="Patient">
                                                 <div class="object_margin">
                                                     <p class="table_view_hider" style="height: 1rem !important; margin: 0px !important;"></p>
-                                                    <h2 class="table_view_hider">Attributes</h2>
                                                     <table class="table table-bordered table-striped table-hover ">
                                                         <thead>
                                                             <tr>
@@ -1461,7 +1486,10 @@ Observationssted = Andet observationsafsnit</em></p></td>
                                                                 <td scope="row">string</td>
                                                                 <td scope="row">Standard formatering af CPR.</td>
                                                                 <td scope="row">
-                                                                    <span class="badge rounded-pill text-bg-danger ms-auto">* Required</span>
+                                                                    <div class="badge rounded-pill text-bg-danger ms-2 me-2 d-inline-flex align-items-center" style="margin-top: -3px;">
+                                                                        <i class="bi bi-exclamation-diamond me-1" style="margin-top: -2px;"></i>
+                                                                        <span> Required</span>
+                                                                    </div>
                                                                 </td>
                                                             </tr>
                                                         </tbody>
@@ -1504,7 +1532,7 @@ Observationssted = Andet observationsafsnit</em></p></td>
                                     <textarea class="form-control textarea-tabs bg-body-tertiary current_json" id="json_post_textarea" style="height: 1000px">{
     "Report": {
         "Patient": {
-            "CivilRegistrationNumber": "2002942954"
+            "CivilRegistrationNumber": "2002835YJ3"
         },
         "Organization": {
             "OrganizationType": "regionskode",
@@ -1513,38 +1541,38 @@ Observationssted = Andet observationsafsnit</em></p></td>
         "Data": {
             "Activity": {
                 "SOR_anesthesia": {
-                    "OrganizationCode": "LHHXtqzibduDvIahcxNY"
+                    "OrganizationCode": "TtbDkBKIFCdOPOdajaje"
+                },
+                "airaway_plan": {
+                    "MethodCode": "sctid257268009"
                 },
                 "airway_management": {
-                    "MethodCode": "sctid41700002"
+                    "MethodCode": "bgda60"
                 },
                 "airway_management_last_attempt": {
-                    "MethodCode": "kgba00a"
-                },
-                "airway_plan": {
-                    "MethodCode": "bgda60"
+                    "MethodCode": "fleksibelt_skopi"
                 },
                 "anesthesia_observation": {
                     "OrganizationCode": "skadestue_modtagelse",
-                    "ResultCode": "hjemmet",
-                    "DateTimeEnd": "24-04-2017 15:55:44",
-                    "DateTimeStart": "08-11-2020 01:07:19"
+                    "ResultCode": "andet_hospital",
+                    "DateTimeEnd": "05-04-2006 04:45:19",
+                    "DateTimeStart": "09-07-2021 20:53:45"
                 },
                 "anesthesia_service": {
-                    "ResultCode": "sctid225419007"
+                    "ResultCode": "inhalation"
                 },
                 "intubation": {
-                    "ResultCode": "mere_end_3"
+                    "ResultCode": "intubation_opgivet"
                 },
                 "procedure_code": {
-                    "ResultCode": "NPReWHvuwsbNNCwoeitg"
+                    "ResultCode": "pkZeBSXKuSbOdUUFGhVC"
                 },
                 "relaxation_intubation": {
                     "ResultCode": "sctid22587006"
                 },
                 "service_time": {
-                    "DateTimeStart": "26-07-2006 11:41:39",
-                    "DateTimeEnd": "14-10-2005 11:01:30"
+                    "DateTimeEnd": "22-02-2012 23:22:45",
+                    "DateTimeStart": "30-10-2012 19:59:54"
                 }
             },
             "Observation": {
@@ -1552,34 +1580,34 @@ Observationssted = Andet observationsafsnit</em></p></td>
                     "ResultCode": "asa_i"
                 },
                 "anesthesia_complications": {
-                    "ResultCode": "di46"
+                    "ResultCode": "mors_uventet"
                 },
                 "anesthesia_prioritization": {
-                    "ResultCode": "sctid103390000"
+                    "ResultCode": "fremskyndet"
                 },
                 "best_achieved_laryngoscopy_grade": {
                     "ResultCode": "grad_4"
                 },
                 "blockade_sufficiency": {
-                    "ResultCode": "vv00002"
+                    "ResultCode": "vv00003"
                 },
                 "nausea_at_discharge": {
-                    "ResultValue": 8
+                    "ResultValue": 9
                 },
                 "nausea_on_arrival": {
-                    "ResultValue": 2
-                },
-                "observation_complications": {
-                    "ResultCode": "aspiration"
-                },
-                "pain_at_discharge": {
                     "ResultValue": 1
                 },
+                "observation_complications": {
+                    "ResultCode": "huskeanaestesi"
+                },
+                "pain_at_discharge": {
+                    "ResultValue": 8
+                },
                 "pain_on_arrival": {
-                    "ResultValue": 2
+                    "ResultValue": 7
                 },
                 "temperature": {
-                    "ResultValue": -477382881.152186
+                    "ResultValue": 9266745723.66337
                 }
             }
         }
@@ -1593,7 +1621,7 @@ Observationssted = Andet observationsafsnit</em></p></td>
                                     <textarea class="form-control textarea-tabs bg-body-tertiary" id="json_put_textarea" style="height: 1000px">{
     "Report": {
         "Patient": {
-            "CivilRegistrationNumber": "3003336440"
+            "CivilRegistrationNumber": "1801029078"
         },
         "Organization": {
             "OrganizationType": "regionskode",
@@ -1602,49 +1630,49 @@ Observationssted = Andet observationsafsnit</em></p></td>
         "Data": {
             "Activity": {
                 "SOR_anesthesia": {
-                    "OrganizationCode": "GFWglEdhlpjuuxHClbkJ"
+                    "OrganizationCode": "dUrmrNNKxwVHccPSAXCc"
+                },
+                "airaway_plan": {
+                    "MethodCode": "intubation_videolaryngoskopi"
                 },
                 "airway_management": {
-                    "MethodCode": "sctid41700002"
+                    "MethodCode": "kgbb00"
                 },
                 "airway_management_last_attempt": {
-                    "MethodCode": "fleksibelt_skopi"
-                },
-                "airway_plan": {
-                    "MethodCode": "sctid257268009"
+                    "MethodCode": "sctid78121007"
                 },
                 "anesthesia_observation": {
-                    "OrganizationCode": "intensiv",
-                    "ResultCode": "andet_hospital",
-                    "DateTimeEnd": "21-03-2015 10:24:05",
-                    "DateTimeStart": "26-05-2018 09:21:21"
+                    "OrganizationCode": "sengeafdeling",
+                    "ResultCode": "doed_i_observationsperioden",
+                    "DateTimeEnd": "14-11-2013 08:28:06",
+                    "DateTimeStart": "15-02-2018 12:39:28"
                 },
                 "anesthesia_service": {
-                    "ResultCode": "naac1"
+                    "ResultCode": "sctid225419007"
                 },
                 "intubation": {
-                    "ResultCode": "videolaryngoskopi_max2"
+                    "ResultCode": "intubation_opgivet"
                 },
                 "procedure_code": {
-                    "ResultCode": "cKKxnCIWdqoKbOrRMYHc"
+                    "ResultCode": "shRFnwkNzrpFPtbJXnXm"
                 },
                 "relaxation_intubation": {
                     "ResultCode": "sctid59594008"
                 },
                 "service_time": {
-                    "DateTimeStart": "28-12-2001 03:10:07",
-                    "DateTimeEnd": "04-11-2021 14:02:18"
+                    "DateTimeEnd": "04-07-2015 03:08:11",
+                    "DateTimeStart": "15-02-2008 11:26:36"
                 }
             },
             "Observation": {
                 "ASA_score": {
-                    "ResultCode": "asa_v"
+                    "ResultCode": "asa_i"
                 },
                 "anesthesia_complications": {
-                    "ResultCode": "aspiration"
+                    "ResultCode": "mors_uventet"
                 },
                 "anesthesia_prioritization": {
-                    "ResultCode": "livstruende"
+                    "ResultCode": "hastende"
                 },
                 "best_achieved_laryngoscopy_grade": {
                     "ResultCode": "grad_4"
@@ -1656,19 +1684,19 @@ Observationssted = Andet observationsafsnit</em></p></td>
                     "ResultValue": 8
                 },
                 "nausea_on_arrival": {
-                    "ResultValue": 9
-                },
-                "observation_complications": {
-                    "ResultCode": "huskeanaestesi"
-                },
-                "pain_at_discharge": {
                     "ResultValue": 8
                 },
-                "pain_on_arrival": {
+                "observation_complications": {
+                    "ResultCode": "di46"
+                },
+                "pain_at_discharge": {
                     "ResultValue": 7
                 },
+                "pain_on_arrival": {
+                    "ResultValue": 3
+                },
                 "temperature": {
-                    "ResultValue": -83096.6382417618
+                    "ResultValue": -693371826.753567
                 }
             }
         }
