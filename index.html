@@ -11,7 +11,7 @@
     </head>
     <body>
         <header class="mb-5">
-            <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary py-4">
+            <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary py-4 header-style">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="https://www.rkkp.dk/">
                         <img class="d-inline-block me-1 align-text-middle" src="favicon.png" width="50" height="50" />
@@ -96,7 +96,7 @@
             <div class="container-lg" style="margin-top:6rem !important">
                 <div class="row mt-4">
                     <div class="col-sm-12 mt-5">
-                        <div class="alert alert-tertiary border" style="margin-bottom: 0px !important">
+                        <div class="container main-container-style bg-body-tertiary rounded-3 p-3" style="margin-bottom: 0px !important">
                             <div class="container-fluid">
                                 <div class="row d-flex align-items-center">
                                     <div class="col-md-8">
@@ -149,7 +149,7 @@
                 </div>
                 <div class="row mt-4">
                     <div class="col-sm-12">
-                        <div class="p-3 bg-body-tertiary border rounded-3">
+                        <div class="main-container-style bg-body-tertiary border rounded-3 p-3">
                             <input class="form-control form-control-lg" id="searchInput" placeholder="Søg i objektnavne og beskrivelser ..." type="text" />
                         </div>
                     </div>
@@ -179,7 +179,7 @@
                                 <button class="nav-link" id="tabReport" type="button" onclick="filterTypes('groupReport', this)"><i class="bi bi-square-fill bg-body-tertiary report-txt me-2"></i>Report Objects</button>
                             </li>
                         </ul>
-                        <div class="container container-border bg-body-tertiary">
+                        <div class="container main-container-style bg-body-tertiary rounded-3 p-3 mb-3" style="border-top: 0px !important;border-top-left-radius: 0px !important;border-top-right-radius: 0px !important;">
                             <ul class="nav mb-2 d-flex justify-content-end">
                                 <li class="nav-item me-2">
                                     <a class="btn btn-info btn-sm" href="dad5_export_v1_0_0.xlsx">
@@ -197,9 +197,9 @@
                             <div class="tab-content">
                                 <div class="tab-pane fade show active" id="tabAll-pane">
                                     <div class="alert alert-danger m-3" role="alert">
-                                        <div class="d-flex align-items-center">
-                                            <h6 style="position: relative; top: 2px;">Bemærk: </h6>
-                                            <div class="badge rounded-pill text-bg-danger ms-2 me-2 d-inline-flex align-items-center" style="margin-top: -3px;">
+                                        <div class="d-flex align-items-center" style="margin-bottom: 0.5rem !important;">
+                                            <h6 style="margin-top: 0px !important;margin-bottom: 0px !important;">Bemærk: </h6>
+                                            <div class="badge rounded-pill text-bg-danger ms-2 me-2 d-inline-flex align-items-center">
                                                 <i class="bi bi-exclamation-diamond me-1" style="margin-top: -2px;"></i>
                                                 <span> Required</span>
                                             </div>
@@ -210,14 +210,14 @@
                                         <div class="dataObject">
                                             <a data-bs-toggle='collapse' aria-expanded='false' href="#SOR_anesthesia1" class="ObjectHeaderWrapper">
                                                 <ol class="breadcrumb objectHeaderMain objectHeaderColor">
-                                                    <i class="bi bi-folder2 me-2"></i>
+                                                    <i class="bi bi-folder2 me-2" style="margin-top: -3px;"></i>
                                                     <li class="breadcrumb-item">DAD5</li>
                                                     <li class="breadcrumb-item">Activity</li>
                                                     <li class="breadcrumb-item active">SOR_anesthesia</li>
                                                     <li class="mx-2"> - </li>
                                                     <li><strong>SOR anæstesi</strong></li>
                                                     <span class="d-flex ms-auto align-content-center">
-                                                        <div class="badge rounded-pill text-bg-danger ms-2 me-2 d-inline-flex align-items-center" style="margin-top: -3px;">
+                                                        <div class="badge rounded-pill text-bg-danger ms-2 me-2 d-inline-flex align-items-center">
                                                             <i class="bi bi-exclamation-diamond me-1" style="margin-top: -2px;"></i>
                                                             <span> Required</span>
                                                         </div>
@@ -236,7 +236,6 @@
                                                             <tr>
                                                                 <th scope="col" class="fst-italic th-attribute">Attribute</th>
                                                                 <th scope="col" class="fst-italic th-description">Description</th>
-                                                                <th scope="col" class="fst-italic th-type">Type</th>
                                                                 <th scope="col" class="fst-italic th-value">Constraints</th>
                                                                 <th scope="col" class="fst-italic th-required">Required</th>
                                                             </tr>
@@ -245,10 +244,24 @@
                                                             <tr>
                                                                 <th scope="row">OrganizationCode</th>
                                                                 <td scope="row"></td>
-                                                                <td scope="row">String</td>
-                                                                <td scope="row"></td>
                                                                 <td scope="row">
-                                                                    <div class="badge rounded-pill text-bg-danger ms-2 me-2 d-inline-flex align-items-center" style="margin-top: -3px;">
+                                                                    <table class="table table-sm" style="--bs-table-bg: transparent !important;">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th scope="col" style="width: 20%">Type</th>
+                                                                                <th scope="col">Ingen begrænsninger</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td scope="row">String</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                                <td scope="row">
+                                                                    <div class="badge rounded-pill text-bg-danger ms-2 me-2 d-inline-flex align-items-center">
                                                                         <i class="bi bi-exclamation-diamond me-1" style="margin-top: -2px;"></i>
                                                                         <span> Required</span>
                                                                     </div>
@@ -262,7 +275,7 @@
                                         <div class="dataObject">
                                             <a data-bs-toggle='collapse' aria-expanded='false' href="#airaway_plan2" class="ObjectHeaderWrapper">
                                                 <ol class="breadcrumb objectHeaderMain objectHeaderColor">
-                                                    <i class="bi bi-folder2 me-2"></i>
+                                                    <i class="bi bi-folder2 me-2" style="margin-top: -3px;"></i>
                                                     <li class="breadcrumb-item">DAD5</li>
                                                     <li class="breadcrumb-item">Activity</li>
                                                     <li class="breadcrumb-item active">airaway_plan</li>
@@ -282,7 +295,6 @@
                                                             <tr>
                                                                 <th scope="col" class="fst-italic th-attribute">Attribute</th>
                                                                 <th scope="col" class="fst-italic th-description">Description</th>
-                                                                <th scope="col" class="fst-italic th-type">Type</th>
                                                                 <th scope="col" class="fst-italic th-value">Constraints</th>
                                                                 <th scope="col" class="fst-italic th-required">Required</th>
                                                             </tr>
@@ -302,19 +314,58 @@
 <li>tracheostomi_lokalanæstesi = Tracheostomi i lokalanæstesi</li>
 <li>intuberet_tracheostomeret = Er intuberet/tracheostomeret</li>
 </ul></td>
-                                                                <td scope="row">List/Array of str, Enum</td>
                                                                 <td scope="row">
-                                                                    <p style="margin:0px; font-weight: bold;">Udfald:</p>
-                                                                    <ul class="list-group list-group-flush">
-                                                                        <li class="list-group-item">"sctid241700002"</li>
-                                                                        <li class="list-group-item">"bgda60"</li>
-                                                                        <li class="list-group-item">"sctid257268009"</li>
-                                                                        <li class="list-group-item">"intubation_laryngoskopi"</li>
-                                                                        <li class="list-group-item">"intubation_videolaryngoskopi"</li>
-                                                                        <li class="list-group-item">"intubation_anden_metode"</li>
-                                                                        <li class="list-group-item">"tracheostomi_lokalanaestesi"</li>
-                                                                        <li class="list-group-item">"intuberet_tracheostomeret"</li>
-                                                                    </ul>
+                                                                    <table class="table table-sm" style="--bs-table-bg: transparent !important;">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th scope="col" style="width: 20%">Type</th>
+                                                                                <th scope="col" style="width: 20%">Udfald</th>
+                                                                                <th scope="col" style="width: 60%">Beskrivelse</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td>List/Array of str, Enum</td>
+                                                                                <td>sctid241700002</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>-</td>
+                                                                                <td>bgda60</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>-</td>
+                                                                                <td>sctid257268009</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>-</td>
+                                                                                <td>intubation_laryngoskopi</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>-</td>
+                                                                                <td>intubation_videolaryngoskopi</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>-</td>
+                                                                                <td>intubation_anden_metode</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>-</td>
+                                                                                <td>tracheostomi_lokalanaestesi</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>-</td>
+                                                                                <td>intuberet_tracheostomeret</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
                                                                 </td>
                                                                 <td scope="row"></td>
                                                             </tr>
@@ -326,7 +377,7 @@
                                         <div class="dataObject">
                                             <a data-bs-toggle='collapse' aria-expanded='false' href="#airway_management3" class="ObjectHeaderWrapper">
                                                 <ol class="breadcrumb objectHeaderMain objectHeaderColor">
-                                                    <i class="bi bi-folder2 me-2"></i>
+                                                    <i class="bi bi-folder2 me-2" style="margin-top: -3px;"></i>
                                                     <li class="breadcrumb-item">DAD5</li>
                                                     <li class="breadcrumb-item">Activity</li>
                                                     <li class="breadcrumb-item active">airway_management</li>
@@ -346,7 +397,6 @@
                                                             <tr>
                                                                 <th scope="col" class="fst-italic th-attribute">Attribute</th>
                                                                 <th scope="col" class="fst-italic th-description">Description</th>
-                                                                <th scope="col" class="fst-italic th-type">Type</th>
                                                                 <th scope="col" class="fst-italic th-value">Constraints</th>
                                                                 <th scope="col" class="fst-italic th-required">Required</th>
                                                             </tr>
@@ -362,17 +412,48 @@
 <li>kgbb00 = tracheostomi</li>
 <li>andet = Ikke relevant/pt er Intuberet/tracheostomeret</li>
 </ul></td>
-                                                                <td scope="row">List/Array of str, Enum</td>
                                                                 <td scope="row">
-                                                                    <p style="margin:0px; font-weight: bold;">Udfald:</p>
-                                                                    <ul class="list-group list-group-flush">
-                                                                        <li class="list-group-item">"sctid41700002"</li>
-                                                                        <li class="list-group-item">"bgda60"</li>
-                                                                        <li class="list-group-item">"larynxmaske"</li>
-                                                                        <li class="list-group-item">"intubation"</li>
-                                                                        <li class="list-group-item">"kgbb00"</li>
-                                                                        <li class="list-group-item">"andet"</li>
-                                                                    </ul>
+                                                                    <table class="table table-sm" style="--bs-table-bg: transparent !important;">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th scope="col" style="width: 20%">Type</th>
+                                                                                <th scope="col" style="width: 20%">Udfald</th>
+                                                                                <th scope="col" style="width: 60%">Beskrivelse</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td>List/Array of str, Enum</td>
+                                                                                <td>sctid41700002</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>-</td>
+                                                                                <td>bgda60</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>-</td>
+                                                                                <td>sctid257268009</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>-</td>
+                                                                                <td>intubation</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>-</td>
+                                                                                <td>kgbb00</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>-</td>
+                                                                                <td>andet</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
                                                                 </td>
                                                                 <td scope="row"></td>
                                                             </tr>
@@ -384,7 +465,7 @@
                                         <div class="dataObject">
                                             <a data-bs-toggle='collapse' aria-expanded='false' href="#airway_management_last_attempt4" class="ObjectHeaderWrapper">
                                                 <ol class="breadcrumb objectHeaderMain objectHeaderColor">
-                                                    <i class="bi bi-folder2 me-2"></i>
+                                                    <i class="bi bi-folder2 me-2" style="margin-top: -3px;"></i>
                                                     <li class="breadcrumb-item">DAD5</li>
                                                     <li class="breadcrumb-item">Activity</li>
                                                     <li class="breadcrumb-item active">airway_management_last_attempt</li>
@@ -404,7 +485,6 @@
                                                             <tr>
                                                                 <th scope="col" class="fst-italic th-attribute">Attribute</th>
                                                                 <th scope="col" class="fst-italic th-description">Description</th>
-                                                                <th scope="col" class="fst-italic th-type">Type</th>
                                                                 <th scope="col" class="fst-italic th-value">Constraints</th>
                                                                 <th scope="col" class="fst-italic th-required">Required</th>
                                                             </tr>
@@ -414,22 +494,57 @@
                                                                 <th scope="row">MethodCode</th>
                                                                 <td scope="row"><p>Ekstra oplysninger til udfald:</p>
 <ul>
-<li>sctid257268009 = LMA (alle typer)</li>
+<li>sctid257268009 = Larynxmaske (alle typer) </li>
 <li>sctid78121007 = Direkte laryngoskopi</li>
 <li>kgba00a  = Nødtracheostomi</li>
 </ul></td>
-                                                                <td scope="row">List/Array of str, Enum</td>
                                                                 <td scope="row">
-                                                                    <p style="margin:0px; font-weight: bold;">Udfald:</p>
-                                                                    <ul class="list-group list-group-flush">
-                                                                        <li class="list-group-item">"sctid257268009"</li>
-                                                                        <li class="list-group-item">"sctid78121007"</li>
-                                                                        <li class="list-group-item">"videolaryngoskopi"</li>
-                                                                        <li class="list-group-item">"fleksibelt_skopi"</li>
-                                                                        <li class="list-group-item">"vaekning_af_patient"</li>
-                                                                        <li class="list-group-item">"kgba00a"</li>
-                                                                        <li class="list-group-item">"anden_teknik"</li>
-                                                                    </ul>
+                                                                    <table class="table table-sm" style="--bs-table-bg: transparent !important;">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th scope="col" style="width: 20%">Type</th>
+                                                                                <th scope="col" style="width: 20%">Udfald</th>
+                                                                                <th scope="col" style="width: 60%">Beskrivelse</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td>List/Array of str, Enum</td>
+                                                                                <td>sctid257268009</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>-</td>
+                                                                                <td>sctid78121007</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>-</td>
+                                                                                <td>videolaryngoskopi</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>-</td>
+                                                                                <td>fleksibelt_skopi</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>-</td>
+                                                                                <td>vaekning_af_patient</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>-</td>
+                                                                                <td>kgba00a</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>-</td>
+                                                                                <td>anden_teknik</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
                                                                 </td>
                                                                 <td scope="row"></td>
                                                             </tr>
@@ -441,7 +556,7 @@
                                         <div class="dataObject">
                                             <a data-bs-toggle='collapse' aria-expanded='false' href="#anesthesia_observation5" class="ObjectHeaderWrapper">
                                                 <ol class="breadcrumb objectHeaderMain objectHeaderColor">
-                                                    <i class="bi bi-folder2 me-2"></i>
+                                                    <i class="bi bi-folder2 me-2" style="margin-top: -3px;"></i>
                                                     <li class="breadcrumb-item">DAD5</li>
                                                     <li class="breadcrumb-item">Activity</li>
                                                     <li class="breadcrumb-item active">anesthesia_observation</li>
@@ -455,7 +570,6 @@
                                                             <tr>
                                                                 <th scope="col" class="fst-italic th-attribute">Attribute</th>
                                                                 <th scope="col" class="fst-italic th-description">Description</th>
-                                                                <th scope="col" class="fst-italic th-type">Type</th>
                                                                 <th scope="col" class="fst-italic th-value">Constraints</th>
                                                                 <th scope="col" class="fst-italic th-required">Required</th>
                                                             </tr>
@@ -464,31 +578,90 @@
                                                             <tr>
                                                                 <th scope="row">DateTimeEnd</th>
                                                                 <td scope="row"><p>Sluttidspunkt for opvågning</p></td>
-                                                                <td scope="row">DateTime</td>
-                                                                <td scope="row"></td>
+                                                                <td scope="row">
+                                                                    <table class="table table-sm" style="--bs-table-bg: transparent !important;">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th scope="col" style="width: 20%">Type</th>
+                                                                                <th scope="col">Ingen begrænsninger</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td scope="row">DateTime</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
                                                                 <td scope="row"></td>
                                                             </tr>
                                                             <tr>
                                                                 <th scope="row">DateTimeStart</th>
                                                                 <td scope="row"><p>Starttidspunkt for opvågning</p></td>
-                                                                <td scope="row">DateTime</td>
-                                                                <td scope="row"></td>
+                                                                <td scope="row">
+                                                                    <table class="table table-sm" style="--bs-table-bg: transparent !important;">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th scope="col" style="width: 20%">Type</th>
+                                                                                <th scope="col">Ingen begrænsninger</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td scope="row">DateTime</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
                                                                 <td scope="row"></td>
                                                             </tr>
                                                             <tr>
                                                                 <th scope="row">OrganizationCode</th>
                                                                 <td scope="row"><p>Type af observationssted (opvågningssted)</p></td>
-                                                                <td scope="row">str, Enum</td>
                                                                 <td scope="row">
-                                                                    <p style="margin:0px; font-weight: bold;">Udfald:</p>
-                                                                    <ul class="list-group list-group-flush">
-                                                                        <li class="list-group-item">"centralt_observationsafsnit"</li>
-                                                                        <li class="list-group-item">"andet_observationsafsnit"</li>
-                                                                        <li class="list-group-item">"operationsgangen"</li>
-                                                                        <li class="list-group-item">"intensiv"</li>
-                                                                        <li class="list-group-item">"sengeafdeling"</li>
-                                                                        <li class="list-group-item">"skadestue_modtagelse"</li>
-                                                                    </ul>
+                                                                    <table class="table table-sm" style="--bs-table-bg: transparent !important;">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th scope="col" style="width: 20%">Type</th>
+                                                                                <th scope="col" style="width: 20%">Udfald</th>
+                                                                                <th scope="col" style="width: 60%">Beskrivelse</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td>str, Enum</td>
+                                                                                <td>centralt_observationsafsnit</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>-</td>
+                                                                                <td>andet_observationsafsnit</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>-</td>
+                                                                                <td>operationsgangen</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>-</td>
+                                                                                <td>intensiv</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>-</td>
+                                                                                <td>sengeafdeling</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>-</td>
+                                                                                <td>skadestue_modtagelse</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
                                                                 </td>
                                                                 <td scope="row"></td>
                                                             </tr>
@@ -500,17 +673,48 @@
 <li>sctid261554009 = Reoperation</li>
 <li>sctid310032008 = Intensiv afdeling</li>
 </ul></td>
-                                                                <td scope="row">str, Enum</td>
                                                                 <td scope="row">
-                                                                    <p style="margin:0px; font-weight: bold;">Udfald:</p>
-                                                                    <ul class="list-group list-group-flush">
-                                                                        <li class="list-group-item">"stamafdeling"</li>
-                                                                        <li class="list-group-item">"hjemmet"</li>
-                                                                        <li class="list-group-item">"sctid261554009"</li>
-                                                                        <li class="list-group-item">"sctid310032008"</li>
-                                                                        <li class="list-group-item">"andet_hospital"</li>
-                                                                        <li class="list-group-item">"doed_i_observationsperioden"</li>
-                                                                    </ul>
+                                                                    <table class="table table-sm" style="--bs-table-bg: transparent !important;">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th scope="col" style="width: 20%">Type</th>
+                                                                                <th scope="col" style="width: 20%">Udfald</th>
+                                                                                <th scope="col" style="width: 60%">Beskrivelse</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td>str, Enum</td>
+                                                                                <td>stamafdeling</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>-</td>
+                                                                                <td>hjemmet</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>-</td>
+                                                                                <td>sctid261554009</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>-</td>
+                                                                                <td>sctid310032008</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>-</td>
+                                                                                <td>andet_hospital</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>-</td>
+                                                                                <td>doed_i_observationsperioden</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
                                                                 </td>
                                                                 <td scope="row"></td>
                                                             </tr>
@@ -522,7 +726,7 @@
                                         <div class="dataObject">
                                             <a data-bs-toggle='collapse' aria-expanded='false' href="#anesthesia_service6" class="ObjectHeaderWrapper">
                                                 <ol class="breadcrumb objectHeaderMain objectHeaderColor">
-                                                    <i class="bi bi-folder2 me-2"></i>
+                                                    <i class="bi bi-folder2 me-2" style="margin-top: -3px;"></i>
                                                     <li class="breadcrumb-item">DAD5</li>
                                                     <li class="breadcrumb-item">Activity</li>
                                                     <li class="breadcrumb-item active">anesthesia_service</li>
@@ -542,7 +746,6 @@
                                                             <tr>
                                                                 <th scope="col" class="fst-italic th-attribute">Attribute</th>
                                                                 <th scope="col" class="fst-italic th-description">Description</th>
-                                                                <th scope="col" class="fst-italic th-type">Type</th>
                                                                 <th scope="col" class="fst-italic th-value">Constraints</th>
                                                                 <th scope="col" class="fst-italic th-required">Required</th>
                                                             </tr>
@@ -557,18 +760,53 @@
 <li>NAAC3 =  IV og inhalation</li>
 <li>NAAC1 = TIVA</li>
 </ul></td>
-                                                                <td scope="row">List/Array of str, Enum</td>
                                                                 <td scope="row">
-                                                                    <p style="margin:0px; font-weight: bold;">Udfald:</p>
-                                                                    <ul class="list-group list-group-flush">
-                                                                        <li class="list-group-item">"perifer_nerveblokade"</li>
-                                                                        <li class="list-group-item">"central_blokade"</li>
-                                                                        <li class="list-group-item">"sctid72641008"</li>
-                                                                        <li class="list-group-item">"sctid225419007"</li>
-                                                                        <li class="list-group-item">"inhalation"</li>
-                                                                        <li class="list-group-item">"naac3"</li>
-                                                                        <li class="list-group-item">"naac1"</li>
-                                                                    </ul>
+                                                                    <table class="table table-sm" style="--bs-table-bg: transparent !important;">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th scope="col" style="width: 20%">Type</th>
+                                                                                <th scope="col" style="width: 20%">Udfald</th>
+                                                                                <th scope="col" style="width: 60%">Beskrivelse</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td>List/Array of str, Enum</td>
+                                                                                <td>perifer_nerveblokade</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>-</td>
+                                                                                <td>central_blokade</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>-</td>
+                                                                                <td>sctid72641008</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>-</td>
+                                                                                <td>sctid225419007</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>-</td>
+                                                                                <td>inhalation</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>-</td>
+                                                                                <td>naac3</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>-</td>
+                                                                                <td>naac1</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
                                                                 </td>
                                                                 <td scope="row"></td>
                                                             </tr>
@@ -580,7 +818,7 @@
                                         <div class="dataObject">
                                             <a data-bs-toggle='collapse' aria-expanded='false' href="#intubation7" class="ObjectHeaderWrapper">
                                                 <ol class="breadcrumb objectHeaderMain objectHeaderColor">
-                                                    <i class="bi bi-folder2 me-2"></i>
+                                                    <i class="bi bi-folder2 me-2" style="margin-top: -3px;"></i>
                                                     <li class="breadcrumb-item">DAD5</li>
                                                     <li class="breadcrumb-item">Activity</li>
                                                     <li class="breadcrumb-item active">intubation</li>
@@ -600,7 +838,6 @@
                                                             <tr>
                                                                 <th scope="col" class="fst-italic th-attribute">Attribute</th>
                                                                 <th scope="col" class="fst-italic th-description">Description</th>
-                                                                <th scope="col" class="fst-italic th-type">Type</th>
                                                                 <th scope="col" class="fst-italic th-value">Constraints</th>
                                                                 <th scope="col" class="fst-italic th-required">Required</th>
                                                             </tr>
@@ -617,17 +854,48 @@
 <li>mere_end_3 = 3 forsøg eller flere uanset metode</li>
 </ul>
 <p><em>Kun relevant hvis Luftvejshåndtering == Intubation</em></p></td>
-                                                                <td scope="row">str, Enum</td>
                                                                 <td scope="row">
-                                                                    <p style="margin:0px; font-weight: bold;">Udfald:</p>
-                                                                    <ul class="list-group list-group-flush">
-                                                                        <li class="list-group-item">"laryngoskopi_max2"</li>
-                                                                        <li class="list-group-item">"videolaryngoskopi_max2"</li>
-                                                                        <li class="list-group-item">"fleksibel_skopi_max2"</li>
-                                                                        <li class="list-group-item">"andet_max2"</li>
-                                                                        <li class="list-group-item">"mere_end_3"</li>
-                                                                        <li class="list-group-item">"intubation_opgivet"</li>
-                                                                    </ul>
+                                                                    <table class="table table-sm" style="--bs-table-bg: transparent !important;">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th scope="col" style="width: 20%">Type</th>
+                                                                                <th scope="col" style="width: 20%">Udfald</th>
+                                                                                <th scope="col" style="width: 60%">Beskrivelse</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td>str, Enum</td>
+                                                                                <td>laryngoskopi_max2</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>-</td>
+                                                                                <td>videolaryngoskopi_max2</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>-</td>
+                                                                                <td>fleksibel_skopi_max2</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>-</td>
+                                                                                <td>andet_max2</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>-</td>
+                                                                                <td>mere_end_3</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>-</td>
+                                                                                <td>intubation_opgivet</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
                                                                 </td>
                                                                 <td scope="row"></td>
                                                             </tr>
@@ -639,14 +907,14 @@
                                         <div class="dataObject">
                                             <a data-bs-toggle='collapse' aria-expanded='false' href="#procedure_code8" class="ObjectHeaderWrapper">
                                                 <ol class="breadcrumb objectHeaderMain objectHeaderColor">
-                                                    <i class="bi bi-folder2 me-2"></i>
+                                                    <i class="bi bi-folder2 me-2" style="margin-top: -3px;"></i>
                                                     <li class="breadcrumb-item">DAD5</li>
                                                     <li class="breadcrumb-item">Activity</li>
                                                     <li class="breadcrumb-item active">procedure_code</li>
                                                     <li class="mx-2"> - </li>
                                                     <li><strong>Procedurekode</strong></li>
                                                     <span class="d-flex ms-auto align-content-center">
-                                                        <div class="badge rounded-pill text-bg-danger ms-2 me-2 d-inline-flex align-items-center" style="margin-top: -3px;">
+                                                        <div class="badge rounded-pill text-bg-danger ms-2 me-2 d-inline-flex align-items-center">
                                                             <i class="bi bi-exclamation-diamond me-1" style="margin-top: -2px;"></i>
                                                             <span> Required</span>
                                                         </div>
@@ -658,14 +926,13 @@
                                                     <p class="table_view_hider" style="height: 1rem !important; margin: 0px !important;"></p>
                                                     <div class="objectDescription alert alert-warning">
                                                         <p><strong>Procedurekode</strong></p>
-                                                        <p><p>SKS-kode for den <strong>vigtigste</strong> procedure foretaget under anæstesien</p></p>
+                                                        <p><p>SKS-koden for den <strong>vigtigste</strong> operation/behandling/undersøgelse foretaget under anæstesien. Her ønskes IKKE anæstesiproceduren.</p></p>
                                                     </div>
                                                     <table class="table table-bordered table-striped table-hover ">
                                                         <thead>
                                                             <tr>
                                                                 <th scope="col" class="fst-italic th-attribute">Attribute</th>
                                                                 <th scope="col" class="fst-italic th-description">Description</th>
-                                                                <th scope="col" class="fst-italic th-type">Type</th>
                                                                 <th scope="col" class="fst-italic th-value">Constraints</th>
                                                                 <th scope="col" class="fst-italic th-required">Required</th>
                                                             </tr>
@@ -674,10 +941,24 @@
                                                             <tr>
                                                                 <th scope="row">ResultCode</th>
                                                                 <td scope="row"></td>
-                                                                <td scope="row">String</td>
-                                                                <td scope="row"></td>
                                                                 <td scope="row">
-                                                                    <div class="badge rounded-pill text-bg-danger ms-2 me-2 d-inline-flex align-items-center" style="margin-top: -3px;">
+                                                                    <table class="table table-sm" style="--bs-table-bg: transparent !important;">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th scope="col" style="width: 20%">Type</th>
+                                                                                <th scope="col">Ingen begrænsninger</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td scope="row">String</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                                <td scope="row">
+                                                                    <div class="badge rounded-pill text-bg-danger ms-2 me-2 d-inline-flex align-items-center">
                                                                         <i class="bi bi-exclamation-diamond me-1" style="margin-top: -2px;"></i>
                                                                         <span> Required</span>
                                                                     </div>
@@ -691,7 +972,7 @@
                                         <div class="dataObject">
                                             <a data-bs-toggle='collapse' aria-expanded='false' href="#relaxation_intubation9" class="ObjectHeaderWrapper">
                                                 <ol class="breadcrumb objectHeaderMain objectHeaderColor">
-                                                    <i class="bi bi-folder2 me-2"></i>
+                                                    <i class="bi bi-folder2 me-2" style="margin-top: -3px;"></i>
                                                     <li class="breadcrumb-item">DAD5</li>
                                                     <li class="breadcrumb-item">Activity</li>
                                                     <li class="breadcrumb-item active">relaxation_intubation</li>
@@ -711,7 +992,6 @@
                                                             <tr>
                                                                 <th scope="col" class="fst-italic th-attribute">Attribute</th>
                                                                 <th scope="col" class="fst-italic th-description">Description</th>
-                                                                <th scope="col" class="fst-italic th-type">Type</th>
                                                                 <th scope="col" class="fst-italic th-value">Constraints</th>
                                                                 <th scope="col" class="fst-italic th-required">Required</th>
                                                             </tr>
@@ -726,14 +1006,33 @@
 <li>sctid59594008 = Non-depolariserende</li>
 </ul>
 <p><em>Kun relevant hvis Luftvejshåndtering = Intubation</em></p></td>
-                                                                <td scope="row">str, Enum</td>
                                                                 <td scope="row">
-                                                                    <p style="margin:0px; font-weight: bold;">Udfald:</p>
-                                                                    <ul class="list-group list-group-flush">
-                                                                        <li class="list-group-item">"vv00003"</li>
-                                                                        <li class="list-group-item">"sctid22587006"</li>
-                                                                        <li class="list-group-item">"sctid59594008"</li>
-                                                                    </ul>
+                                                                    <table class="table table-sm" style="--bs-table-bg: transparent !important;">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th scope="col" style="width: 20%">Type</th>
+                                                                                <th scope="col" style="width: 20%">Udfald</th>
+                                                                                <th scope="col" style="width: 60%">Beskrivelse</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td>str, Enum</td>
+                                                                                <td>vv00003</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>-</td>
+                                                                                <td>sctid22587006</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>-</td>
+                                                                                <td>sctid59594008</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
                                                                 </td>
                                                                 <td scope="row"></td>
                                                             </tr>
@@ -745,14 +1044,14 @@
                                         <div class="dataObject">
                                             <a data-bs-toggle='collapse' aria-expanded='false' href="#service_time10" class="ObjectHeaderWrapper">
                                                 <ol class="breadcrumb objectHeaderMain objectHeaderColor">
-                                                    <i class="bi bi-folder2 me-2"></i>
+                                                    <i class="bi bi-folder2 me-2" style="margin-top: -3px;"></i>
                                                     <li class="breadcrumb-item">DAD5</li>
                                                     <li class="breadcrumb-item">Activity</li>
                                                     <li class="breadcrumb-item active">service_time</li>
                                                     <li class="mx-2"> - </li>
                                                     <li><strong>Ydelses tidspunkt</strong></li>
                                                     <span class="d-flex ms-auto align-content-center">
-                                                        <div class="badge rounded-pill text-bg-danger ms-2 me-2 d-inline-flex align-items-center" style="margin-top: -3px;">
+                                                        <div class="badge rounded-pill text-bg-danger ms-2 me-2 d-inline-flex align-items-center">
                                                             <i class="bi bi-exclamation-diamond me-1" style="margin-top: -2px;"></i>
                                                             <span> Required</span>
                                                         </div>
@@ -771,7 +1070,6 @@
                                                             <tr>
                                                                 <th scope="col" class="fst-italic th-attribute">Attribute</th>
                                                                 <th scope="col" class="fst-italic th-description">Description</th>
-                                                                <th scope="col" class="fst-italic th-type">Type</th>
                                                                 <th scope="col" class="fst-italic th-value">Constraints</th>
                                                                 <th scope="col" class="fst-italic th-required">Required</th>
                                                             </tr>
@@ -780,10 +1078,24 @@
                                                             <tr>
                                                                 <th scope="row">DateTimeEnd</th>
                                                                 <td scope="row"><p>Sluttidspunkt for anæstesi-ydelse</p></td>
-                                                                <td scope="row">DateTime</td>
-                                                                <td scope="row"></td>
                                                                 <td scope="row">
-                                                                    <div class="badge rounded-pill text-bg-danger ms-2 me-2 d-inline-flex align-items-center" style="margin-top: -3px;">
+                                                                    <table class="table table-sm" style="--bs-table-bg: transparent !important;">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th scope="col" style="width: 20%">Type</th>
+                                                                                <th scope="col">Ingen begrænsninger</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td scope="row">DateTime</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                                <td scope="row">
+                                                                    <div class="badge rounded-pill text-bg-danger ms-2 me-2 d-inline-flex align-items-center">
                                                                         <i class="bi bi-exclamation-diamond me-1" style="margin-top: -2px;"></i>
                                                                         <span> Required</span>
                                                                     </div>
@@ -792,10 +1104,24 @@
                                                             <tr>
                                                                 <th scope="row">DateTimeStart</th>
                                                                 <td scope="row"><p>Start tidspunkt for anæstesi-ydelse</p></td>
-                                                                <td scope="row">DateTime</td>
-                                                                <td scope="row"></td>
                                                                 <td scope="row">
-                                                                    <div class="badge rounded-pill text-bg-danger ms-2 me-2 d-inline-flex align-items-center" style="margin-top: -3px;">
+                                                                    <table class="table table-sm" style="--bs-table-bg: transparent !important;">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th scope="col" style="width: 20%">Type</th>
+                                                                                <th scope="col">Ingen begrænsninger</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td scope="row">DateTime</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                                <td scope="row">
+                                                                    <div class="badge rounded-pill text-bg-danger ms-2 me-2 d-inline-flex align-items-center">
                                                                         <i class="bi bi-exclamation-diamond me-1" style="margin-top: -2px;"></i>
                                                                         <span> Required</span>
                                                                     </div>
@@ -814,7 +1140,7 @@
                                         <div class="dataObject">
                                             <a data-bs-toggle='collapse' aria-expanded='false' href="#ASA_score1" class="ObjectHeaderWrapper">
                                                 <ol class="breadcrumb objectHeaderMain objectHeaderColor">
-                                                    <i class="bi bi-folder2 me-2"></i>
+                                                    <i class="bi bi-folder2 me-2" style="margin-top: -3px;"></i>
                                                     <li class="breadcrumb-item">DAD5</li>
                                                     <li class="breadcrumb-item">Observation</li>
                                                     <li class="breadcrumb-item active">ASA_score</li>
@@ -834,7 +1160,6 @@
                                                             <tr>
                                                                 <th scope="col" class="fst-italic th-attribute">Attribute</th>
                                                                 <th scope="col" class="fst-italic th-description">Description</th>
-                                                                <th scope="col" class="fst-italic th-type">Type</th>
                                                                 <th scope="col" class="fst-italic th-value">Constraints</th>
                                                                 <th scope="col" class="fst-italic th-required">Required</th>
                                                             </tr>
@@ -843,17 +1168,48 @@
                                                             <tr>
                                                                 <th scope="row">ResultCode</th>
                                                                 <td scope="row"></td>
-                                                                <td scope="row">str, Enum</td>
                                                                 <td scope="row">
-                                                                    <p style="margin:0px; font-weight: bold;">Udfald:</p>
-                                                                    <ul class="list-group list-group-flush">
-                                                                        <li class="list-group-item">"asa_i"</li>
-                                                                        <li class="list-group-item">"asa_ii"</li>
-                                                                        <li class="list-group-item">"asa_iii"</li>
-                                                                        <li class="list-group-item">"asa_iv"</li>
-                                                                        <li class="list-group-item">"asa_v"</li>
-                                                                        <li class="list-group-item">"asa_vi"</li>
-                                                                    </ul>
+                                                                    <table class="table table-sm" style="--bs-table-bg: transparent !important;">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th scope="col" style="width: 20%">Type</th>
+                                                                                <th scope="col" style="width: 20%">Udfald</th>
+                                                                                <th scope="col" style="width: 60%">Beskrivelse</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td>str, Enum</td>
+                                                                                <td>asa_i</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>-</td>
+                                                                                <td>asa_ii</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>-</td>
+                                                                                <td>asa_iii</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>-</td>
+                                                                                <td>asa_iv</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>-</td>
+                                                                                <td>asa_v</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>-</td>
+                                                                                <td>asa_vi</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
                                                                 </td>
                                                                 <td scope="row"></td>
                                                             </tr>
@@ -865,19 +1221,19 @@
                                         <div class="dataObject">
                                             <a data-bs-toggle='collapse' aria-expanded='false' href="#anesthesia_complications2" class="ObjectHeaderWrapper">
                                                 <ol class="breadcrumb objectHeaderMain objectHeaderColor">
-                                                    <i class="bi bi-folder2 me-2"></i>
+                                                    <i class="bi bi-folder2 me-2" style="margin-top: -3px;"></i>
                                                     <li class="breadcrumb-item">DAD5</li>
                                                     <li class="breadcrumb-item">Observation</li>
                                                     <li class="breadcrumb-item active">anesthesia_complications</li>
                                                     <li class="mx-2"> - </li>
-                                                    <li><strong>Anæstesi Komplikationer</strong></li>
+                                                    <li><strong>Anæstesi komplikationer</strong></li>
                                                 </ol>
                                             </a>
                                             <div class="collapse m-3 objectBodyMain" id="anesthesia_complications2">
                                                 <div class="object_margin">
                                                     <p class="table_view_hider" style="height: 1rem !important; margin: 0px !important;"></p>
                                                     <div class="objectDescription alert alert-warning">
-                                                        <p><strong>Anæstesi Komplikationer</strong></p>
+                                                        <p><strong>Anæstesi komplikationer</strong></p>
                                                         <p><p>Komplikationer opstået under anæstesien</p></p>
                                                     </div>
                                                     <table class="table table-bordered table-striped table-hover ">
@@ -885,7 +1241,6 @@
                                                             <tr>
                                                                 <th scope="col" class="fst-italic th-attribute">Attribute</th>
                                                                 <th scope="col" class="fst-italic th-description">Description</th>
-                                                                <th scope="col" class="fst-italic th-type">Type</th>
                                                                 <th scope="col" class="fst-italic th-value">Constraints</th>
                                                                 <th scope="col" class="fst-italic th-required">Required</th>
                                                             </tr>
@@ -893,28 +1248,69 @@
                                                         <tbody class="table-group-divider">
                                                             <tr>
                                                                 <th scope="row">ResultCode</th>
-                                                                <td scope="row"><p>Ekstra oplysninger til udfald:</p>
-<ul>
-<li>di46 = Hjertestop</li>
-<li>dt883 = Malign Hypertermi mistanke</li>
-<li>dt884a = Tandskade</li>
-</ul>
-<p><em>Kun relevant hvis komplikationer = Nej</em></p></td>
-                                                                <td scope="row">List/Array of str, Enum</td>
+                                                                <td scope="row"><p><em>Kun relevant hvis komplikationer = Nej</em></p></td>
                                                                 <td scope="row">
-                                                                    <p style="margin:0px; font-weight: bold;">Udfald:</p>
-                                                                    <ul class="list-group list-group-flush">
-                                                                        <li class="list-group-item">"anafylaktisk_reaktion_shock"</li>
-                                                                        <li class="list-group-item">"anaestesi_afbrudt"</li>
-                                                                        <li class="list-group-item">"aspiration"</li>
-                                                                        <li class="list-group-item">"durapunktur_accidentel"</li>
-                                                                        <li class="list-group-item">"di46"</li>
-                                                                        <li class="list-group-item">"huskeanaestesi"</li>
-                                                                        <li class="list-group-item">"dt883"</li>
-                                                                        <li class="list-group-item">"neuromuskulaer_blokade_forlaenget_virkning"</li>
-                                                                        <li class="list-group-item">"dt884a"</li>
-                                                                        <li class="list-group-item">"mors_uventet"</li>
-                                                                    </ul>
+                                                                    <table class="table table-sm" style="--bs-table-bg: transparent !important;">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th scope="col" style="width: 20%">Type</th>
+                                                                                <th scope="col" style="width: 20%">Udfald</th>
+                                                                                <th scope="col" style="width: 60%">Beskrivelse</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td>List/Array of str, Enum</td>
+                                                                                <td>anafylaktisk_reaktion_shock</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>-</td>
+                                                                                <td>anaestesi_afbrudt</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>-</td>
+                                                                                <td>aspiration</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>-</td>
+                                                                                <td>durapunktur_accidentel</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>-</td>
+                                                                                <td>di46</td>
+                                                                                <td>Hjertestop</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>-</td>
+                                                                                <td>huskeanaestesi</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>-</td>
+                                                                                <td>dt883</td>
+                                                                                <td>Malign Hypertermi mistanke</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>-</td>
+                                                                                <td>neuromuskulaer_blokade_forlaenget_virkning</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>-</td>
+                                                                                <td>dt884a</td>
+                                                                                <td>Tandskade</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>-</td>
+                                                                                <td>mors_uventet</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
                                                                 </td>
                                                                 <td scope="row"></td>
                                                             </tr>
@@ -926,27 +1322,26 @@
                                         <div class="dataObject">
                                             <a data-bs-toggle='collapse' aria-expanded='false' href="#anesthesia_prioritization3" class="ObjectHeaderWrapper">
                                                 <ol class="breadcrumb objectHeaderMain objectHeaderColor">
-                                                    <i class="bi bi-folder2 me-2"></i>
+                                                    <i class="bi bi-folder2 me-2" style="margin-top: -3px;"></i>
                                                     <li class="breadcrumb-item">DAD5</li>
                                                     <li class="breadcrumb-item">Observation</li>
                                                     <li class="breadcrumb-item active">anesthesia_prioritization</li>
                                                     <li class="mx-2"> - </li>
-                                                    <li><strong>Anæestisi prioritering</strong></li>
+                                                    <li><strong>Anæstesi prioritering</strong></li>
                                                 </ol>
                                             </a>
                                             <div class="collapse m-3 objectBodyMain" id="anesthesia_prioritization3">
                                                 <div class="object_margin">
                                                     <p class="table_view_hider" style="height: 1rem !important; margin: 0px !important;"></p>
                                                     <div class="objectDescription alert alert-warning">
-                                                        <p><strong>Anæestisi prioritering</strong></p>
-                                                        <p><p>Hvor akut var anæstesien?</p></p>
+                                                        <p><strong>Anæstesi prioritering</strong></p>
+                                                        <p><p>Hvor akut var anæstesien? Vurderet ved prætilsynet.</p></p>
                                                     </div>
                                                     <table class="table table-bordered table-striped table-hover ">
                                                         <thead>
                                                             <tr>
                                                                 <th scope="col" class="fst-italic th-attribute">Attribute</th>
                                                                 <th scope="col" class="fst-italic th-description">Description</th>
-                                                                <th scope="col" class="fst-italic th-type">Type</th>
                                                                 <th scope="col" class="fst-italic th-value">Constraints</th>
                                                                 <th scope="col" class="fst-italic th-required">Required</th>
                                                             </tr>
@@ -954,22 +1349,39 @@
                                                         <tbody class="table-group-divider">
                                                             <tr>
                                                                 <th scope="row">ResultCode</th>
-                                                                <td scope="row"><p>Ekstra oplysninger til udfald:</p>
-<ul>
-<li>sctid103390000 = Elektiv</li>
-<li>fremskyndet  = Fremskyndet (dage)</li>
-<li>hastende = Hastende (timer)</li>
-<li>livstruende = Umiddelbart livstruende</li>
-</ul></td>
-                                                                <td scope="row">str, Enum</td>
+                                                                <td scope="row"></td>
                                                                 <td scope="row">
-                                                                    <p style="margin:0px; font-weight: bold;">Udfald:</p>
-                                                                    <ul class="list-group list-group-flush">
-                                                                        <li class="list-group-item">"sctid103390000"</li>
-                                                                        <li class="list-group-item">"fremskyndet"</li>
-                                                                        <li class="list-group-item">"hastende"</li>
-                                                                        <li class="list-group-item">"livstruende"</li>
-                                                                    </ul>
+                                                                    <table class="table table-sm" style="--bs-table-bg: transparent !important;">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th scope="col" style="width: 20%">Type</th>
+                                                                                <th scope="col" style="width: 20%">Udfald</th>
+                                                                                <th scope="col" style="width: 60%">Beskrivelse</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td>str, Enum</td>
+                                                                                <td>sctid103390000</td>
+                                                                                <td>Elektiv</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>-</td>
+                                                                                <td>fremskyndet</td>
+                                                                                <td>Fremskyndet (dage)</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>-</td>
+                                                                                <td>hastende</td>
+                                                                                <td>Hastende (timer)</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>-</td>
+                                                                                <td>livstruende</td>
+                                                                                <td>Umiddelbart livstruende</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
                                                                 </td>
                                                                 <td scope="row"></td>
                                                             </tr>
@@ -981,7 +1393,7 @@
                                         <div class="dataObject">
                                             <a data-bs-toggle='collapse' aria-expanded='false' href="#best_achieved_laryngoscopy_grade4" class="ObjectHeaderWrapper">
                                                 <ol class="breadcrumb objectHeaderMain objectHeaderColor">
-                                                    <i class="bi bi-folder2 me-2"></i>
+                                                    <i class="bi bi-folder2 me-2" style="margin-top: -3px;"></i>
                                                     <li class="breadcrumb-item">DAD5</li>
                                                     <li class="breadcrumb-item">Observation</li>
                                                     <li class="breadcrumb-item active">best_achieved_laryngoscopy_grade</li>
@@ -1001,7 +1413,6 @@
                                                             <tr>
                                                                 <th scope="col" class="fst-italic th-attribute">Attribute</th>
                                                                 <th scope="col" class="fst-italic th-description">Description</th>
-                                                                <th scope="col" class="fst-italic th-type">Type</th>
                                                                 <th scope="col" class="fst-italic th-value">Constraints</th>
                                                                 <th scope="col" class="fst-italic th-required">Required</th>
                                                             </tr>
@@ -1013,15 +1424,38 @@
 Intubation opgivet</p>
 <p>ELLER</p>
 <p>Intubation=Intubation opgivet</p></td>
-                                                                <td scope="row">str, Enum</td>
                                                                 <td scope="row">
-                                                                    <p style="margin:0px; font-weight: bold;">Udfald:</p>
-                                                                    <ul class="list-group list-group-flush">
-                                                                        <li class="list-group-item">"grad_1"</li>
-                                                                        <li class="list-group-item">"grad_2"</li>
-                                                                        <li class="list-group-item">"grad_3"</li>
-                                                                        <li class="list-group-item">"grad_4"</li>
-                                                                    </ul>
+                                                                    <table class="table table-sm" style="--bs-table-bg: transparent !important;">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th scope="col" style="width: 20%">Type</th>
+                                                                                <th scope="col" style="width: 20%">Udfald</th>
+                                                                                <th scope="col" style="width: 60%">Beskrivelse</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td>str, Enum</td>
+                                                                                <td>grad_1</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>-</td>
+                                                                                <td>grad_2</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>-</td>
+                                                                                <td>grad_3</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>-</td>
+                                                                                <td>grad_4</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
                                                                 </td>
                                                                 <td scope="row"></td>
                                                             </tr>
@@ -1033,7 +1467,7 @@ Intubation opgivet</p>
                                         <div class="dataObject">
                                             <a data-bs-toggle='collapse' aria-expanded='false' href="#blockade_sufficiency5" class="ObjectHeaderWrapper">
                                                 <ol class="breadcrumb objectHeaderMain objectHeaderColor">
-                                                    <i class="bi bi-folder2 me-2"></i>
+                                                    <i class="bi bi-folder2 me-2" style="margin-top: -3px;"></i>
                                                     <li class="breadcrumb-item">DAD5</li>
                                                     <li class="breadcrumb-item">Observation</li>
                                                     <li class="breadcrumb-item active">blockade_sufficiency</li>
@@ -1046,14 +1480,13 @@ Intubation opgivet</p>
                                                     <p class="table_view_hider" style="height: 1rem !important; margin: 0px !important;"></p>
                                                     <div class="objectDescription alert alert-warning">
                                                         <p><strong>Sufficiens af blokade</strong></p>
-                                                        <p><p>Virkede blokaden sufficient?</p></p>
+                                                        <p><p>Virkede blokaden sufficient? Hvis insufficiens af en blokade medførte, at det var nødvendigt at anvende generel anæstesi, sendes vv00003: nej.</p></p>
                                                     </div>
                                                     <table class="table table-bordered table-striped table-hover ">
                                                         <thead>
                                                             <tr>
                                                                 <th scope="col" class="fst-italic th-attribute">Attribute</th>
                                                                 <th scope="col" class="fst-italic th-description">Description</th>
-                                                                <th scope="col" class="fst-italic th-type">Type</th>
                                                                 <th scope="col" class="fst-italic th-value">Constraints</th>
                                                                 <th scope="col" class="fst-italic th-required">Required</th>
                                                             </tr>
@@ -1061,18 +1494,29 @@ Intubation opgivet</p>
                                                         <tbody class="table-group-divider">
                                                             <tr>
                                                                 <th scope="row">ResultCode</th>
-                                                                <td scope="row"><p>Ekstra oplysninger til udfald: </p>
-<ul>
-<li>vv00002 = ja</li>
-<li>vv00003  = nej</li>
-</ul></td>
-                                                                <td scope="row">str, Enum</td>
+                                                                <td scope="row"></td>
                                                                 <td scope="row">
-                                                                    <p style="margin:0px; font-weight: bold;">Udfald:</p>
-                                                                    <ul class="list-group list-group-flush">
-                                                                        <li class="list-group-item">"vv00002"</li>
-                                                                        <li class="list-group-item">"vv00003"</li>
-                                                                    </ul>
+                                                                    <table class="table table-sm" style="--bs-table-bg: transparent !important;">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th scope="col" style="width: 20%">Type</th>
+                                                                                <th scope="col" style="width: 20%">Udfald</th>
+                                                                                <th scope="col" style="width: 60%">Beskrivelse</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td>str, Enum</td>
+                                                                                <td>vv00002</td>
+                                                                                <td>Ja</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>-</td>
+                                                                                <td>vv00003</td>
+                                                                                <td>Nej</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
                                                                 </td>
                                                                 <td scope="row"></td>
                                                             </tr>
@@ -1084,7 +1528,7 @@ Intubation opgivet</p>
                                         <div class="dataObject">
                                             <a data-bs-toggle='collapse' aria-expanded='false' href="#nausea_at_discharge6" class="ObjectHeaderWrapper">
                                                 <ol class="breadcrumb objectHeaderMain objectHeaderColor">
-                                                    <i class="bi bi-folder2 me-2"></i>
+                                                    <i class="bi bi-folder2 me-2" style="margin-top: -3px;"></i>
                                                     <li class="breadcrumb-item">DAD5</li>
                                                     <li class="breadcrumb-item">Observation</li>
                                                     <li class="breadcrumb-item active">nausea_at_discharge</li>
@@ -1104,7 +1548,6 @@ Intubation opgivet</p>
                                                             <tr>
                                                                 <th scope="col" class="fst-italic th-attribute">Attribute</th>
                                                                 <th scope="col" class="fst-italic th-description">Description</th>
-                                                                <th scope="col" class="fst-italic th-type">Type</th>
                                                                 <th scope="col" class="fst-italic th-value">Constraints</th>
                                                                 <th scope="col" class="fst-italic th-required">Required</th>
                                                             </tr>
@@ -1115,16 +1558,23 @@ Intubation opgivet</p>
                                                                 <td scope="row"><p><em>Kun relevant hvis Observationssted = Centralt observationsafsnit
 ELLER
 Observationssted = Andet observationsafsnit</em></p></td>
-                                                                <td scope="row">Integer</td>
                                                                 <td scope="row">
-                                                                    <p style="margin:0px; font-weight: bold;">Min or Equal to</p>
-                                                                    <ul class="list-group list-group-flush">
-                                                                        <li class="list-group-item">0</li>
-                                                                    </ul>
-                                                                    <p style="margin:0px; font-weight: bold;">Max or Equal to</p>
-                                                                    <ul class="list-group list-group-flush">
-                                                                        <li class="list-group-item">10</li>
-                                                                    </ul>
+                                                                    <table class="table table-sm" style="--bs-table-bg: transparent !important;">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th scope="col" style="width: 20%">Type</th>
+                                                                                <th scope="col">Min or Equal to</th>
+                                                                                <th scope="col">Max or Equal to</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td scope="row">Integer</td>
+                                                                                <td>0</td>
+                                                                                <td>10</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
                                                                 </td>
                                                                 <td scope="row"></td>
                                                             </tr>
@@ -1136,7 +1586,7 @@ Observationssted = Andet observationsafsnit</em></p></td>
                                         <div class="dataObject">
                                             <a data-bs-toggle='collapse' aria-expanded='false' href="#nausea_on_arrival7" class="ObjectHeaderWrapper">
                                                 <ol class="breadcrumb objectHeaderMain objectHeaderColor">
-                                                    <i class="bi bi-folder2 me-2"></i>
+                                                    <i class="bi bi-folder2 me-2" style="margin-top: -3px;"></i>
                                                     <li class="breadcrumb-item">DAD5</li>
                                                     <li class="breadcrumb-item">Observation</li>
                                                     <li class="breadcrumb-item active">nausea_on_arrival</li>
@@ -1156,7 +1606,6 @@ Observationssted = Andet observationsafsnit</em></p></td>
                                                             <tr>
                                                                 <th scope="col" class="fst-italic th-attribute">Attribute</th>
                                                                 <th scope="col" class="fst-italic th-description">Description</th>
-                                                                <th scope="col" class="fst-italic th-type">Type</th>
                                                                 <th scope="col" class="fst-italic th-value">Constraints</th>
                                                                 <th scope="col" class="fst-italic th-required">Required</th>
                                                             </tr>
@@ -1167,16 +1616,23 @@ Observationssted = Andet observationsafsnit</em></p></td>
                                                                 <td scope="row"><p><em>Kun relevant hvis Observationssted = Centralt observationsafsnit
 ELLER
 Observationssted = Andet observationsafsnit</em></p></td>
-                                                                <td scope="row">Integer</td>
                                                                 <td scope="row">
-                                                                    <p style="margin:0px; font-weight: bold;">Min or Equal to</p>
-                                                                    <ul class="list-group list-group-flush">
-                                                                        <li class="list-group-item">0</li>
-                                                                    </ul>
-                                                                    <p style="margin:0px; font-weight: bold;">Max or Equal to</p>
-                                                                    <ul class="list-group list-group-flush">
-                                                                        <li class="list-group-item">10</li>
-                                                                    </ul>
+                                                                    <table class="table table-sm" style="--bs-table-bg: transparent !important;">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th scope="col" style="width: 20%">Type</th>
+                                                                                <th scope="col">Min or Equal to</th>
+                                                                                <th scope="col">Max or Equal to</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td scope="row">Integer</td>
+                                                                                <td>0</td>
+                                                                                <td>10</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
                                                                 </td>
                                                                 <td scope="row"></td>
                                                             </tr>
@@ -1188,7 +1644,7 @@ Observationssted = Andet observationsafsnit</em></p></td>
                                         <div class="dataObject">
                                             <a data-bs-toggle='collapse' aria-expanded='false' href="#observation_complications8" class="ObjectHeaderWrapper">
                                                 <ol class="breadcrumb objectHeaderMain objectHeaderColor">
-                                                    <i class="bi bi-folder2 me-2"></i>
+                                                    <i class="bi bi-folder2 me-2" style="margin-top: -3px;"></i>
                                                     <li class="breadcrumb-item">DAD5</li>
                                                     <li class="breadcrumb-item">Observation</li>
                                                     <li class="breadcrumb-item active">observation_complications</li>
@@ -1208,7 +1664,6 @@ Observationssted = Andet observationsafsnit</em></p></td>
                                                             <tr>
                                                                 <th scope="col" class="fst-italic th-attribute">Attribute</th>
                                                                 <th scope="col" class="fst-italic th-description">Description</th>
-                                                                <th scope="col" class="fst-italic th-type">Type</th>
                                                                 <th scope="col" class="fst-italic th-value">Constraints</th>
                                                                 <th scope="col" class="fst-italic th-required">Required</th>
                                                             </tr>
@@ -1216,25 +1671,59 @@ Observationssted = Andet observationsafsnit</em></p></td>
                                                         <tbody class="table-group-divider">
                                                             <tr>
                                                                 <th scope="row">ResultCode</th>
-                                                                <td scope="row"><p>Ekstra oplysninger til udfald:</p>
-<ul>
-<li>di46 = Hjertestop</li>
-<li>dt884a = Tandskade</li>
-</ul>
-<p><em>Kun relevant hvis Observation ingen komplikationer = Nej</em></p></td>
-                                                                <td scope="row">List/Array of str, Enum</td>
+                                                                <td scope="row"><p><em>Kun relevant hvis Observation ingen komplikationer = Nej</em></p></td>
                                                                 <td scope="row">
-                                                                    <p style="margin:0px; font-weight: bold;">Udfald:</p>
-                                                                    <ul class="list-group list-group-flush">
-                                                                        <li class="list-group-item">"anafylaktisk_reaktion_shock"</li>
-                                                                        <li class="list-group-item">"aspiration"</li>
-                                                                        <li class="list-group-item">"durapunktur_accidentel"</li>
-                                                                        <li class="list-group-item">"di46"</li>
-                                                                        <li class="list-group-item">"huskeanaestesi"</li>
-                                                                        <li class="list-group-item">"neuromuskulaer_blokade_forlaenget_virkning"</li>
-                                                                        <li class="list-group-item">"dt884a"</li>
-                                                                        <li class="list-group-item">"mors_uventet"</li>
-                                                                    </ul>
+                                                                    <table class="table table-sm" style="--bs-table-bg: transparent !important;">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th scope="col" style="width: 20%">Type</th>
+                                                                                <th scope="col" style="width: 20%">Udfald</th>
+                                                                                <th scope="col" style="width: 60%">Beskrivelse</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td>List/Array of str, Enum</td>
+                                                                                <td>anafylaktisk_reaktion_shock</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>-</td>
+                                                                                <td>aspiration</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>-</td>
+                                                                                <td>durapunktur_accidentel</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>-</td>
+                                                                                <td>di46</td>
+                                                                                <td>Hjertestop</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>-</td>
+                                                                                <td>huskeanaestesi</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>-</td>
+                                                                                <td>neuromuskulaer_blokade_forlaenget_virkning</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>-</td>
+                                                                                <td>dt884a</td>
+                                                                                <td>Tandskade</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>-</td>
+                                                                                <td>mors_uventet</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
                                                                 </td>
                                                                 <td scope="row"></td>
                                                             </tr>
@@ -1246,7 +1735,7 @@ Observationssted = Andet observationsafsnit</em></p></td>
                                         <div class="dataObject">
                                             <a data-bs-toggle='collapse' aria-expanded='false' href="#pain_at_discharge9" class="ObjectHeaderWrapper">
                                                 <ol class="breadcrumb objectHeaderMain objectHeaderColor">
-                                                    <i class="bi bi-folder2 me-2"></i>
+                                                    <i class="bi bi-folder2 me-2" style="margin-top: -3px;"></i>
                                                     <li class="breadcrumb-item">DAD5</li>
                                                     <li class="breadcrumb-item">Observation</li>
                                                     <li class="breadcrumb-item active">pain_at_discharge</li>
@@ -1266,7 +1755,6 @@ Observationssted = Andet observationsafsnit</em></p></td>
                                                             <tr>
                                                                 <th scope="col" class="fst-italic th-attribute">Attribute</th>
                                                                 <th scope="col" class="fst-italic th-description">Description</th>
-                                                                <th scope="col" class="fst-italic th-type">Type</th>
                                                                 <th scope="col" class="fst-italic th-value">Constraints</th>
                                                                 <th scope="col" class="fst-italic th-required">Required</th>
                                                             </tr>
@@ -1277,16 +1765,23 @@ Observationssted = Andet observationsafsnit</em></p></td>
                                                                 <td scope="row"><p><em>Kun relevant hvis Observationssted = Centralt observationsafsnit
 ELLER
 Observationssted = Andet observationsafsnit</em></p></td>
-                                                                <td scope="row">Integer</td>
                                                                 <td scope="row">
-                                                                    <p style="margin:0px; font-weight: bold;">Min or Equal to</p>
-                                                                    <ul class="list-group list-group-flush">
-                                                                        <li class="list-group-item">0</li>
-                                                                    </ul>
-                                                                    <p style="margin:0px; font-weight: bold;">Max or Equal to</p>
-                                                                    <ul class="list-group list-group-flush">
-                                                                        <li class="list-group-item">10</li>
-                                                                    </ul>
+                                                                    <table class="table table-sm" style="--bs-table-bg: transparent !important;">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th scope="col" style="width: 20%">Type</th>
+                                                                                <th scope="col">Min or Equal to</th>
+                                                                                <th scope="col">Max or Equal to</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td scope="row">Integer</td>
+                                                                                <td>0</td>
+                                                                                <td>10</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
                                                                 </td>
                                                                 <td scope="row"></td>
                                                             </tr>
@@ -1298,7 +1793,7 @@ Observationssted = Andet observationsafsnit</em></p></td>
                                         <div class="dataObject">
                                             <a data-bs-toggle='collapse' aria-expanded='false' href="#pain_on_arrival10" class="ObjectHeaderWrapper">
                                                 <ol class="breadcrumb objectHeaderMain objectHeaderColor">
-                                                    <i class="bi bi-folder2 me-2"></i>
+                                                    <i class="bi bi-folder2 me-2" style="margin-top: -3px;"></i>
                                                     <li class="breadcrumb-item">DAD5</li>
                                                     <li class="breadcrumb-item">Observation</li>
                                                     <li class="breadcrumb-item active">pain_on_arrival</li>
@@ -1318,7 +1813,6 @@ Observationssted = Andet observationsafsnit</em></p></td>
                                                             <tr>
                                                                 <th scope="col" class="fst-italic th-attribute">Attribute</th>
                                                                 <th scope="col" class="fst-italic th-description">Description</th>
-                                                                <th scope="col" class="fst-italic th-type">Type</th>
                                                                 <th scope="col" class="fst-italic th-value">Constraints</th>
                                                                 <th scope="col" class="fst-italic th-required">Required</th>
                                                             </tr>
@@ -1329,16 +1823,23 @@ Observationssted = Andet observationsafsnit</em></p></td>
                                                                 <td scope="row"><p><em>Kun relevant hvis Observationssted = Centralt observationsafsnit
 ELLER
 Observationssted = Andet observationsafsnit</em></p></td>
-                                                                <td scope="row">Integer</td>
                                                                 <td scope="row">
-                                                                    <p style="margin:0px; font-weight: bold;">Min or Equal to</p>
-                                                                    <ul class="list-group list-group-flush">
-                                                                        <li class="list-group-item">0</li>
-                                                                    </ul>
-                                                                    <p style="margin:0px; font-weight: bold;">Max or Equal to</p>
-                                                                    <ul class="list-group list-group-flush">
-                                                                        <li class="list-group-item">10</li>
-                                                                    </ul>
+                                                                    <table class="table table-sm" style="--bs-table-bg: transparent !important;">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th scope="col" style="width: 20%">Type</th>
+                                                                                <th scope="col">Min or Equal to</th>
+                                                                                <th scope="col">Max or Equal to</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td scope="row">Integer</td>
+                                                                                <td>0</td>
+                                                                                <td>10</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
                                                                 </td>
                                                                 <td scope="row"></td>
                                                             </tr>
@@ -1350,7 +1851,7 @@ Observationssted = Andet observationsafsnit</em></p></td>
                                         <div class="dataObject">
                                             <a data-bs-toggle='collapse' aria-expanded='false' href="#temperature11" class="ObjectHeaderWrapper">
                                                 <ol class="breadcrumb objectHeaderMain objectHeaderColor">
-                                                    <i class="bi bi-folder2 me-2"></i>
+                                                    <i class="bi bi-folder2 me-2" style="margin-top: -3px;"></i>
                                                     <li class="breadcrumb-item">DAD5</li>
                                                     <li class="breadcrumb-item">Observation</li>
                                                     <li class="breadcrumb-item active">temperature</li>
@@ -1370,7 +1871,6 @@ Observationssted = Andet observationsafsnit</em></p></td>
                                                             <tr>
                                                                 <th scope="col" class="fst-italic th-attribute">Attribute</th>
                                                                 <th scope="col" class="fst-italic th-description">Description</th>
-                                                                <th scope="col" class="fst-italic th-type">Type</th>
                                                                 <th scope="col" class="fst-italic th-value">Constraints</th>
                                                                 <th scope="col" class="fst-italic th-required">Required</th>
                                                             </tr>
@@ -1379,8 +1879,22 @@ Observationssted = Andet observationsafsnit</em></p></td>
                                                             <tr>
                                                                 <th scope="row">ResultValue</th>
                                                                 <td scope="row"></td>
-                                                                <td scope="row">Float</td>
-                                                                <td scope="row"></td>
+                                                                <td scope="row">
+                                                                    <table class="table table-sm" style="--bs-table-bg: transparent !important;">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th scope="col" style="width: 20%">Type</th>
+                                                                                <th scope="col">Ingen begrænsninger</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td scope="row">Float</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
                                                                 <td scope="row"></td>
                                                             </tr>
                                                         </tbody>
@@ -1389,121 +1903,193 @@ Observationssted = Andet observationsafsnit</em></p></td>
                                             </div>
                                         </div>
                                     </div>
+                                    <div id="groupReport" class="groupReport"></div>
                                     <div id="groupReport" class="groupReport">
                                         <div class="dataObject">
-                                            <a data-bs-toggle='collapse' aria-expanded='false' href="#Organization" class="ObjectHeaderWrapper">
-                                                <ol class="breadcrumb objectHeaderMain objectHeaderColor">
-                                                    <i class="bi bi-folder2 me-2"></i>
-                                                    <li class="breadcrumb-item">DAD5</li>
-                                                    <li class="breadcrumb-item">Report</li>
-                                                    <li aria-current='page' class="breadcrumb-item active">Organization</li>
-                                                    <span class="d-flex ms-auto align-content-center">
-                                                        <div class="badge rounded-pill text-bg-danger ms-2 me-2 d-inline-flex align-items-center" style="margin-top: -3px;">
-                                                            <i class="bi bi-exclamation-diamond me-1" style="margin-top: -2px;"></i>
-                                                            <span> Required</span>
-                                                        </div>
-                                                    </span>
-                                                </ol>
-                                            </a>
-                                            <div class="collapse m-3 objectBodyMain" id="Organization">
-                                                <div class="object_margin">
-                                                    <p class="table_view_hider" style="height: 1rem !important; margin: 0px !important;"></p>
-                                                    <table class="table table-bordered table-striped table-hover ">
-                                                        <thead>
-                                                            <tr>
-                                                                <th scope="col" class="fst-italic th-attribute">Attribute</th>
-                                                                <th scope="col" class="fst-italic th-description">Description</th>
-                                                                <th scope="col" class="fst-italic th-type">Type</th>
-                                                                <th scope="col" class="fst-italic th-value">Constraint(s)</th>
-                                                                <th scope="col" class="fst-italic th-required">Required</th>
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody class="table-group-divider">
-                                                            <tr>
-                                                                <th scope="row">OrganizationType</th>
-                                                                <td scope="row">Typen af Identifier, som bliver indberettet.</td>
-                                                                <td scope="row">Udfald (str)</td>
-                                                                <td scope="row">
-                                                                    <p style="margin:0px; font-weight: bold;">Udfald:</p>
-                                                                    <ul class="list-group list-group-flush">
-                                                                        <li class="list-group-item">sor</li>
-                                                                        <li class="list-group-item">shak</li>
-                                                                        <li class="list-group-item">regionskode</li>
-                                                                        <li class="list-group-item">kommunekode</li>
-                                                                        <li class="list-group-item">ydernummer</li>
-                                                                        <li class="list-group-item">lokationsnummer</li>
-                                                                    </ul>
-                                                                </td>
-                                                                <td scope="row">
-                                                                    <div class="badge rounded-pill text-bg-danger ms-2 me-2 d-inline-flex align-items-center" style="margin-top: -3px;">
-                                                                        <i class="bi bi-exclamation-diamond me-1" style="margin-top: -2px;"></i>
-                                                                        <span> Required</span>
-                                                                    </div>
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <th scope="row">Identifier</th>
-                                                                <td scope="row">ID på den enkelte organisation, der er ansvarlig for indberetning af patienten. Typen af ID skal følge den indsendte OrganizationType.</td>
-                                                                <td scope="row">string</td>
-                                                                <td scope="row"></td>
-                                                                <td scope="row">
-                                                                    <div class="badge rounded-pill text-bg-danger ms-2 me-2 d-inline-flex align-items-center" style="margin-top: -3px;">
-                                                                        <i class="bi bi-exclamation-diamond me-1" style="margin-top: -2px;"></i>
-                                                                        <span> Required</span>
-                                                                    </div>
-                                                                </td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-                                            </div>
-                                        </div>
+   <a data-bs-toggle="collapse" aria-expanded="false" href="#Organization" class="ObjectHeaderWrapper collapsed">
+      <ol class="breadcrumb objectHeaderMain objectHeaderColor">
+         <i class="bi bi-folder2 me-2"></i>
+         <li class="breadcrumb-item">DAH</li>
+         <li class="breadcrumb-item">DAD5</li>
+         <li class="breadcrumb-item active">Organization</li>
+         <li class="mx-2"> - </li>
+         <li><strong>Organisation</strong></li>
+         <span class="d-flex ms-auto align-content-center">
+            <div class="badge rounded-pill text-bg-danger ms-2 me-2 d-inline-flex align-items-center" style="margin-top: -3px;">
+                <i class="bi bi-exclamation-diamond me-1" style="margin-top: -2px;"></i>
+                <span> Required</span>
+            </div>
+            </span>
+      </ol>
+   </a>
+   <div class="m-3 objectBodyMain collapse" id="Organization" style="">
+      <div class="object_margin">
+         <p class="table_view_hider" style="height: 1rem !important; margin: 0px !important;"></p>
+         <div class="objectDescription alert alert-warning">
+            <p><strong>Organisation</strong></p>
+            <p></p>
+            <p>Standard for all indberetninger. <br><br> Organisationen, der er ansvarlig for indberetning af patienten.</p>
+            <p></p>
+         </div>
+         <table class="table table-bordered table-striped table-hover ">
+            <thead>
+               <tr>
+                  <th scope="col" class="fst-italic th-attribute">Attribute</th>
+                  <th scope="col" class="fst-italic th-description">Description</th>
+                  <th scope="col" class="fst-italic th-value">Constraints</th>
+                  <th scope="col" class="fst-italic th-required">Required</th>
+               </tr>
+            </thead>
+            <tbody class="table-group-divider">
+                <tr>
+                    <th scope="row">OrganizationType</th>
+                    <td scope="row">Typen af Identifier, som bliver indberettet.</td>
+                    <td scope="row">
+                        <table class="table table-sm" style="--bs-table-bg: transparent !important;">
+                            <thead>
+                            <tr>
+                                <th scope="col" style="width: 20%">Type</th>
+                                <th scope="col" style="width: 20%">Udfald</th>
+                                <th scope="col" style="width: 60%">Beskrivelse</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>str, Enum</td>
+                                    <td>sor</td>
+                                    <td>sor format</td>
+                                </tr>
+                                <tr>
+                                    <td>str, Enum</td>
+                                    <td>shak</td>
+                                    <td>shak format</td>
+                                </tr>
+                                <tr>
+                                    <td>str, Enum</td>
+                                    <td>regionskode</td>
+                                    <td>regionskode format</td>
+                                </tr>
+                                <tr>
+                                    <td>str, Enum</td>
+                                    <td>kommunekode</td>
+                                    <td>kommunekode format</td>
+                                </tr>
+                                <tr>
+                                    <td>str, Enum</td>
+                                    <td>ydernummer</td>
+                                    <td>ydernummer format</td>
+                                </tr>
+                                <tr>
+                                    <td>str, Enum</td>
+                                    <td>lokationsnummer</td>
+                                    <td>lokationsnummer format</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                    <td scope="row">
+                        <div class="badge rounded-pill text-bg-danger ms-2 me-2 d-inline-flex align-items-center" style="margin-top: -3px;">
+                            <i class="bi bi-exclamation-diamond me-1" style="margin-top: -2px;"></i>
+                            <span> Required</span>
+                        </div>
+                    </td>
+            </tbody>
+                <tr>
+                    <th scope="row">Identifier</th>
+                    <td scope="row">ID på den enkelte organisation, der er ansvarlig for indberetning af patienten. Typen af ID skal følge den indsendte OrganizationType.</td>
+                    <td scope="row">
+                        <table class="table table-sm" style="--bs-table-bg: transparent !important;">
+                            <thead>
+                            <tr>
+                                <th scope="col" style="width: 20%">Type</th>
+                                <th scope="col" style="width: 20%">Format</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>String</td>
+                                    <td>OrganizationType</td>
+                                </tr>
+                            </tbody>
+                        </table>                    
+                    </td>
+                    <td scope="row">
+                        <div class="badge rounded-pill text-bg-danger ms-2 me-2 d-inline-flex align-items-center" style="margin-top: -3px;">
+                            <i class="bi bi-exclamation-diamond me-1" style="margin-top: -2px;"></i>
+                            <span> Required</span>
+                        </div>
+                    </td>
+            </tbody>
+         </table>
+      </div>
+   </div>
+</div>
                                         <div class="dataObject">
-                                            <a data-bs-toggle='collapse' aria-expanded='false' href="#Patient" class="ObjectHeaderWrapper">
-                                                <ol class="breadcrumb objectHeaderMain objectHeaderColor">
-                                                    <i class="bi bi-folder2 me-2"></i>
-                                                    <li class="breadcrumb-item">DAD5</li>
-                                                    <li class="breadcrumb-item">Report</li>
-                                                    <li aria-current='page' class="breadcrumb-item active">Patient</li>
-                                                    <span class="d-flex ms-auto align-content-center">
-                                                        <div class="badge rounded-pill text-bg-danger ms-2 me-2 d-inline-flex align-items-center" style="margin-top: -3px;">
-                                                            <i class="bi bi-exclamation-diamond me-1" style="margin-top: -2px;"></i>
-                                                            <span> Required</span>
-                                                        </div>
-                                                    </span>
-                                                </ol>
-                                            </a>
-                                            <div class="collapse m-3 objectBodyMain" id="Patient">
-                                                <div class="object_margin">
-                                                    <p class="table_view_hider" style="height: 1rem !important; margin: 0px !important;"></p>
-                                                    <table class="table table-bordered table-striped table-hover ">
-                                                        <thead>
-                                                            <tr>
-                                                                <th scope="col" class="fst-italic th-attribute">Attribute</th>
-                                                                <th scope="col" class="fst-italic th-description">Description</th>
-                                                                <th scope="col" class="fst-italic th-type">Type</th>
-                                                                <th scope="col" class="fst-italic th-value">Constraints</th>
-                                                                <th scope="col" class="fst-italic th-required">Required</th>
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody class="table-group-divider">
-                                                            <tr>
-                                                                <th scope="row">CivilRegistrationNumber</th>
-                                                                <td scope="row"></td>
-                                                                <td scope="row">string</td>
-                                                                <td scope="row">Standard formatering af CPR.</td>
-                                                                <td scope="row">
-                                                                    <div class="badge rounded-pill text-bg-danger ms-2 me-2 d-inline-flex align-items-center" style="margin-top: -3px;">
-                                                                        <i class="bi bi-exclamation-diamond me-1" style="margin-top: -2px;"></i>
-                                                                        <span> Required</span>
-                                                                    </div>
-                                                                </td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-                                            </div>
-                                        </div>
+   <a data-bs-toggle="collapse" aria-expanded="false" href="#Patient" class="ObjectHeaderWrapper collapsed">
+      <ol class="breadcrumb objectHeaderMain objectHeaderColor">
+         <i class="bi bi-folder2 me-2"></i>
+         <li class="breadcrumb-item">DAH</li>
+         <li class="breadcrumb-item">DAD5</li>
+         <li class="breadcrumb-item active">Patient</li>
+         <li class="mx-2"> - </li>
+         <li><strong>Patient</strong></li>
+         <span class="d-flex ms-auto align-content-center">
+            <div class="badge rounded-pill text-bg-danger ms-2 me-2 d-inline-flex align-items-center" style="margin-top: -3px;">
+                <i class="bi bi-exclamation-diamond me-1" style="margin-top: -2px;"></i>
+                <span> Required</span>
+            </div>
+            </span>
+      </ol>
+   </a>
+   <div class="m-3 objectBodyMain collapse" id="Patient" style="">
+      <div class="object_margin">
+         <p class="table_view_hider" style="height: 1rem !important; margin: 0px !important;"></p>
+         <div class="objectDescription alert alert-warning">
+            <p><strong>Patient</strong></p>
+            <p></p>
+            <p>Standard for all indberetninger. <br> <br> Patienten, som indberetningen vedrører.</p>
+            <p></p>
+         </div>
+         <table class="table table-bordered table-striped table-hover ">
+            <thead>
+               <tr>
+                  <th scope="col" class="fst-italic th-attribute">Attribute</th>
+                  <th scope="col" class="fst-italic th-description">Description</th>
+                  <th scope="col" class="fst-italic th-value">Constraints</th>
+                  <th scope="col" class="fst-italic th-required">Required</th>
+               </tr>
+            </thead>
+            <tbody class="table-group-divider">
+                <tr>
+                    <th scope="row">CivilRegistrationNumber</th>
+                    <td scope="row">CPR nummer på patienten.</td>
+                    <td scope="row">
+                        <table class="table table-sm" style="--bs-table-bg: transparent !important;">
+                            <thead>
+                            <tr>
+                                <th scope="col" style="width: 20%">Type</th>
+                                <th scope="col" style="width: 20%">Format</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>String</td>
+                                    <td>Standard CPR formatering uden bindestreg</td>
+                                </tr>
+                            </tbody>
+                        </table>                    
+                    </td>
+                    <td scope="row">
+                        <div class="badge rounded-pill text-bg-danger ms-2 me-2 d-inline-flex align-items-center" style="margin-top: -3px;">
+                            <i class="bi bi-exclamation-diamond me-1" style="margin-top: -2px;"></i>
+                            <span> Required</span>
+                        </div>
+                    </td>
+            </tbody>
+         </table>
+      </div>
+   </div>
+</div>
                                     </div>
                                 </div>
                             </div>
@@ -1539,7 +2125,7 @@ Observationssted = Andet observationsafsnit</em></p></td>
                                     <textarea class="form-control textarea-tabs bg-body-tertiary current_json" id="json_post_textarea" style="height: 1000px">{
     "Report": {
         "Patient": {
-            "CivilRegistrationNumber": "2008124HN3"
+            "CivilRegistrationNumber": "3101420kR4"
         },
         "Organization": {
             "OrganizationType": "regionskode",
@@ -1548,49 +2134,49 @@ Observationssted = Andet observationsafsnit</em></p></td>
         "Data": {
             "Activity": {
                 "SOR_anesthesia": {
-                    "OrganizationCode": "pTeBfGxnVxqInYvHNanf"
+                    "OrganizationCode": "BnuBmuihhmQXEDShHlNC"
                 },
                 "airaway_plan": {
-                    "MethodCode": "intuberet_tracheostomeret"
+                    "MethodCode": "intubation_anden_metode"
                 },
                 "airway_management": {
                     "MethodCode": "sctid41700002"
                 },
                 "airway_management_last_attempt": {
-                    "MethodCode": "vaekning_af_patient"
+                    "MethodCode": "sctid78121007"
                 },
                 "anesthesia_observation": {
                     "OrganizationCode": "operationsgangen",
                     "ResultCode": "stamafdeling",
-                    "DateTimeEnd": "17-01-2013 04:25:41",
-                    "DateTimeStart": "03-05-2003 01:34:59"
+                    "DateTimeStart": "29-06-2008 03:11:53",
+                    "DateTimeEnd": "09-03-2009 07:40:58"
                 },
                 "anesthesia_service": {
-                    "ResultCode": "naac1"
+                    "ResultCode": "central_blokade"
                 },
                 "intubation": {
-                    "ResultCode": "intubation_opgivet"
+                    "ResultCode": "laryngoskopi_max2"
                 },
                 "procedure_code": {
-                    "ResultCode": "AxNVltpgAmWKkkFYeyBW"
+                    "ResultCode": "ahTlNjxBoTxhpLwfqUyP"
                 },
                 "relaxation_intubation": {
-                    "ResultCode": "sctid59594008"
+                    "ResultCode": "sctid22587006"
                 },
                 "service_time": {
-                    "DateTimeStart": "25-08-2015 10:16:05",
-                    "DateTimeEnd": "08-08-1995 07:39:38"
+                    "DateTimeStart": "12-02-2012 21:01:36",
+                    "DateTimeEnd": "27-03-1995 12:52:52"
                 }
             },
             "Observation": {
                 "ASA_score": {
-                    "ResultCode": "asa_i"
+                    "ResultCode": "asa_ii"
                 },
                 "anesthesia_complications": {
-                    "ResultCode": "anafylaktisk_reaktion_shock"
+                    "ResultCode": "dt884a"
                 },
                 "anesthesia_prioritization": {
-                    "ResultCode": "livstruende"
+                    "ResultCode": "hastende"
                 },
                 "best_achieved_laryngoscopy_grade": {
                     "ResultCode": "grad_3"
@@ -1599,22 +2185,22 @@ Observationssted = Andet observationsafsnit</em></p></td>
                     "ResultCode": "vv00003"
                 },
                 "nausea_at_discharge": {
-                    "ResultValue": 1
+                    "ResultValue": 2
                 },
                 "nausea_on_arrival": {
-                    "ResultValue": 5
+                    "ResultValue": 2
                 },
                 "observation_complications": {
-                    "ResultCode": "di46"
+                    "ResultCode": "mors_uventet"
                 },
                 "pain_at_discharge": {
-                    "ResultValue": 3
+                    "ResultValue": 6
                 },
                 "pain_on_arrival": {
-                    "ResultValue": 1
+                    "ResultValue": 6
                 },
                 "temperature": {
-                    "ResultValue": -1238699878.18725
+                    "ResultValue": 607879911846.852
                 }
             }
         }
@@ -1628,7 +2214,7 @@ Observationssted = Andet observationsafsnit</em></p></td>
                                     <textarea class="form-control textarea-tabs bg-body-tertiary" id="json_put_textarea" style="height: 1000px">{
     "Report": {
         "Patient": {
-            "CivilRegistrationNumber": "0211468795"
+            "CivilRegistrationNumber": "0302849642"
         },
         "Organization": {
             "OrganizationType": "regionskode",
@@ -1637,46 +2223,46 @@ Observationssted = Andet observationsafsnit</em></p></td>
         "Data": {
             "Activity": {
                 "SOR_anesthesia": {
-                    "OrganizationCode": "mdCObssGKytHJBiQFGgJ"
+                    "OrganizationCode": "LvcIkMOlNvqxWGHPLPIu"
                 },
                 "airaway_plan": {
-                    "MethodCode": "sctid241700002"
+                    "MethodCode": "bgda60"
                 },
                 "airway_management": {
-                    "MethodCode": "larynxmaske"
+                    "MethodCode": "sctid257268009"
                 },
                 "airway_management_last_attempt": {
                     "MethodCode": "sctid78121007"
                 },
                 "anesthesia_observation": {
-                    "OrganizationCode": "sengeafdeling",
-                    "ResultCode": "hjemmet",
-                    "DateTimeEnd": "26-07-2003 05:11:08",
-                    "DateTimeStart": "28-09-2023 10:53:01"
+                    "OrganizationCode": "operationsgangen",
+                    "ResultCode": "andet_hospital",
+                    "DateTimeStart": "26-02-1997 04:36:42",
+                    "DateTimeEnd": "10-03-2011 22:31:44"
                 },
                 "anesthesia_service": {
                     "ResultCode": "central_blokade"
                 },
                 "intubation": {
-                    "ResultCode": "mere_end_3"
+                    "ResultCode": "andet_max2"
                 },
                 "procedure_code": {
-                    "ResultCode": "dOgKnaeiMuGYUWeZgTid"
+                    "ResultCode": "hEdeseEitoEoVeXuxDkb"
                 },
                 "relaxation_intubation": {
-                    "ResultCode": "sctid59594008"
+                    "ResultCode": "sctid22587006"
                 },
                 "service_time": {
-                    "DateTimeStart": "07-01-2022 22:40:21",
-                    "DateTimeEnd": "07-11-2019 22:00:48"
+                    "DateTimeStart": "16-05-2006 21:09:02",
+                    "DateTimeEnd": "08-10-2018 09:52:53"
                 }
             },
             "Observation": {
                 "ASA_score": {
-                    "ResultCode": "asa_v"
+                    "ResultCode": "asa_ii"
                 },
                 "anesthesia_complications": {
-                    "ResultCode": "durapunktur_accidentel"
+                    "ResultCode": "dt883"
                 },
                 "anesthesia_prioritization": {
                     "ResultCode": "sctid103390000"
@@ -1685,25 +2271,25 @@ Observationssted = Andet observationsafsnit</em></p></td>
                     "ResultCode": "grad_2"
                 },
                 "blockade_sufficiency": {
-                    "ResultCode": "vv00002"
+                    "ResultCode": "vv00003"
                 },
                 "nausea_at_discharge": {
-                    "ResultValue": 3
+                    "ResultValue": 0
                 },
                 "nausea_on_arrival": {
-                    "ResultValue": 9
+                    "ResultValue": 1
                 },
                 "observation_complications": {
-                    "ResultCode": "mors_uventet"
+                    "ResultCode": "aspiration"
                 },
                 "pain_at_discharge": {
-                    "ResultValue": 10
-                },
-                "pain_on_arrival": {
                     "ResultValue": 8
                 },
+                "pain_on_arrival": {
+                    "ResultValue": 1
+                },
                 "temperature": {
-                    "ResultValue": 45601.8680380311
+                    "ResultValue": -5740318058.55729
                 }
             }
         }
@@ -1735,7 +2321,7 @@ Observationssted = Andet observationsafsnit</em></p></td>
             // Hide Advanced Data
 
             hideAdvancedRows() // Hide Rows with class advanced-data
-            hideAdvancedColumn(2); // Hide Column 1 (Type)
+            //hideAdvancedColumn(2); // Hide Column 1 (Type)
         });
                            
         </script>
