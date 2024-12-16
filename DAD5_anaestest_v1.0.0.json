@@ -187,7 +187,7 @@
                                             "name": "Value_String",
                                             "hackoladeMeta": {},
                                             "isActivated": true,
-                                            "python_type": "enum",
+                                            "python_type": "str",
                                             "childType": "Base_Value_String",
                                             "type": "string",
                                             "GUID": "25b7589e-d406-4498-ba0e-f3e89cd1eae4",
@@ -1392,7 +1392,7 @@
     "creationTS": "2024-10-28T11:43:01.029Z",
     "GUID": "375bd5c8-de62-4483-892a-7b86573eea2c",
     "isLineageEnabled": false,
-    "lastModifTS": "2024-12-16T14:40:04.678Z",
+    "lastModifTS": "2024-12-16T15:34:45.413Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
