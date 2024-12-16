@@ -25,13 +25,13 @@
                             </a>
                         </li>
                         <li class="nav-item ms-3">
-                            <a class="btn btn-info btn-sm" href="https://rkkp-wsapi.test.tcs.trifork.cloud/redoc" id="redocs-link">
+                            <a class="btn btn-info btn-sm" href="https://wsapi-test.sundk.dk/redoc" id="redocs-link">
                                 <i class="bi bi-window-sidebar"></i>
                                  ReDocs
                             </a>
                         </li>
                         <li class="nav-item ms-3">
-                            <a class="btn btn-info btn-sm" href="https://rkkp-wsapi.test.tcs.trifork.cloud/docs" id="swagger-link">
+                            <a class="btn btn-info btn-sm" href="https://wsapi-test.sundk.dk/docs" id="swagger-link">
                                 <i class="bi bi-menu-button-wide"></i>
                                  Swagger UI
                             </a>
@@ -186,12 +186,6 @@
                                         <i class="bi bi-filetype-xlsx"></i>
                                          Eksporter (Excel)
                                     </a>
-                                </li>
-                                <li class="nav-item ms-2">
-                                    <button data-bs-toggle='modal' data-bs-target='#jsonModal' class="btn btn-info btn-sm">
-                                        <i class="bi bi-filetype-json"></i>
-                                         JSON Eksempel
-                                    </button>
                                 </li>
                             </ul>
                             <div class="tab-content">
@@ -1861,8 +1855,8 @@ Observationssted = Andet observationsafsnit</em></p></td>
    <a data-bs-toggle="collapse" aria-expanded="false" href="#Organization" class="ObjectHeaderWrapper collapsed">
       <ol class="breadcrumb objectHeaderMain objectHeaderColor">
          <i class="bi bi-folder2 me-2"></i>
-         <li class="breadcrumb-item">DAH</li>
          <li class="breadcrumb-item">DAD5</li>
+         <li class="breadcrumb-item">Report</li>
          <li class="breadcrumb-item active">Organization</li>
          <li class="mx-2"> - </li>
          <li><strong>Organisation</strong></li>
@@ -1980,8 +1974,8 @@ Observationssted = Andet observationsafsnit</em></p></td>
    <a data-bs-toggle="collapse" aria-expanded="false" href="#Patient" class="ObjectHeaderWrapper collapsed">
       <ol class="breadcrumb objectHeaderMain objectHeaderColor">
          <i class="bi bi-folder2 me-2"></i>
-         <li class="breadcrumb-item">DAH</li>
          <li class="breadcrumb-item">DAD5</li>
+         <li class="breadcrumb-item">Report</li>
          <li class="breadcrumb-item active">Patient</li>
          <li class="mx-2"> - </li>
          <li><strong>Patient</strong></li>
@@ -2050,215 +2044,6 @@ Observationssted = Andet observationsafsnit</em></p></td>
                 </div>
             </div>
         </main>
-        <div class="modal modal-xl fade" id="jsonModal">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title fs-5" id="jsonModalLabel">API request struktur af DAD5 v1.0.0</h5>
-                        <button data-bs-dismiss='modal' type="button" class="btn-close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="alert alert-tertiary border">
-                            <p>Dette er et auto-genereret eksempel af JSON strukturen til indberetning af data.</p>
-                            <hr />
-                            <p>For mere information om processen af at indsende data til API'en, se venligst vores tekniske guide                                         på www.rkkp.dk eller besøg <a href='https://rkkp-wsapi.test.tcs.trifork.cloud/docs' target='_blank'>Swagger UI</a>.                                         På <a href='https://rkkp-wsapi.test.tcs.trifork.cloud/docs' target='_blank'>Swagger UI</a> kan du finde en oversigt                                         over API endpoints, samt detaljerede beskrivelser af de tilgængelige API forespørgsler, som kan foretages til hvert endpoint. </p>
-                        </div>
-                        <ul class="nav nav-tabs" id="myTab" style="border-bottom: 0px !important">
-                            <li class="nav-item">
-                                <button class="nav-link active" id="postJSONTab" onclick="jsonTabs(this.id)">POST Example</button>
-                            </li>
-                            <li class="nav-item">
-                                <button class="nav-link" id="putJSONTab" onclick="jsonTabs(this.id)">PUT Example</button>
-                            </li>
-                        </ul>
-                        <div class="tab-content">
-                            <div class="" id="postJSONContent">
-                                <div class="form-floating mb-3">
-                                    <textarea class="form-control textarea-tabs bg-body-tertiary current_json" id="json_post_textarea" style="height: 1000px">{
-    "Report": {
-        "Patient": {
-            "CivilRegistrationNumber": "1910449363"
-        },
-        "Organization": {
-            "OrganizationType": "regionskode",
-            "Identifier": "1234"
-        },
-        "Data": {
-            "Activity": {
-                "SOR_anesthesia": {
-                    "OrganizationCode": "dDIitrWzBwNvyJuoVTMf"
-                },
-                "airaway_plan": {
-                    "MethodCode": "intubation_videolaryngoskopi"
-                },
-                "airway_management": {
-                    "MethodCode": "intubation"
-                },
-                "airway_management_last_attempt": {
-                    "MethodCode": "anden_teknik"
-                },
-                "anesthesia_observation": {
-                    "OrganizationCode": "skadestue_modtagelse",
-                    "ResultCode": "sctid261554009",
-                    "DateTimeEnd": "22-12-1997 19:38:36",
-                    "DateTimeStart": "12-10-2024 01:02:30"
-                },
-                "anesthesia_service": {
-                    "ResultCode": "naac1"
-                },
-                "intubation": {
-                    "ResultCode": "mere_end_3"
-                },
-                "procedure_code": {
-                    "ResultCode": "piJNGSylDTnjjaBhfyBW"
-                },
-                "relaxation_intubation": {
-                    "ResultCode": "sctid22587006"
-                },
-                "service_time": {
-                    "DateTimeEnd": "18-02-1996 08:32:19",
-                    "DateTimeStart": "21-03-2020 05:19:36"
-                }
-            },
-            "Observation": {
-                "ASA_score": {
-                    "ResultCode": "asa_iv"
-                },
-                "anesthesia_complications": {
-                    "ResultCode": "mors_uventet"
-                },
-                "anesthesia_prioritization": {
-                    "ResultCode": "livstruende"
-                },
-                "best_achieved_laryngoscopy_grade": {
-                    "ResultCode": "grad_3"
-                },
-                "blockade_sufficiency": {
-                    "ResultCode": "vv00002"
-                },
-                "nausea_at_discharge": {
-                    "ResultValue": 2
-                },
-                "nausea_on_arrival": {
-                    "ResultValue": 9
-                },
-                "observation_complications": {
-                    "ResultCode": "anafylaktisk_reaktion_shock"
-                },
-                "pain_at_discharge": {
-                    "ResultValue": 6
-                },
-                "pain_on_arrival": {
-                    "ResultValue": 6
-                },
-                "temperature": {
-                    "ResultValue": -21.7183040983817
-                }
-            }
-        }
-    }
-}</textarea>
-                                    <label _for="floatingTextarea2">JSON POST Structure</label>
-                                </div>
-                            </div>
-                            <div class="hidden" id="putJSONContent">
-                                <div class="form-floating mb-3">
-                                    <textarea class="form-control textarea-tabs bg-body-tertiary" id="json_put_textarea" style="height: 1000px">{
-    "Report": {
-        "Patient": {
-            "CivilRegistrationNumber": "1303104263"
-        },
-        "Organization": {
-            "OrganizationType": "regionskode",
-            "Identifier": "1234"
-        },
-        "Data": {
-            "Activity": {
-                "SOR_anesthesia": {
-                    "OrganizationCode": "RVZKagWUWOaqfmBtjAwu"
-                },
-                "airaway_plan": {
-                    "MethodCode": "intubation_anden_metode"
-                },
-                "airway_management": {
-                    "MethodCode": "bgda60"
-                },
-                "airway_management_last_attempt": {
-                    "MethodCode": "videolaryngoskopi"
-                },
-                "anesthesia_observation": {
-                    "OrganizationCode": "skadestue_modtagelse",
-                    "ResultCode": "doed_i_observationsperioden",
-                    "DateTimeEnd": "11-07-2002 19:26:36",
-                    "DateTimeStart": "02-02-1996 08:43:08"
-                },
-                "anesthesia_service": {
-                    "ResultCode": "central_blokade"
-                },
-                "intubation": {
-                    "ResultCode": "laryngoskopi_max2"
-                },
-                "procedure_code": {
-                    "ResultCode": "wweFvSJvKUyzgZfJCTXI"
-                },
-                "relaxation_intubation": {
-                    "ResultCode": "vv00003"
-                },
-                "service_time": {
-                    "DateTimeEnd": "16-10-1995 10:11:55",
-                    "DateTimeStart": "04-08-2017 14:46:53"
-                }
-            },
-            "Observation": {
-                "ASA_score": {
-                    "ResultCode": "asa_iii"
-                },
-                "anesthesia_complications": {
-                    "ResultCode": "di46"
-                },
-                "anesthesia_prioritization": {
-                    "ResultCode": "sctid103390000"
-                },
-                "best_achieved_laryngoscopy_grade": {
-                    "ResultCode": "grad_3"
-                },
-                "blockade_sufficiency": {
-                    "ResultCode": "vv00003"
-                },
-                "nausea_at_discharge": {
-                    "ResultValue": 7
-                },
-                "nausea_on_arrival": {
-                    "ResultValue": 6
-                },
-                "observation_complications": {
-                    "ResultCode": "durapunktur_accidentel"
-                },
-                "pain_at_discharge": {
-                    "ResultValue": 2
-                },
-                "pain_on_arrival": {
-                    "ResultValue": 3
-                },
-                "temperature": {
-                    "ResultValue": -45927604.6924245
-                }
-            }
-        }
-    }
-}</textarea>
-                                    <label _for="floatingTextarea2">JSON PUT Structure</label>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button data-bs-dismiss='modal' type="button" class="btn btn-secondary btn-sm">Close Window</button>
-                        <button type="button" class="btn btn-primary btn-sm" id="copyJsonButton" onclick="copyText()">Copy JSON</button>
-                    </div>
-                </div>
-            </div>
-        </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" crossorgigin="anonymous"></script>
         <script src="js/rkkp.js" crossorgigin="anonymous"></script>
         <script>
