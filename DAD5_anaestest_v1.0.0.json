@@ -190,43 +190,9 @@
                                             "python_type": "enum",
                                             "childType": "Base_Value_String",
                                             "type": "string",
-                                            "GUID": "a136aba7-9189-4503-81d5-b6d976388c07",
+                                            "GUID": "25b7589e-d406-4498-ba0e-f3e89cd1eae4",
                                             "is_list": true,
-                                            "error": {},
-                                            "enum": [
-                                                {
-                                                    "GUID": "891069f3-20ca-447c-bde9-936e0a9c50ea",
-                                                    "Udfald": "perifer_nerveblokade"
-                                                },
-                                                {
-                                                    "GUID": "d810dece-b9d5-4d5c-8df0-3c27ee44fd57",
-                                                    "Udfald": "central_blokade"
-                                                },
-                                                {
-                                                    "GUID": "505395af-a4cf-4d6b-a319-225163915cf2",
-                                                    "Udfald": "sctid72641008",
-                                                    "enumDescription": "Sedation"
-                                                },
-                                                {
-                                                    "GUID": "3b022bcd-b9fd-4073-9c8c-ed9b57bd26aa",
-                                                    "Udfald": "sctid225419007",
-                                                    "enumDescription": "Overvågning"
-                                                },
-                                                {
-                                                    "GUID": "dad81380-7240-4abd-b8a8-e2277efabd06",
-                                                    "Udfald": "inhalation"
-                                                },
-                                                {
-                                                    "GUID": "b84b0407-392b-4683-b0d2-f58a8523433d",
-                                                    "Udfald": "naac3",
-                                                    "enumDescription": "IV og inhalation"
-                                                },
-                                                {
-                                                    "GUID": "e1ab3e23-0ef4-443c-a4d8-c43efa9f2607",
-                                                    "Udfald": "naac1",
-                                                    "enumDescription": "TIVA"
-                                                }
-                                            ]
+                                            "error": {}
                                         }
                                     ],
                                     "childType": "Attribute_ResultCode",
@@ -851,7 +817,6 @@
                                     "childType": "Attribute_ResultCode",
                                     "type": "document",
                                     "GUID": "1d4b1be7-50b7-4895-9970-5317bccd9896",
-                                    "description": "*Kun relevant hvis komplikationer = Nej*\n",
                                     "error": {}
                                 }
                             ],
@@ -1283,7 +1248,6 @@
                                     "childType": "Attribute_ResultCode",
                                     "type": "document",
                                     "GUID": "f030ae78-03bc-49cd-96ef-9a54a4286926",
-                                    "description": "*Kun relevant hvis Observation ingen komplikationer = Nej*\n",
                                     "error": {}
                                 }
                             ],
@@ -1402,7 +1366,8 @@
         "fe434de3-cb77-4546-8226-af754b4d4e11": "ResultCode",
         "75003bca-abde-4d37-9908-f65da8b547a6": "ResultCode",
         "46763111-ec9e-4863-a96e-13a184100da3": "MethodCode",
-        "b0465750-bb0e-4170-b687-9e4b5e17ca8f": "ResultCode"
+        "b0465750-bb0e-4170-b687-9e4b5e17ca8f": "ResultCode",
+        "25b7589e-d406-4498-ba0e-f3e89cd1eae4": "Value_String"
     },
     "definitions": {
         "type": "definitions",
@@ -1427,7 +1392,7 @@
     "creationTS": "2024-10-28T11:43:01.029Z",
     "GUID": "375bd5c8-de62-4483-892a-7b86573eea2c",
     "isLineageEnabled": false,
-    "lastModifTS": "2024-12-02T09:22:36.159Z",
+    "lastModifTS": "2024-12-16T14:40:04.678Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
@@ -1966,26 +1931,12 @@
                 [
                     "4f320b6c-8511-448b-b909-3ed1d23bb0f1",
                     "04e87c8e-7275-4211-8049-ef90c66beb9f",
-                    "6445c8c8-a1b5-4e4e-a1e4-12e687b74a72"
-                ],
-                [
-                    "4f320b6c-8511-448b-b909-3ed1d23bb0f1",
-                    "04e87c8e-7275-4211-8049-ef90c66beb9f",
                     "505191a8-5282-421d-911d-b42047223bee"
                 ],
                 [
                     "4f320b6c-8511-448b-b909-3ed1d23bb0f1",
                     "04e87c8e-7275-4211-8049-ef90c66beb9f",
                     "2ad77a31-7b52-46a5-977c-19c4daa12469"
-                ],
-                [
-                    "4f320b6c-8511-448b-b909-3ed1d23bb0f1",
-                    "04e87c8e-7275-4211-8049-ef90c66beb9f",
-                    "5ae24b6f-a3d0-4e05-bb74-4ce9f23f29cb"
-                ],
-                [
-                    "4f320b6c-8511-448b-b909-3ed1d23bb0f1",
-                    "04e87c8e-7275-4211-8049-ef90c66beb9f"
                 ],
                 [
                     "4f320b6c-8511-448b-b909-3ed1d23bb0f1",
@@ -2050,12 +2001,123 @@
                 [
                     "4f320b6c-8511-448b-b909-3ed1d23bb0f1",
                     "64dccd07-f9a5-4d21-bc85-ce561abe3481",
-                    "ed79d39e-2d3c-4d95-8d70-42c07e9c278f"
+                    "4fcc10ae-a668-42c9-81aa-c8c8e4c3c586"
                 ],
                 [
                     "4f320b6c-8511-448b-b909-3ed1d23bb0f1",
                     "64dccd07-f9a5-4d21-bc85-ce561abe3481",
-                    "7d66a113-7a34-45c7-bf36-8202d660cc28"
+                    "c36a4a94-c2c1-4ccf-9c2e-9c4532565e4a",
+                    "75003bca-abde-4d37-9908-f65da8b547a6"
+                ],
+                [
+                    "4f320b6c-8511-448b-b909-3ed1d23bb0f1",
+                    "64dccd07-f9a5-4d21-bc85-ce561abe3481",
+                    "c36a4a94-c2c1-4ccf-9c2e-9c4532565e4a"
+                ],
+                [
+                    "4f320b6c-8511-448b-b909-3ed1d23bb0f1",
+                    "64dccd07-f9a5-4d21-bc85-ce561abe3481",
+                    "ed79d39e-2d3c-4d95-8d70-42c07e9c278f",
+                    "2e1898da-25ae-4e69-a295-3ef86a5d2655"
+                ],
+                [
+                    "4f320b6c-8511-448b-b909-3ed1d23bb0f1",
+                    "64dccd07-f9a5-4d21-bc85-ce561abe3481",
+                    "ed79d39e-2d3c-4d95-8d70-42c07e9c278f",
+                    "ffd429a4-435b-48a8-bc6b-6eb8a951886d"
+                ],
+                [
+                    "4f320b6c-8511-448b-b909-3ed1d23bb0f1",
+                    "64dccd07-f9a5-4d21-bc85-ce561abe3481",
+                    "ed79d39e-2d3c-4d95-8d70-42c07e9c278f",
+                    "b4871208-d6c5-477c-920e-8d446d6e6b9e"
+                ],
+                [
+                    "4f320b6c-8511-448b-b909-3ed1d23bb0f1",
+                    "64dccd07-f9a5-4d21-bc85-ce561abe3481",
+                    "ed79d39e-2d3c-4d95-8d70-42c07e9c278f",
+                    "df35394d-726e-4c4a-beb7-128d90e4ae86"
+                ],
+                [
+                    "4f320b6c-8511-448b-b909-3ed1d23bb0f1",
+                    "04e87c8e-7275-4211-8049-ef90c66beb9f",
+                    "505191a8-5282-421d-911d-b42047223bee"
+                ],
+                [
+                    "4f320b6c-8511-448b-b909-3ed1d23bb0f1",
+                    "04e87c8e-7275-4211-8049-ef90c66beb9f",
+                    "ccb89e27-110b-4f1b-9e4f-0c7b89bd945c"
+                ],
+                [
+                    "4f320b6c-8511-448b-b909-3ed1d23bb0f1",
+                    "04e87c8e-7275-4211-8049-ef90c66beb9f",
+                    "2ceaf789-1bca-4f8e-83d3-c4df93dba7d0"
+                ],
+                [
+                    "4f320b6c-8511-448b-b909-3ed1d23bb0f1",
+                    "04e87c8e-7275-4211-8049-ef90c66beb9f",
+                    "2ad77a31-7b52-46a5-977c-19c4daa12469"
+                ],
+                [
+                    "4f320b6c-8511-448b-b909-3ed1d23bb0f1",
+                    "04e87c8e-7275-4211-8049-ef90c66beb9f",
+                    "1ce41f53-268d-4fe1-a081-22789e4dee11"
+                ],
+                [
+                    "4f320b6c-8511-448b-b909-3ed1d23bb0f1",
+                    "04e87c8e-7275-4211-8049-ef90c66beb9f",
+                    "fa6b6383-24dd-4f75-8e8d-97c3dfcf9d47"
+                ],
+                [
+                    "4f320b6c-8511-448b-b909-3ed1d23bb0f1",
+                    "04e87c8e-7275-4211-8049-ef90c66beb9f",
+                    "6d64b4d8-bcf2-4bb0-9d98-2db99f40492a"
+                ],
+                [
+                    "4f320b6c-8511-448b-b909-3ed1d23bb0f1",
+                    "04e87c8e-7275-4211-8049-ef90c66beb9f",
+                    "e0c70805-17ed-4a59-b682-9ac73ad09570"
+                ],
+                [
+                    "4f320b6c-8511-448b-b909-3ed1d23bb0f1",
+                    "04e87c8e-7275-4211-8049-ef90c66beb9f",
+                    "06225d05-9795-446e-bf98-06a82036e8e8"
+                ],
+                [
+                    "4f320b6c-8511-448b-b909-3ed1d23bb0f1",
+                    "04e87c8e-7275-4211-8049-ef90c66beb9f",
+                    "6445c8c8-a1b5-4e4e-a1e4-12e687b74a72",
+                    "1d4b1be7-50b7-4895-9970-5317bccd9896"
+                ],
+                [
+                    "4f320b6c-8511-448b-b909-3ed1d23bb0f1",
+                    "04e87c8e-7275-4211-8049-ef90c66beb9f",
+                    "6445c8c8-a1b5-4e4e-a1e4-12e687b74a72"
+                ],
+                [
+                    "4f320b6c-8511-448b-b909-3ed1d23bb0f1",
+                    "04e87c8e-7275-4211-8049-ef90c66beb9f",
+                    "5ae24b6f-a3d0-4e05-bb74-4ce9f23f29cb",
+                    "f030ae78-03bc-49cd-96ef-9a54a4286926"
+                ],
+                [
+                    "4f320b6c-8511-448b-b909-3ed1d23bb0f1",
+                    "04e87c8e-7275-4211-8049-ef90c66beb9f"
+                ],
+                [
+                    "4f320b6c-8511-448b-b909-3ed1d23bb0f1",
+                    "64dccd07-f9a5-4d21-bc85-ce561abe3481",
+                    "96ecc10a-334f-4711-8b3d-6951ce35944a"
+                ],
+                [
+                    "4f320b6c-8511-448b-b909-3ed1d23bb0f1",
+                    "64dccd07-f9a5-4d21-bc85-ce561abe3481",
+                    "9b2f786f-b7d6-42e9-a063-594dabbb8689"
+                ],
+                [
+                    "4f320b6c-8511-448b-b909-3ed1d23bb0f1",
+                    "64dccd07-f9a5-4d21-bc85-ce561abe3481",
+                    "49a29ea2-5eec-4e2a-9268-c20da5f54bfd"
                 ],
                 [
                     "4f320b6c-8511-448b-b909-3ed1d23bb0f1",
@@ -2065,8 +2127,51 @@
                 [
                     "4f320b6c-8511-448b-b909-3ed1d23bb0f1",
                     "64dccd07-f9a5-4d21-bc85-ce561abe3481",
-                    "c36a4a94-c2c1-4ccf-9c2e-9c4532565e4a",
-                    "75003bca-abde-4d37-9908-f65da8b547a6"
+                    "39222525-adf6-46c2-a6e5-06911db78418"
+                ],
+                [
+                    "4f320b6c-8511-448b-b909-3ed1d23bb0f1",
+                    "64dccd07-f9a5-4d21-bc85-ce561abe3481",
+                    "826cfa0c-d067-40bd-bdb4-1b4a85855c4c"
+                ],
+                [
+                    "4f320b6c-8511-448b-b909-3ed1d23bb0f1",
+                    "64dccd07-f9a5-4d21-bc85-ce561abe3481",
+                    "26715a99-9c59-4086-b115-ba4d91264abe"
+                ],
+                [
+                    "4f320b6c-8511-448b-b909-3ed1d23bb0f1",
+                    "64dccd07-f9a5-4d21-bc85-ce561abe3481",
+                    "c36a4a94-c2c1-4ccf-9c2e-9c4532565e4a"
+                ],
+                [
+                    "4f320b6c-8511-448b-b909-3ed1d23bb0f1",
+                    "64dccd07-f9a5-4d21-bc85-ce561abe3481",
+                    "ed79d39e-2d3c-4d95-8d70-42c07e9c278f",
+                    "2e1898da-25ae-4e69-a295-3ef86a5d2655"
+                ],
+                [
+                    "4f320b6c-8511-448b-b909-3ed1d23bb0f1",
+                    "64dccd07-f9a5-4d21-bc85-ce561abe3481",
+                    "ed79d39e-2d3c-4d95-8d70-42c07e9c278f",
+                    "ffd429a4-435b-48a8-bc6b-6eb8a951886d"
+                ],
+                [
+                    "4f320b6c-8511-448b-b909-3ed1d23bb0f1",
+                    "64dccd07-f9a5-4d21-bc85-ce561abe3481",
+                    "ed79d39e-2d3c-4d95-8d70-42c07e9c278f",
+                    "b4871208-d6c5-477c-920e-8d446d6e6b9e"
+                ],
+                [
+                    "4f320b6c-8511-448b-b909-3ed1d23bb0f1",
+                    "64dccd07-f9a5-4d21-bc85-ce561abe3481",
+                    "ed79d39e-2d3c-4d95-8d70-42c07e9c278f",
+                    "df35394d-726e-4c4a-beb7-128d90e4ae86"
+                ],
+                [
+                    "4f320b6c-8511-448b-b909-3ed1d23bb0f1",
+                    "64dccd07-f9a5-4d21-bc85-ce561abe3481",
+                    "ed79d39e-2d3c-4d95-8d70-42c07e9c278f"
                 ]
             ],
             "shouldDistributeCollections": false
