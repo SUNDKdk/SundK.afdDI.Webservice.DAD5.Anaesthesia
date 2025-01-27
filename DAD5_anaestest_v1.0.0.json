@@ -198,6 +198,7 @@
                                     "childType": "Attribute_ResultCode",
                                     "type": "document",
                                     "GUID": "89bd512d-f5b9-4997-99fb-de1ff032e524",
+                                    "description": "**SKS-koder** skal starte med **NAA**",
                                     "error": {}
                                 },
                                 {
@@ -396,7 +397,7 @@
                             "error": {}
                         },
                         {
-                            "name": "airaway_plan",
+                            "name": "airway_plan",
                             "hackoladeMeta": {},
                             "isActivated": true,
                             "properties": [
@@ -437,11 +438,11 @@
                                                 {
                                                     "GUID": "a9a44038-e70b-4ecd-ac8f-3cde150cff8a",
                                                     "Udfald": "intubation_videolaryngoskopi",
-                                                    "enumDescription": "Intubation med videolaryngoskopi"
+                                                    "enumDescription": "Intubation med videolaryngoskop"
                                                 },
                                                 {
                                                     "GUID": "fa0f4d71-5716-41a1-895a-8912b2cce3f0",
-                                                    "Udfald": "intubation_videolaryngoskopi",
+                                                    "Udfald": "intubation_fleksibeltskop",
                                                     "enumDescription": "Intubation med fleksibelt skop"
                                                 },
                                                 {
@@ -532,7 +533,7 @@
                                     "childType": "Attribute_ResultCode",
                                     "type": "document",
                                     "GUID": "99b09a42-ee10-43cd-bd4a-b25a28e7127d",
-                                    "description": "*Kun relevant hvis Luftvejshåndtering == Intubation*\n",
+                                    "description": "*Kun relevant hvis Luftvejshåndtering = Intubation*\n",
                                     "error": {}
                                 }
                             ],
@@ -1344,7 +1345,7 @@
         "526c2006-d365-40c0-94a6-69156e0a51d7": "Value_String",
         "ed79d39e-2d3c-4d95-8d70-42c07e9c278f": "anesthesia_observation",
         "9b2f786f-b7d6-42e9-a063-594dabbb8689": "airway_management_last_attempt",
-        "49a29ea2-5eec-4e2a-9268-c20da5f54bfd": "airaway_plan",
+        "49a29ea2-5eec-4e2a-9268-c20da5f54bfd": "airway_plan",
         "7d66a113-7a34-45c7-bf36-8202d660cc28": "anesthesia_service",
         "4fcc10ae-a668-42c9-81aa-c8c8e4c3c586": "intubation",
         "ffd429a4-435b-48a8-bc6b-6eb8a951886d": "DateTimeStart",
@@ -1353,11 +1354,12 @@
         "26715a99-9c59-4086-b115-ba4d91264abe": "procedure_code",
         "fe434de3-cb77-4546-8226-af754b4d4e11": "ResultCode",
         "75003bca-abde-4d37-9908-f65da8b547a6": "ResultCode",
-        "46763111-ec9e-4863-a96e-13a184100da3": "MethodCode",
         "b0465750-bb0e-4170-b687-9e4b5e17ca8f": "ResultCode",
         "2b58e04f-0aaf-4772-8684-af953e874d9d": "DateTimeEnd",
         "89bd512d-f5b9-4997-99fb-de1ff032e524": "ResultCode",
-        "effd81dd-debd-41b3-a82b-bd59a855c825": "DateTimeStart"
+        "effd81dd-debd-41b3-a82b-bd59a855c825": "DateTimeStart",
+        "99b09a42-ee10-43cd-bd4a-b25a28e7127d": "ResultCode",
+        "46763111-ec9e-4863-a96e-13a184100da3": "MethodCode"
     },
     "definitions": {
         "type": "definitions",
@@ -1382,7 +1384,7 @@
     "creationTS": "2024-10-28T11:43:01.029Z",
     "GUID": "375bd5c8-de62-4483-892a-7b86573eea2c",
     "isLineageEnabled": false,
-    "lastModifTS": "2025-01-27T08:54:55.309Z",
+    "lastModifTS": "2025-01-27T11:26:32.791Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
@@ -1839,11 +1841,6 @@
                 [
                     "4f320b6c-8511-448b-b909-3ed1d23bb0f1",
                     "64dccd07-f9a5-4d21-bc85-ce561abe3481",
-                    "49a29ea2-5eec-4e2a-9268-c20da5f54bfd"
-                ],
-                [
-                    "4f320b6c-8511-448b-b909-3ed1d23bb0f1",
-                    "64dccd07-f9a5-4d21-bc85-ce561abe3481",
                     "ed79d39e-2d3c-4d95-8d70-42c07e9c278f",
                     "2e1898da-25ae-4e69-a295-3ef86a5d2655"
                 ],
@@ -1864,11 +1861,6 @@
                     "64dccd07-f9a5-4d21-bc85-ce561abe3481",
                     "ed79d39e-2d3c-4d95-8d70-42c07e9c278f",
                     "df35394d-726e-4c4a-beb7-128d90e4ae86"
-                ],
-                [
-                    "4f320b6c-8511-448b-b909-3ed1d23bb0f1",
-                    "64dccd07-f9a5-4d21-bc85-ce561abe3481",
-                    "4fcc10ae-a668-42c9-81aa-c8c8e4c3c586"
                 ],
                 [
                     "4f320b6c-8511-448b-b909-3ed1d23bb0f1",
@@ -1945,16 +1937,6 @@
                     "04e87c8e-7275-4211-8049-ef90c66beb9f",
                     "6445c8c8-a1b5-4e4e-a1e4-12e687b74a72",
                     "1d4b1be7-50b7-4895-9970-5317bccd9896"
-                ],
-                [
-                    "4f320b6c-8511-448b-b909-3ed1d23bb0f1",
-                    "64dccd07-f9a5-4d21-bc85-ce561abe3481",
-                    "49a29ea2-5eec-4e2a-9268-c20da5f54bfd"
-                ],
-                [
-                    "4f320b6c-8511-448b-b909-3ed1d23bb0f1",
-                    "64dccd07-f9a5-4d21-bc85-ce561abe3481",
-                    "4fcc10ae-a668-42c9-81aa-c8c8e4c3c586"
                 ],
                 [
                     "4f320b6c-8511-448b-b909-3ed1d23bb0f1",
@@ -2054,17 +2036,7 @@
                 [
                     "4f320b6c-8511-448b-b909-3ed1d23bb0f1",
                     "64dccd07-f9a5-4d21-bc85-ce561abe3481",
-                    "96ecc10a-334f-4711-8b3d-6951ce35944a"
-                ],
-                [
-                    "4f320b6c-8511-448b-b909-3ed1d23bb0f1",
-                    "64dccd07-f9a5-4d21-bc85-ce561abe3481",
                     "26715a99-9c59-4086-b115-ba4d91264abe"
-                ],
-                [
-                    "4f320b6c-8511-448b-b909-3ed1d23bb0f1",
-                    "64dccd07-f9a5-4d21-bc85-ce561abe3481",
-                    "9b2f786f-b7d6-42e9-a063-594dabbb8689"
                 ],
                 [
                     "4f320b6c-8511-448b-b909-3ed1d23bb0f1",
@@ -2076,6 +2048,26 @@
                     "64dccd07-f9a5-4d21-bc85-ce561abe3481",
                     "7d66a113-7a34-45c7-bf36-8202d660cc28",
                     "89bd512d-f5b9-4997-99fb-de1ff032e524"
+                ],
+                [
+                    "4f320b6c-8511-448b-b909-3ed1d23bb0f1",
+                    "64dccd07-f9a5-4d21-bc85-ce561abe3481",
+                    "7d66a113-7a34-45c7-bf36-8202d660cc28"
+                ],
+                [
+                    "4f320b6c-8511-448b-b909-3ed1d23bb0f1",
+                    "64dccd07-f9a5-4d21-bc85-ce561abe3481",
+                    "96ecc10a-334f-4711-8b3d-6951ce35944a"
+                ],
+                [
+                    "4f320b6c-8511-448b-b909-3ed1d23bb0f1",
+                    "64dccd07-f9a5-4d21-bc85-ce561abe3481",
+                    "9b2f786f-b7d6-42e9-a063-594dabbb8689"
+                ],
+                [
+                    "4f320b6c-8511-448b-b909-3ed1d23bb0f1",
+                    "64dccd07-f9a5-4d21-bc85-ce561abe3481",
+                    "4fcc10ae-a668-42c9-81aa-c8c8e4c3c586"
                 ]
             ],
             "shouldDistributeCollections": false
