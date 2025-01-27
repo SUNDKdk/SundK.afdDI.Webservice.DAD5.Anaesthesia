@@ -438,11 +438,11 @@
                                                 {
                                                     "GUID": "a9a44038-e70b-4ecd-ac8f-3cde150cff8a",
                                                     "Udfald": "intubation_videolaryngoskopi",
-                                                    "enumDescription": "Intubation med videolaryngoskop"
+                                                    "enumDescription": "Intubation med videolaryngoskopi"
                                                 },
                                                 {
                                                     "GUID": "fa0f4d71-5716-41a1-895a-8912b2cce3f0",
-                                                    "Udfald": "intubation_fleksibeltskop",
+                                                    "Udfald": "intubation_fleksibelt_skop",
                                                     "enumDescription": "Intubation med fleksibelt skop"
                                                 },
                                                 {
@@ -1384,7 +1384,7 @@
     "creationTS": "2024-10-28T11:43:01.029Z",
     "GUID": "375bd5c8-de62-4483-892a-7b86573eea2c",
     "isLineageEnabled": false,
-    "lastModifTS": "2025-01-27T11:26:32.791Z",
+    "lastModifTS": "2025-01-27T11:54:42.694Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
