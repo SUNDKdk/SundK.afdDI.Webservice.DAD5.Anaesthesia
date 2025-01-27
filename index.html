@@ -482,7 +482,7 @@
                                                                             <tr>
                                                                                 <td>List/Array of str, Enum</td>
                                                                                 <td>sctid257268009</td>
-                                                                                <td>LMA (alle typer)</td>
+                                                                                <td>Larynxmaske (alle typer)</td>
                                                                             </tr>
                                                                             <tr>
                                                                                 <td>-</td>
@@ -705,7 +705,7 @@
                                                     <p class="table_view_hider" style="height: 1rem !important; margin: 0px !important;"></p>
                                                     <div class="objectDescription alert alert-warning">
                                                         <p><strong>Anæstesiydelse</strong></p>
-                                                        <p><p>Typen af anæstesi</p></p>
+                                                        <p><p>Typen af anæstesi og start-/sluttidspunkt.</p></p>
                                                     </div>
                                                     <table class="table table-bordered table-striped table-hover ">
                                                         <thead>
@@ -717,6 +717,58 @@
                                                             </tr>
                                                         </thead>
                                                         <tbody class="table-group-divider">
+                                                            <tr>
+                                                                <th scope="row">DateTimeEnd</th>
+                                                                <td scope="row"><p>Sluttidspunkt for anæstesi-ydelse</p></td>
+                                                                <td scope="row">
+                                                                    <table class="table table-sm" style="--bs-table-bg: transparent !important;">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th scope="col" style="width: 20%">Type</th>
+                                                                                <th scope="col">Ingen begrænsninger</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td scope="row">DateTime</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                                <td scope="row">
+                                                                    <div class="badge rounded-pill text-bg-danger ms-2 me-2 d-inline-flex align-items-center">
+                                                                        <i class="bi bi-exclamation-diamond me-1" style="margin-top: -2px;"></i>
+                                                                        <span> Required</span>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th scope="row">DateTimeStart</th>
+                                                                <td scope="row"><p>Start tidspunkt for anæstesi-ydelse</p></td>
+                                                                <td scope="row">
+                                                                    <table class="table table-sm" style="--bs-table-bg: transparent !important;">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th scope="col" style="width: 20%">Type</th>
+                                                                                <th scope="col">Ingen begrænsninger</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td scope="row">DateTime</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                                <td scope="row">
+                                                                    <div class="badge rounded-pill text-bg-danger ms-2 me-2 d-inline-flex align-items-center">
+                                                                        <i class="bi bi-exclamation-diamond me-1" style="margin-top: -2px;"></i>
+                                                                        <span> Required</span>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
                                                             <tr>
                                                                 <th scope="row">ResultCode</th>
                                                                 <td scope="row"></td>
@@ -846,7 +898,7 @@
                                                     <p class="table_view_hider" style="height: 1rem !important; margin: 0px !important;"></p>
                                                     <div class="objectDescription alert alert-warning">
                                                         <p><strong>Procedurekode</strong></p>
-                                                        <p><p>SKS-koden for den <strong>vigtigste</strong> operation/behandling/undersøgelse foretaget under anæstesien. Her ønskes IKKE anæstesiproceduren.</p></p>
+                                                        <p><p>SKS-koden for den <strong>vigtigste</strong> operation/behandling/undersøgelse foretaget under anæstesien. Her ønskes <strong>IKKE</strong> anæstesiproceduren.</p></p>
                                                     </div>
                                                     <table class="table table-bordered table-striped table-hover ">
                                                         <thead>
@@ -949,97 +1001,6 @@
                                                                     </table>
                                                                 </td>
                                                                 <td scope="row"></td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="dataObject">
-                                            <a data-bs-toggle='collapse' aria-expanded='false' href="#service_time10" class="ObjectHeaderWrapper">
-                                                <ol class="breadcrumb objectHeaderMain objectHeaderColor">
-                                                    <i class="bi bi-folder2 me-2" style="margin-top: -3px;"></i>
-                                                    <li class="breadcrumb-item">DAD5</li>
-                                                    <li class="breadcrumb-item">Activity</li>
-                                                    <li class="breadcrumb-item active">service_time</li>
-                                                    <li class="mx-2"> - </li>
-                                                    <li><strong>Ydelses tidspunkt</strong></li>
-                                                    <span class="d-flex ms-auto align-content-center">
-                                                        <div class="badge rounded-pill text-bg-danger ms-2 me-2 d-inline-flex align-items-center">
-                                                            <i class="bi bi-exclamation-diamond me-1" style="margin-top: -2px;"></i>
-                                                            <span> Required</span>
-                                                        </div>
-                                                    </span>
-                                                </ol>
-                                            </a>
-                                            <div class="collapse m-3 objectBodyMain" id="service_time10">
-                                                <div class="object_margin">
-                                                    <p class="table_view_hider" style="height: 1rem !important; margin: 0px !important;"></p>
-                                                    <div class="objectDescription alert alert-warning">
-                                                        <p><strong>Ydelses tidspunkt</strong></p>
-                                                        <p><p>Start og slut ydelse</p></p>
-                                                    </div>
-                                                    <table class="table table-bordered table-striped table-hover ">
-                                                        <thead>
-                                                            <tr>
-                                                                <th scope="col" class="fst-italic th-attribute">Attribute</th>
-                                                                <th scope="col" class="fst-italic th-description">Description</th>
-                                                                <th scope="col" class="fst-italic th-value">Constraints</th>
-                                                                <th scope="col" class="fst-italic th-required">Required</th>
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody class="table-group-divider">
-                                                            <tr>
-                                                                <th scope="row">DateTimeEnd</th>
-                                                                <td scope="row"><p>Sluttidspunkt for anæstesi-ydelse</p></td>
-                                                                <td scope="row">
-                                                                    <table class="table table-sm" style="--bs-table-bg: transparent !important;">
-                                                                        <thead>
-                                                                            <tr>
-                                                                                <th scope="col" style="width: 20%">Type</th>
-                                                                                <th scope="col">Ingen begrænsninger</th>
-                                                                            </tr>
-                                                                        </thead>
-                                                                        <tbody>
-                                                                            <tr>
-                                                                                <td scope="row">DateTime</td>
-                                                                                <td></td>
-                                                                            </tr>
-                                                                        </tbody>
-                                                                    </table>
-                                                                </td>
-                                                                <td scope="row">
-                                                                    <div class="badge rounded-pill text-bg-danger ms-2 me-2 d-inline-flex align-items-center">
-                                                                        <i class="bi bi-exclamation-diamond me-1" style="margin-top: -2px;"></i>
-                                                                        <span> Required</span>
-                                                                    </div>
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <th scope="row">DateTimeStart</th>
-                                                                <td scope="row"><p>Start tidspunkt for anæstesi-ydelse</p></td>
-                                                                <td scope="row">
-                                                                    <table class="table table-sm" style="--bs-table-bg: transparent !important;">
-                                                                        <thead>
-                                                                            <tr>
-                                                                                <th scope="col" style="width: 20%">Type</th>
-                                                                                <th scope="col">Ingen begrænsninger</th>
-                                                                            </tr>
-                                                                        </thead>
-                                                                        <tbody>
-                                                                            <tr>
-                                                                                <td scope="row">DateTime</td>
-                                                                                <td></td>
-                                                                            </tr>
-                                                                        </tbody>
-                                                                    </table>
-                                                                </td>
-                                                                <td scope="row">
-                                                                    <div class="badge rounded-pill text-bg-danger ms-2 me-2 d-inline-flex align-items-center">
-                                                                        <i class="bi bi-exclamation-diamond me-1" style="margin-top: -2px;"></i>
-                                                                        <span> Required</span>
-                                                                    </div>
-                                                                </td>
                                                             </tr>
                                                         </tbody>
                                                     </table>
