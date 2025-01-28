@@ -1286,7 +1286,7 @@
             "dbNameShort": "DAD5",
             "dbSchema": "Anaestesi",
             "dbImplementationGuide": "Alle anæstesier udført på danske offentlige og private hospitaler og klinikker indgår i populationen til Dansk Anæstesi Database.\n\nDatateknisk trigger for en anæstesi: Er der oprettet et anæstesiskema/anæstesiprocedure på patienten med et starttidspunkt for anæstesien, betragtes det som en anæstesi. ",
-            "docLink": "https://rkkpdk.github.io/RKKP.afdDI.Webservice.DAD5.Anaesthesia/"
+            "docLink": "https://sundkdk.github.io/SundK.afdDI.Webservice.DAD5.Anaesthesia/"
         }
     ],
     "buckets": [
@@ -1384,7 +1384,7 @@
     "creationTS": "2024-10-28T11:43:01.029Z",
     "GUID": "375bd5c8-de62-4483-892a-7b86573eea2c",
     "isLineageEnabled": false,
-    "lastModifTS": "2025-01-27T11:54:42.694Z",
+    "lastModifTS": "2025-01-28T08:31:53.551Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
