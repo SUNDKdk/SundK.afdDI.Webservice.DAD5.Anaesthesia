@@ -4,8 +4,8 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>DAD5 v1.0.0 Dokumentation</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous" />
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="assets/css/bootstrap-icons.css" rel="stylesheet" />
         <link href="style.css" rel="stylesheet" />
         <link href="favicon.png" rel="icon" type="image/png" />
     </head>
@@ -13,50 +13,49 @@
         <header class="mb-5">
             <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary py-4 header-style">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="https://www.sundk.dk/">
-                        <img class="d-inline-block me-1 align-text-middle" src="favicon.png" width="50" height="50" />
-                        RKKP
+                    <a class="navbar-brand" href="https://www.rkkp.dk/">
+                        <img class="d-inline-block me-1 align-text-middle max-h-14" src="assets/img/TopLogo_Blue.png" height="50" />
                     </a>
                     <ul class="navbar-nav ms-3 me-auto">
                         <li class="nav-item ms-3">
-                            <a class="btn btn-info btn-sm hidden" href="https://github.com/SUNDKdk" id="github-link">
+                            <a class="btn btn-info hidden" href="https://github.com/SUNDKdk" id="github-link">
                                 <i class="bi bi-github"></i>
                                  GitHub
                             </a>
                         </li>
                         <li class="nav-item ms-3">
-                            <a class="btn btn-info btn-sm" href="https://wsapi-test.sundk.dk/redoc" id="redocs-link">
+                            <a class="btn btn-info" href="https://wsapi-test.sundk.dk/redoc" id="redocs-link">
                                 <i class="bi bi-window-sidebar"></i>
                                  ReDocs
                             </a>
                         </li>
                         <li class="nav-item ms-3">
-                            <a class="btn btn-info btn-sm" href="https://wsapi-test.sundk.dk/docs" id="swagger-link">
+                            <a class="btn btn-info" href="https://wsapi-test.sundk.dk/docs" id="swagger-link">
                                 <i class="bi bi-menu-button-wide"></i>
                                  Swagger UI
                             </a>
                         </li>
                         <li class="nav-item ms-3">
-                            <a class="btn btn-info btn-sm disabled" href="#" id="ldm-link">
+                            <a class="btn btn-info" href="https://sundk.dk/media/l5donzc5/wsapi-datamodel-beskrivelse.pdf" id="ldm-link">
                                 <i class="bi bi-database"></i>
-                                 RKKP Data Model
+                                 SundK Data Model
                             </a>
                         </li>
                     </ul>
                     <div class="d-flex">
                         <div class="row align-items-center">
                             <div class="col">
-                                <button class="btn btn-info btn-sm ms-2 visible" type="button" onclick="expandAll()" id="toggleExpand">
+                                <button class="btn btn-info ms-2 visible" type="button" onclick="expandAll()" id="toggleExpand">
                                     <i class="bi bi-arrows-expand"></i>
-                                     Fold Alt Ud
+                                     Fold alle ud
                                 </button>
                             </div>
                         </div>
                         <div class="row align-items-center me-3">
                             <div class="col">
-                                <button class="btn btn-info btn-sm ms-2 hidden" type="button" onclick="collapseAll()" id="toggleCollapse">
+                                <button class="btn btn-info ms-2 hidden" type="button" onclick="collapseAll()" id="toggleCollapse">
                                     <i class="bi bi-arrows-collapse"></i>
-                                     Fold Alt Ind
+                                     Fold alle ind
                                 </button>
                             </div>
                         </div>
@@ -64,13 +63,7 @@
                             <div class="col flex-fill">
                                 <div class="form-check form-switch">
                                     <input class="form-check-input switch-size" type="checkbox" id="toggleAdvView" />
-                                    <label class="form-check-label switch-size" for="flexSwitchCheckChecked">Avanceret Visning</label>
-                                </div>
-                            </div>
-                            <div class="col flex-fill">
-                                <div class="form-check form-switch">
-                                    <input class="form-check-input switch-size" type="checkbox" id="toggleFlatView" />
-                                    <label class="form-check-label switch-size" for="toggleFlatView">Tabel Visning</label>
+                                    <label class="form-check-label switch-size me-3" for="toggleAdvView">Avanceret Visning</label>
                                 </div>
                             </div>
                         </div>
@@ -96,23 +89,20 @@
             <div class="container-lg" style="margin-top:6rem !important">
                 <div class="row mt-4">
                     <div class="col-sm-12 mt-5">
-                        <div class="container main-container-style bg-body-tertiary rounded-3 p-3" style="margin-bottom: 0px !important">
+                        <div class="container box-lightblue p-5">
                             <div class="container-fluid">
-                                <div class="row d-flex align-items-center">
-                                    <div class="col-md-8">
-                                        <h1>Dansk Anæstesi Database</h1>
-                                    </div>
-                                    <div class="col-md-4 d-flex justify-content-end">
-                                        <ul class="nav ">
+                                <div class="row d-flex">
+                                    <div class="col d-flex justify-content-end">
+                                        <ul class="nav">
                                             <li class="nav-item ms-2">
-                                                <button class="btn btn-info btn-sm disabled">
-                                                    <i class="bi bi-card-list"></i>
+                                                <button class="btn btn-info disabled">
+                                                    <i class="bi bi-card-list "></i>
                                                      Change Logs
                                                 </button>
                                             </li>
                                             <li class="nav-item ms-2">
                                                 <div class="dropdown">
-                                                    <button data-bs-toggle='dropdown' class="btn btn-info btn-sm disabled dropdown-toggle">
+                                                    <button data-bs-toggle='dropdown' class="btn btn-info disabled dropdown-toggle">
                                                         <i class="bi bi-git"></i>
                                                          Version History
                                                     </button>
@@ -129,13 +119,17 @@
                                         </ul>
                                     </div>
                                 </div>
+                                <div class="row d-flex">
+                                    <div class="col">
+                                        <h1 class="display-3 py-4">Dansk Anæstesi Database</h1>
+                                        <h4>DAD5 - Anaestesi</h4>
+                                        <h5>Dokumentation til endpoint version:
+                                            <span class="badge bg-sundk fs-6" style="color: var(--sundk-badge-color)">v1.0.0</span>
+                                        </h5>
+                                    </div>
+                                </div>
                                 <div class="row">
                                     <div class="col">
-                                        <h4>DAD5 - Anaestesi</h4>
-                                        <h6>Dokumentation til endpoint version: 1.0.0
-                                            <span class="badge bg-success hidden" style="vertical-align: super !important;font-size: 12px;">Newest version</span>
-                                        </h6>
-                                        <hr />
                                         <h5>Implementeringsguide</h5>
                                         <p><p>Alle anæstesier udført på danske offentlige og private hospitaler og klinikker indgår i populationen til Dansk Anæstesi Database.</p>
 <p>Datateknisk trigger for en anæstesi: Er der oprettet et anæstesiskema/anæstesiprocedure på patienten med et starttidspunkt for anæstesien, betragtes det som en anæstesi.</p></p>
@@ -148,8 +142,9 @@
                     </div>
                 </div>
                 <div class="row mt-4">
-                    <div class="col-sm-12">
-                        <div class="main-container-style bg-body-tertiary border rounded-3 p-3">
+                    <div class="col-12">
+                        <div class="input-group">
+                            <div class="input-group-text"><i class="bi bi-search "></i></div>
                             <input class="form-control form-control-lg" id="searchInput" placeholder="Søg i objektnavne og beskrivelser ..." type="text" />
                         </div>
                     </div>
@@ -161,7 +156,7 @@
                                 <button class="nav-link active" id="showAll" type="button" onclick="filterTypes('showAll', this)"><i class="bi bi-square-fill gray-txt me-2"></i>Show all</button>
                             </li>
                             <li class="nav-item">
-                                <button class="nav-link" id="tabActivity" type="button" onclick="filterTypes('groupActivity', this)"><i class="bi bi-square-fill bg-body-tertiary activity-txt me-2"></i>Activities</button>
+                                <button class="nav-link" id="tabActivity" type="button" onclick="filterTypes('groupActivity', this)"><i class="bi bi-square-fill activity-txt me-2"></i>Activities</button>
                             </li>
                             <li class="nav-item">
                                 <button class="nav-link hidden" id="tabContact" type="button"><i class="bi bi-square-fill contact-txt me-2"></i>Contacts</button>
@@ -173,16 +168,16 @@
                                 <button class="nav-link hidden" id="tabDiagnosis" type="button"><i class="bi bi-square-fill diagnosis-txt me-2"></i>Diagnosis</button>
                             </li>
                             <li class="nav-item">
-                                <button class="nav-link" id="tabObservation" type="button" onclick="filterTypes('groupObservation', this)"><i class="bi bi-square-fill bg-body-tertiary observation-txt me-2"></i>Observations</button>
+                                <button class="nav-link" id="tabObservation" type="button" onclick="filterTypes('groupObservation', this)"><i class="bi bi-square-fill observation-txt me-2"></i>Observations</button>
                             </li>
                             <li class="nav-item">
-                                <button class="nav-link" id="tabReport" type="button" onclick="filterTypes('groupReport', this)"><i class="bi bi-square-fill bg-body-tertiary report-txt me-2"></i>Report Objects</button>
+                                <button class="nav-link" id="tabReport" type="button" onclick="filterTypes('groupReport', this)"><i class="bi bi-square-fill report-txt me-2"></i>Report Objects</button>
                             </li>
                         </ul>
-                        <div class="container main-container-style bg-body-tertiary rounded-3 p-3 mb-3" style="border-top: 0px !important;border-top-left-radius: 0px !important;border-top-right-radius: 0px !important;">
+                        <div class="container box-lightblue p-3 mb-3" style="border-top: 0px !important;border-top-left-radius: 0px !important;border-top-right-radius: 0px !important;">
                             <ul class="nav mb-2 d-flex justify-content-end">
                                 <li class="nav-item me-2">
-                                    <a class="btn btn-info btn-sm" href="dad5_anaestesi_v100_export.xlsx">
+                                    <a class="btn btn-info" href="dad5_anaestesi_v100_export.xlsx">
                                         <i class="bi bi-filetype-xlsx"></i>
                                          Eksporter (Excel)
                                     </a>
@@ -190,20 +185,20 @@
                             </ul>
                             <div class="tab-content">
                                 <div class="tab-pane fade show active" id="tabAll-pane">
-                                    <div class="alert alert-danger m-3" role="alert">
+                                    <div class="alert alert-danger" role="alert">
                                         <div class="d-flex align-items-center" style="margin-bottom: 0.5rem !important;">
                                             <h6 style="margin-top: 0px !important;margin-bottom: 0px !important;">Bemærk: </h6>
-                                            <div class="badge rounded-pill text-bg-danger ms-2 me-2 d-inline-flex align-items-center">
-                                                <i class="bi bi-exclamation-diamond me-1" style="margin-top: -2px;"></i>
+                                            <div class="badge text-bg-danger ms-2 me-2 d-inline-flex align-items-center">
+                                                <i class="bi bi-exclamation-diamond me-1"></i>
                                                 <span> Required</span>
                                             </div>
                                         </div>
-                                        <p>Alle felter skal som udgangspunkt indberettes. Felter markeret som <strong>required</strong> er påkrævet for at kunne oprette en indberetning.</p>
+                                        <p style="margin-bottom: 0px !important;">Alle felter skal som udgangspunkt indberettes. Felter markeret som <strong>required</strong> er påkrævet for at kunne oprette en indberetning.</p>
                                     </div>
                                     <div id="groupActivity" class="groupActivity">
-                                        <div class="dataObject">
+                                        <div class="dataObject mb-3">
                                             <a data-bs-toggle='collapse' aria-expanded='false' href="#SOR_anesthesia1" class="ObjectHeaderWrapper">
-                                                <ol class="breadcrumb objectHeaderMain objectHeaderColor">
+                                                <ol class="breadcrumb objectHeader objectHeaderColor">
                                                     <i class="bi bi-folder2 me-2" style="margin-top: -3px;"></i>
                                                     <li class="breadcrumb-item">DAD5</li>
                                                     <li class="breadcrumb-item">Activity</li>
@@ -211,22 +206,22 @@
                                                     <li class="mx-2"> - </li>
                                                     <li><strong>SOR anæstesi</strong></li>
                                                     <span class="d-flex ms-auto align-content-center">
-                                                        <div class="badge rounded-pill text-bg-danger ms-2 me-2 d-inline-flex align-items-center">
-                                                            <i class="bi bi-exclamation-diamond me-1" style="margin-top: -2px;"></i>
+                                                        <div class="badge text-bg-danger ms-2 me-2 d-inline-flex align-items-center">
+                                                            <i class="bi bi-exclamation-diamond me-1"></i>
                                                             <span> Required</span>
                                                         </div>
                                                     </span>
                                                 </ol>
                                             </a>
-                                            <div class="collapse m-3 objectBodyMain" id="SOR_anesthesia1">
-                                                <div class="object_margin">
-                                                    <p class="table_view_hider" style="height: 1rem !important; margin: 0px !important;"></p>
-                                                    <div class="objectDescription alert alert-warning">
+                                            <div class="collapse mb-3 objectBodyWrapper" id="SOR_anesthesia1">
+                                                <div class="objectBody">
+                                                    <p class="hidden" style="height: 1rem !important; margin: 0px !important;"></p>
+                                                    <div class="objectBodyDescription">
                                                         <p><strong>SOR anæstesi</strong></p>
-                                                        <p><p>SOR-koden for anæstesiafdelingen</p></p>
+                                                        <html><p>SOR-koden for anæstesiafdelingen</p></html>
                                                     </div>
-                                                    <table class="table table-bordered table-striped table-hover ">
-                                                        <thead>
+                                                    <table class="table">
+                                                        <thead class="main-thead">
                                                             <tr>
                                                                 <th scope="col" class="fst-italic th-attribute">Attribute</th>
                                                                 <th scope="col" class="fst-italic th-description">Description</th>
@@ -234,12 +229,12 @@
                                                                 <th scope="col" class="fst-italic th-required">Required</th>
                                                             </tr>
                                                         </thead>
-                                                        <tbody class="table-group-divider">
+                                                        <tbody class="main-tbody">
                                                             <tr>
                                                                 <th scope="row">OrganizationCode</th>
                                                                 <td scope="row"></td>
                                                                 <td scope="row">
-                                                                    <table class="table table-sm" style="--bs-table-bg: transparent !important;">
+                                                                    <table class="table table-sm inner_table" style="--bs-table-bg: transparent !important;">
                                                                         <thead>
                                                                             <tr>
                                                                                 <th scope="col" style="width: 20%">Type</th>
@@ -255,8 +250,8 @@
                                                                     </table>
                                                                 </td>
                                                                 <td scope="row">
-                                                                    <div class="badge rounded-pill text-bg-danger ms-2 me-2 d-inline-flex align-items-center">
-                                                                        <i class="bi bi-exclamation-diamond me-1" style="margin-top: -2px;"></i>
+                                                                    <div class="badge text-bg-danger ms-2 me-2 d-inline-flex align-items-center">
+                                                                        <i class="bi bi-exclamation-diamond me-1"></i>
                                                                         <span> Required</span>
                                                                     </div>
                                                                 </td>
@@ -266,9 +261,9 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="dataObject">
+                                        <div class="dataObject mb-3">
                                             <a data-bs-toggle='collapse' aria-expanded='false' href="#airway_management2" class="ObjectHeaderWrapper">
-                                                <ol class="breadcrumb objectHeaderMain objectHeaderColor">
+                                                <ol class="breadcrumb objectHeader objectHeaderColor">
                                                     <i class="bi bi-folder2 me-2" style="margin-top: -3px;"></i>
                                                     <li class="breadcrumb-item">DAD5</li>
                                                     <li class="breadcrumb-item">Activity</li>
@@ -277,15 +272,15 @@
                                                     <li><strong>Luftvejshåndtering</strong></li>
                                                 </ol>
                                             </a>
-                                            <div class="collapse m-3 objectBodyMain" id="airway_management2">
-                                                <div class="object_margin">
-                                                    <p class="table_view_hider" style="height: 1rem !important; margin: 0px !important;"></p>
-                                                    <div class="objectDescription alert alert-warning">
+                                            <div class="collapse mb-3 objectBodyWrapper" id="airway_management2">
+                                                <div class="objectBody">
+                                                    <p class="hidden" style="height: 1rem !important; margin: 0px !important;"></p>
+                                                    <div class="objectBodyDescription">
                                                         <p><strong>Luftvejshåndtering</strong></p>
-                                                        <p><p>Håndtering af patientens luftveje</p></p>
+                                                        <html><p>Håndtering af patientens luftveje</p></html>
                                                     </div>
-                                                    <table class="table table-bordered table-striped table-hover ">
-                                                        <thead>
+                                                    <table class="table">
+                                                        <thead class="main-thead">
                                                             <tr>
                                                                 <th scope="col" class="fst-italic th-attribute">Attribute</th>
                                                                 <th scope="col" class="fst-italic th-description">Description</th>
@@ -293,12 +288,12 @@
                                                                 <th scope="col" class="fst-italic th-required">Required</th>
                                                             </tr>
                                                         </thead>
-                                                        <tbody class="table-group-divider">
+                                                        <tbody class="main-tbody">
                                                             <tr>
                                                                 <th scope="row">MethodCode</th>
                                                                 <td scope="row"></td>
                                                                 <td scope="row">
-                                                                    <table class="table table-sm" style="--bs-table-bg: transparent !important;">
+                                                                    <table class="table table-sm inner_table" style="--bs-table-bg: transparent !important;">
                                                                         <thead>
                                                                             <tr>
                                                                                 <th scope="col" style="width: 20%">Type</th>
@@ -347,9 +342,9 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="dataObject">
+                                        <div class="dataObject mb-3">
                                             <a data-bs-toggle='collapse' aria-expanded='false' href="#airway_management_last_attempt3" class="ObjectHeaderWrapper">
-                                                <ol class="breadcrumb objectHeaderMain objectHeaderColor">
+                                                <ol class="breadcrumb objectHeader objectHeaderColor">
                                                     <i class="bi bi-folder2 me-2" style="margin-top: -3px;"></i>
                                                     <li class="breadcrumb-item">DAD5</li>
                                                     <li class="breadcrumb-item">Activity</li>
@@ -358,15 +353,15 @@
                                                     <li><strong>Luftvejshåndtering sidste forsøg</strong></li>
                                                 </ol>
                                             </a>
-                                            <div class="collapse m-3 objectBodyMain" id="airway_management_last_attempt3">
-                                                <div class="object_margin">
-                                                    <p class="table_view_hider" style="height: 1rem !important; margin: 0px !important;"></p>
-                                                    <div class="objectDescription alert alert-warning">
+                                            <div class="collapse mb-3 objectBodyWrapper" id="airway_management_last_attempt3">
+                                                <div class="objectBody">
+                                                    <p class="hidden" style="height: 1rem !important; margin: 0px !important;"></p>
+                                                    <div class="objectBodyDescription">
                                                         <p><strong>Luftvejshåndtering sidste forsøg</strong></p>
-                                                        <p><p>Sidste forsøg på håndtering af patientens luftveje</p></p>
+                                                        <html><p>Sidste forsøg på håndtering af patientens luftveje</p></html>
                                                     </div>
-                                                    <table class="table table-bordered table-striped table-hover ">
-                                                        <thead>
+                                                    <table class="table">
+                                                        <thead class="main-thead">
                                                             <tr>
                                                                 <th scope="col" class="fst-italic th-attribute">Attribute</th>
                                                                 <th scope="col" class="fst-italic th-description">Description</th>
@@ -374,12 +369,12 @@
                                                                 <th scope="col" class="fst-italic th-required">Required</th>
                                                             </tr>
                                                         </thead>
-                                                        <tbody class="table-group-divider">
+                                                        <tbody class="main-tbody">
                                                             <tr>
                                                                 <th scope="row">MethodCode</th>
                                                                 <td scope="row"></td>
                                                                 <td scope="row">
-                                                                    <table class="table table-sm" style="--bs-table-bg: transparent !important;">
+                                                                    <table class="table table-sm inner_table" style="--bs-table-bg: transparent !important;">
                                                                         <thead>
                                                                             <tr>
                                                                                 <th scope="col" style="width: 20%">Type</th>
@@ -433,9 +428,9 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="dataObject">
+                                        <div class="dataObject mb-3">
                                             <a data-bs-toggle='collapse' aria-expanded='false' href="#airway_plan4" class="ObjectHeaderWrapper">
-                                                <ol class="breadcrumb objectHeaderMain objectHeaderColor">
+                                                <ol class="breadcrumb objectHeader objectHeaderColor">
                                                     <i class="bi bi-folder2 me-2" style="margin-top: -3px;"></i>
                                                     <li class="breadcrumb-item">DAD5</li>
                                                     <li class="breadcrumb-item">Activity</li>
@@ -444,15 +439,15 @@
                                                     <li><strong>Luftvejsplan</strong></li>
                                                 </ol>
                                             </a>
-                                            <div class="collapse m-3 objectBodyMain" id="airway_plan4">
-                                                <div class="object_margin">
-                                                    <p class="table_view_hider" style="height: 1rem !important; margin: 0px !important;"></p>
-                                                    <div class="objectDescription alert alert-warning">
+                                            <div class="collapse mb-3 objectBodyWrapper" id="airway_plan4">
+                                                <div class="objectBody">
+                                                    <p class="hidden" style="height: 1rem !important; margin: 0px !important;"></p>
+                                                    <div class="objectBodyDescription">
                                                         <p><strong>Luftvejsplan</strong></p>
-                                                        <p><p>Plan for håndteringen af patientens luftveje</p></p>
+                                                        <html><p>Plan for håndteringen af patientens luftveje</p></html>
                                                     </div>
-                                                    <table class="table table-bordered table-striped table-hover ">
-                                                        <thead>
+                                                    <table class="table">
+                                                        <thead class="main-thead">
                                                             <tr>
                                                                 <th scope="col" class="fst-italic th-attribute">Attribute</th>
                                                                 <th scope="col" class="fst-italic th-description">Description</th>
@@ -460,12 +455,12 @@
                                                                 <th scope="col" class="fst-italic th-required">Required</th>
                                                             </tr>
                                                         </thead>
-                                                        <tbody class="table-group-divider">
+                                                        <tbody class="main-tbody">
                                                             <tr>
                                                                 <th scope="row">MethodCode</th>
                                                                 <td scope="row"></td>
                                                                 <td scope="row">
-                                                                    <table class="table table-sm" style="--bs-table-bg: transparent !important;">
+                                                                    <table class="table table-sm inner_table" style="--bs-table-bg: transparent !important;">
                                                                         <thead>
                                                                             <tr>
                                                                                 <th scope="col" style="width: 20%">Type</th>
@@ -529,20 +524,20 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="dataObject">
+                                        <div class="dataObject mb-3">
                                             <a data-bs-toggle='collapse' aria-expanded='false' href="#anesthesia_observation5" class="ObjectHeaderWrapper">
-                                                <ol class="breadcrumb objectHeaderMain objectHeaderColor">
+                                                <ol class="breadcrumb objectHeader objectHeaderColor">
                                                     <i class="bi bi-folder2 me-2" style="margin-top: -3px;"></i>
                                                     <li class="breadcrumb-item">DAD5</li>
                                                     <li class="breadcrumb-item">Activity</li>
                                                     <li class="breadcrumb-item active">anesthesia_observation</li>
                                                 </ol>
                                             </a>
-                                            <div class="collapse m-3 objectBodyMain" id="anesthesia_observation5">
-                                                <div class="object_margin">
-                                                    <p class="table_view_hider" style="height: 1rem !important; margin: 0px !important;"></p>
-                                                    <table class="table table-bordered table-striped table-hover ">
-                                                        <thead>
+                                            <div class="collapse mb-3 objectBodyWrapper" id="anesthesia_observation5">
+                                                <div class="objectBody">
+                                                    <p class="hidden" style="height: 1rem !important; margin: 0px !important;"></p>
+                                                    <table class="table">
+                                                        <thead class="main-thead">
                                                             <tr>
                                                                 <th scope="col" class="fst-italic th-attribute">Attribute</th>
                                                                 <th scope="col" class="fst-italic th-description">Description</th>
@@ -550,12 +545,12 @@
                                                                 <th scope="col" class="fst-italic th-required">Required</th>
                                                             </tr>
                                                         </thead>
-                                                        <tbody class="table-group-divider">
+                                                        <tbody class="main-tbody">
                                                             <tr>
                                                                 <th scope="row">DateTimeEnd</th>
                                                                 <td scope="row"><p>Sluttidspunkt for opvågning</p></td>
                                                                 <td scope="row">
-                                                                    <table class="table table-sm" style="--bs-table-bg: transparent !important;">
+                                                                    <table class="table table-sm inner_table" style="--bs-table-bg: transparent !important;">
                                                                         <thead>
                                                                             <tr>
                                                                                 <th scope="col" style="width: 20%">Type</th>
@@ -576,7 +571,7 @@
                                                                 <th scope="row">DateTimeStart</th>
                                                                 <td scope="row"><p>Starttidspunkt for opvågning</p></td>
                                                                 <td scope="row">
-                                                                    <table class="table table-sm" style="--bs-table-bg: transparent !important;">
+                                                                    <table class="table table-sm inner_table" style="--bs-table-bg: transparent !important;">
                                                                         <thead>
                                                                             <tr>
                                                                                 <th scope="col" style="width: 20%">Type</th>
@@ -597,7 +592,7 @@
                                                                 <th scope="row">OrganizationCode</th>
                                                                 <td scope="row"><p>Type af observationssted (opvågningssted)</p></td>
                                                                 <td scope="row">
-                                                                    <table class="table table-sm" style="--bs-table-bg: transparent !important;">
+                                                                    <table class="table table-sm inner_table" style="--bs-table-bg: transparent !important;">
                                                                         <thead>
                                                                             <tr>
                                                                                 <th scope="col" style="width: 20%">Type</th>
@@ -645,7 +640,7 @@
                                                                 <th scope="row">ResultCode</th>
                                                                 <td scope="row"><p>Hvor er patienten udskrevet til?</p></td>
                                                                 <td scope="row">
-                                                                    <table class="table table-sm" style="--bs-table-bg: transparent !important;">
+                                                                    <table class="table table-sm inner_table" style="--bs-table-bg: transparent !important;">
                                                                         <thead>
                                                                             <tr>
                                                                                 <th scope="col" style="width: 20%">Type</th>
@@ -694,9 +689,9 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="dataObject">
+                                        <div class="dataObject mb-3">
                                             <a data-bs-toggle='collapse' aria-expanded='false' href="#anesthesia_service6" class="ObjectHeaderWrapper">
-                                                <ol class="breadcrumb objectHeaderMain objectHeaderColor">
+                                                <ol class="breadcrumb objectHeader objectHeaderColor">
                                                     <i class="bi bi-folder2 me-2" style="margin-top: -3px;"></i>
                                                     <li class="breadcrumb-item">DAD5</li>
                                                     <li class="breadcrumb-item">Activity</li>
@@ -705,15 +700,15 @@
                                                     <li><strong>Anæstesiydelse</strong></li>
                                                 </ol>
                                             </a>
-                                            <div class="collapse m-3 objectBodyMain" id="anesthesia_service6">
-                                                <div class="object_margin">
-                                                    <p class="table_view_hider" style="height: 1rem !important; margin: 0px !important;"></p>
-                                                    <div class="objectDescription alert alert-warning">
+                                            <div class="collapse mb-3 objectBodyWrapper" id="anesthesia_service6">
+                                                <div class="objectBody">
+                                                    <p class="hidden" style="height: 1rem !important; margin: 0px !important;"></p>
+                                                    <div class="objectBodyDescription">
                                                         <p><strong>Anæstesiydelse</strong></p>
-                                                        <p><p>Typen af anæstesi og start-/sluttidspunkt.</p></p>
+                                                        <html><p>Typen af anæstesi og start-/sluttidspunkt.</p></html>
                                                     </div>
-                                                    <table class="table table-bordered table-striped table-hover ">
-                                                        <thead>
+                                                    <table class="table">
+                                                        <thead class="main-thead">
                                                             <tr>
                                                                 <th scope="col" class="fst-italic th-attribute">Attribute</th>
                                                                 <th scope="col" class="fst-italic th-description">Description</th>
@@ -721,12 +716,12 @@
                                                                 <th scope="col" class="fst-italic th-required">Required</th>
                                                             </tr>
                                                         </thead>
-                                                        <tbody class="table-group-divider">
+                                                        <tbody class="main-tbody">
                                                             <tr>
                                                                 <th scope="row">DateTimeEnd</th>
                                                                 <td scope="row"><p>Sluttidspunkt for anæstesi-ydelse</p></td>
                                                                 <td scope="row">
-                                                                    <table class="table table-sm" style="--bs-table-bg: transparent !important;">
+                                                                    <table class="table table-sm inner_table" style="--bs-table-bg: transparent !important;">
                                                                         <thead>
                                                                             <tr>
                                                                                 <th scope="col" style="width: 20%">Type</th>
@@ -742,8 +737,8 @@
                                                                     </table>
                                                                 </td>
                                                                 <td scope="row">
-                                                                    <div class="badge rounded-pill text-bg-danger ms-2 me-2 d-inline-flex align-items-center">
-                                                                        <i class="bi bi-exclamation-diamond me-1" style="margin-top: -2px;"></i>
+                                                                    <div class="badge text-bg-danger ms-2 me-2 d-inline-flex align-items-center">
+                                                                        <i class="bi bi-exclamation-diamond me-1"></i>
                                                                         <span> Required</span>
                                                                     </div>
                                                                 </td>
@@ -752,7 +747,7 @@
                                                                 <th scope="row">DateTimeStart</th>
                                                                 <td scope="row"><p>Start tidspunkt for anæstesi-ydelse</p></td>
                                                                 <td scope="row">
-                                                                    <table class="table table-sm" style="--bs-table-bg: transparent !important;">
+                                                                    <table class="table table-sm inner_table" style="--bs-table-bg: transparent !important;">
                                                                         <thead>
                                                                             <tr>
                                                                                 <th scope="col" style="width: 20%">Type</th>
@@ -768,8 +763,8 @@
                                                                     </table>
                                                                 </td>
                                                                 <td scope="row">
-                                                                    <div class="badge rounded-pill text-bg-danger ms-2 me-2 d-inline-flex align-items-center">
-                                                                        <i class="bi bi-exclamation-diamond me-1" style="margin-top: -2px;"></i>
+                                                                    <div class="badge text-bg-danger ms-2 me-2 d-inline-flex align-items-center">
+                                                                        <i class="bi bi-exclamation-diamond me-1"></i>
                                                                         <span> Required</span>
                                                                     </div>
                                                                 </td>
@@ -778,7 +773,7 @@
                                                                 <th scope="row">ResultCode</th>
                                                                 <td scope="row"><p><strong>SKS-koder</strong> skal starte med <strong>NAA</strong></p></td>
                                                                 <td scope="row">
-                                                                    <table class="table table-sm" style="--bs-table-bg: transparent !important;">
+                                                                    <table class="table table-sm inner_table" style="--bs-table-bg: transparent !important;">
                                                                         <thead>
                                                                             <tr>
                                                                                 <th scope="col" style="width: 20%">Type</th>
@@ -800,9 +795,9 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="dataObject">
+                                        <div class="dataObject mb-3">
                                             <a data-bs-toggle='collapse' aria-expanded='false' href="#intubation7" class="ObjectHeaderWrapper">
-                                                <ol class="breadcrumb objectHeaderMain objectHeaderColor">
+                                                <ol class="breadcrumb objectHeader objectHeaderColor">
                                                     <i class="bi bi-folder2 me-2" style="margin-top: -3px;"></i>
                                                     <li class="breadcrumb-item">DAD5</li>
                                                     <li class="breadcrumb-item">Activity</li>
@@ -811,15 +806,15 @@
                                                     <li><strong>Intubation</strong></li>
                                                 </ol>
                                             </a>
-                                            <div class="collapse m-3 objectBodyMain" id="intubation7">
-                                                <div class="object_margin">
-                                                    <p class="table_view_hider" style="height: 1rem !important; margin: 0px !important;"></p>
-                                                    <div class="objectDescription alert alert-warning">
+                                            <div class="collapse mb-3 objectBodyWrapper" id="intubation7">
+                                                <div class="objectBody">
+                                                    <p class="hidden" style="height: 1rem !important; margin: 0px !important;"></p>
+                                                    <div class="objectBodyDescription">
                                                         <p><strong>Intubation</strong></p>
-                                                        <p><p>Typen af intubation</p></p>
+                                                        <html><p>Typen af intubation</p></html>
                                                     </div>
-                                                    <table class="table table-bordered table-striped table-hover ">
-                                                        <thead>
+                                                    <table class="table">
+                                                        <thead class="main-thead">
                                                             <tr>
                                                                 <th scope="col" class="fst-italic th-attribute">Attribute</th>
                                                                 <th scope="col" class="fst-italic th-description">Description</th>
@@ -827,12 +822,12 @@
                                                                 <th scope="col" class="fst-italic th-required">Required</th>
                                                             </tr>
                                                         </thead>
-                                                        <tbody class="table-group-divider">
+                                                        <tbody class="main-tbody">
                                                             <tr>
                                                                 <th scope="row">ResultCode</th>
                                                                 <td scope="row"><p><em>Kun relevant hvis Luftvejshåndtering = Intubation</em></p></td>
                                                                 <td scope="row">
-                                                                    <table class="table table-sm" style="--bs-table-bg: transparent !important;">
+                                                                    <table class="table table-sm inner_table" style="--bs-table-bg: transparent !important;">
                                                                         <thead>
                                                                             <tr>
                                                                                 <th scope="col" style="width: 20%">Type</th>
@@ -881,9 +876,9 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="dataObject">
+                                        <div class="dataObject mb-3">
                                             <a data-bs-toggle='collapse' aria-expanded='false' href="#procedure_code8" class="ObjectHeaderWrapper">
-                                                <ol class="breadcrumb objectHeaderMain objectHeaderColor">
+                                                <ol class="breadcrumb objectHeader objectHeaderColor">
                                                     <i class="bi bi-folder2 me-2" style="margin-top: -3px;"></i>
                                                     <li class="breadcrumb-item">DAD5</li>
                                                     <li class="breadcrumb-item">Activity</li>
@@ -891,22 +886,22 @@
                                                     <li class="mx-2"> - </li>
                                                     <li><strong>Procedurekode</strong></li>
                                                     <span class="d-flex ms-auto align-content-center">
-                                                        <div class="badge rounded-pill text-bg-danger ms-2 me-2 d-inline-flex align-items-center">
-                                                            <i class="bi bi-exclamation-diamond me-1" style="margin-top: -2px;"></i>
+                                                        <div class="badge text-bg-danger ms-2 me-2 d-inline-flex align-items-center">
+                                                            <i class="bi bi-exclamation-diamond me-1"></i>
                                                             <span> Required</span>
                                                         </div>
                                                     </span>
                                                 </ol>
                                             </a>
-                                            <div class="collapse m-3 objectBodyMain" id="procedure_code8">
-                                                <div class="object_margin">
-                                                    <p class="table_view_hider" style="height: 1rem !important; margin: 0px !important;"></p>
-                                                    <div class="objectDescription alert alert-warning">
+                                            <div class="collapse mb-3 objectBodyWrapper" id="procedure_code8">
+                                                <div class="objectBody">
+                                                    <p class="hidden" style="height: 1rem !important; margin: 0px !important;"></p>
+                                                    <div class="objectBodyDescription">
                                                         <p><strong>Procedurekode</strong></p>
-                                                        <p><p>SKS-koden for den <strong>vigtigste</strong> operation/behandling/undersøgelse foretaget under anæstesien. Her ønskes <strong>IKKE</strong> anæstesiproceduren.</p></p>
+                                                        <html><p>SKS-koden for den <strong>vigtigste</strong> operation/behandling/undersøgelse foretaget under anæstesien. Her ønskes <strong>IKKE</strong> anæstesiproceduren.</p></html>
                                                     </div>
-                                                    <table class="table table-bordered table-striped table-hover ">
-                                                        <thead>
+                                                    <table class="table">
+                                                        <thead class="main-thead">
                                                             <tr>
                                                                 <th scope="col" class="fst-italic th-attribute">Attribute</th>
                                                                 <th scope="col" class="fst-italic th-description">Description</th>
@@ -914,12 +909,12 @@
                                                                 <th scope="col" class="fst-italic th-required">Required</th>
                                                             </tr>
                                                         </thead>
-                                                        <tbody class="table-group-divider">
+                                                        <tbody class="main-tbody">
                                                             <tr>
                                                                 <th scope="row">ResultCode</th>
                                                                 <td scope="row"></td>
                                                                 <td scope="row">
-                                                                    <table class="table table-sm" style="--bs-table-bg: transparent !important;">
+                                                                    <table class="table table-sm inner_table" style="--bs-table-bg: transparent !important;">
                                                                         <thead>
                                                                             <tr>
                                                                                 <th scope="col" style="width: 20%">Type</th>
@@ -935,8 +930,8 @@
                                                                     </table>
                                                                 </td>
                                                                 <td scope="row">
-                                                                    <div class="badge rounded-pill text-bg-danger ms-2 me-2 d-inline-flex align-items-center">
-                                                                        <i class="bi bi-exclamation-diamond me-1" style="margin-top: -2px;"></i>
+                                                                    <div class="badge text-bg-danger ms-2 me-2 d-inline-flex align-items-center">
+                                                                        <i class="bi bi-exclamation-diamond me-1"></i>
                                                                         <span> Required</span>
                                                                     </div>
                                                                 </td>
@@ -946,9 +941,9 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="dataObject">
+                                        <div class="dataObject mb-3">
                                             <a data-bs-toggle='collapse' aria-expanded='false' href="#relaxation_intubation9" class="ObjectHeaderWrapper">
-                                                <ol class="breadcrumb objectHeaderMain objectHeaderColor">
+                                                <ol class="breadcrumb objectHeader objectHeaderColor">
                                                     <i class="bi bi-folder2 me-2" style="margin-top: -3px;"></i>
                                                     <li class="breadcrumb-item">DAD5</li>
                                                     <li class="breadcrumb-item">Activity</li>
@@ -957,15 +952,15 @@
                                                     <li><strong>Relaksation intubation</strong></li>
                                                 </ol>
                                             </a>
-                                            <div class="collapse m-3 objectBodyMain" id="relaxation_intubation9">
-                                                <div class="object_margin">
-                                                    <p class="table_view_hider" style="height: 1rem !important; margin: 0px !important;"></p>
-                                                    <div class="objectDescription alert alert-warning">
+                                            <div class="collapse mb-3 objectBodyWrapper" id="relaxation_intubation9">
+                                                <div class="objectBody">
+                                                    <p class="hidden" style="height: 1rem !important; margin: 0px !important;"></p>
+                                                    <div class="objectBodyDescription">
                                                         <p><strong>Relaksation intubation</strong></p>
-                                                        <p><p>Relaksation til intubation</p></p>
+                                                        <html><p>Relaksation til intubation</p></html>
                                                     </div>
-                                                    <table class="table table-bordered table-striped table-hover ">
-                                                        <thead>
+                                                    <table class="table">
+                                                        <thead class="main-thead">
                                                             <tr>
                                                                 <th scope="col" class="fst-italic th-attribute">Attribute</th>
                                                                 <th scope="col" class="fst-italic th-description">Description</th>
@@ -973,12 +968,12 @@
                                                                 <th scope="col" class="fst-italic th-required">Required</th>
                                                             </tr>
                                                         </thead>
-                                                        <tbody class="table-group-divider">
+                                                        <tbody class="main-tbody">
                                                             <tr>
                                                                 <th scope="row">ResultCode</th>
                                                                 <td scope="row"><p><em>Kun relevant hvis Luftvejshåndtering = Intubation</em></p></td>
                                                                 <td scope="row">
-                                                                    <table class="table table-sm" style="--bs-table-bg: transparent !important;">
+                                                                    <table class="table table-sm inner_table" style="--bs-table-bg: transparent !important;">
                                                                         <thead>
                                                                             <tr>
                                                                                 <th scope="col" style="width: 20%">Type</th>
@@ -1017,9 +1012,9 @@
                                     <div id="groupCourse" class="groupCourse"></div>
                                     <div id="groupDiagnosis" class="groupDiagnosis"></div>
                                     <div id="groupObservation" class="groupObservation">
-                                        <div class="dataObject">
+                                        <div class="dataObject mb-3">
                                             <a data-bs-toggle='collapse' aria-expanded='false' href="#ASA_score1" class="ObjectHeaderWrapper">
-                                                <ol class="breadcrumb objectHeaderMain objectHeaderColor">
+                                                <ol class="breadcrumb objectHeader objectHeaderColor">
                                                     <i class="bi bi-folder2 me-2" style="margin-top: -3px;"></i>
                                                     <li class="breadcrumb-item">DAD5</li>
                                                     <li class="breadcrumb-item">Observation</li>
@@ -1028,15 +1023,15 @@
                                                     <li><strong>ASA score</strong></li>
                                                 </ol>
                                             </a>
-                                            <div class="collapse m-3 objectBodyMain" id="ASA_score1">
-                                                <div class="object_margin">
-                                                    <p class="table_view_hider" style="height: 1rem !important; margin: 0px !important;"></p>
-                                                    <div class="objectDescription alert alert-warning">
+                                            <div class="collapse mb-3 objectBodyWrapper" id="ASA_score1">
+                                                <div class="objectBody">
+                                                    <p class="hidden" style="height: 1rem !important; margin: 0px !important;"></p>
+                                                    <div class="objectBodyDescription">
                                                         <p><strong>ASA score</strong></p>
-                                                        <p><p>Patientens ASA-score</p></p>
+                                                        <html><p>Patientens ASA-score</p></html>
                                                     </div>
-                                                    <table class="table table-bordered table-striped table-hover ">
-                                                        <thead>
+                                                    <table class="table">
+                                                        <thead class="main-thead">
                                                             <tr>
                                                                 <th scope="col" class="fst-italic th-attribute">Attribute</th>
                                                                 <th scope="col" class="fst-italic th-description">Description</th>
@@ -1044,12 +1039,12 @@
                                                                 <th scope="col" class="fst-italic th-required">Required</th>
                                                             </tr>
                                                         </thead>
-                                                        <tbody class="table-group-divider">
+                                                        <tbody class="main-tbody">
                                                             <tr>
                                                                 <th scope="row">ResultCode</th>
                                                                 <td scope="row"></td>
                                                                 <td scope="row">
-                                                                    <table class="table table-sm" style="--bs-table-bg: transparent !important;">
+                                                                    <table class="table table-sm inner_table" style="--bs-table-bg: transparent !important;">
                                                                         <thead>
                                                                             <tr>
                                                                                 <th scope="col" style="width: 20%">Type</th>
@@ -1098,9 +1093,9 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="dataObject">
+                                        <div class="dataObject mb-3">
                                             <a data-bs-toggle='collapse' aria-expanded='false' href="#anesthesia_complications2" class="ObjectHeaderWrapper">
-                                                <ol class="breadcrumb objectHeaderMain objectHeaderColor">
+                                                <ol class="breadcrumb objectHeader objectHeaderColor">
                                                     <i class="bi bi-folder2 me-2" style="margin-top: -3px;"></i>
                                                     <li class="breadcrumb-item">DAD5</li>
                                                     <li class="breadcrumb-item">Observation</li>
@@ -1109,15 +1104,15 @@
                                                     <li><strong>Anæstesi komplikationer</strong></li>
                                                 </ol>
                                             </a>
-                                            <div class="collapse m-3 objectBodyMain" id="anesthesia_complications2">
-                                                <div class="object_margin">
-                                                    <p class="table_view_hider" style="height: 1rem !important; margin: 0px !important;"></p>
-                                                    <div class="objectDescription alert alert-warning">
+                                            <div class="collapse mb-3 objectBodyWrapper" id="anesthesia_complications2">
+                                                <div class="objectBody">
+                                                    <p class="hidden" style="height: 1rem !important; margin: 0px !important;"></p>
+                                                    <div class="objectBodyDescription">
                                                         <p><strong>Anæstesi komplikationer</strong></p>
-                                                        <p><p>Komplikationer opstået under anæstesien</p></p>
+                                                        <html><p>Komplikationer opstået under anæstesien</p></html>
                                                     </div>
-                                                    <table class="table table-bordered table-striped table-hover ">
-                                                        <thead>
+                                                    <table class="table">
+                                                        <thead class="main-thead">
                                                             <tr>
                                                                 <th scope="col" class="fst-italic th-attribute">Attribute</th>
                                                                 <th scope="col" class="fst-italic th-description">Description</th>
@@ -1125,12 +1120,12 @@
                                                                 <th scope="col" class="fst-italic th-required">Required</th>
                                                             </tr>
                                                         </thead>
-                                                        <tbody class="table-group-divider">
+                                                        <tbody class="main-tbody">
                                                             <tr>
                                                                 <th scope="row">ResultCode</th>
                                                                 <td scope="row"></td>
                                                                 <td scope="row">
-                                                                    <table class="table table-sm" style="--bs-table-bg: transparent !important;">
+                                                                    <table class="table table-sm inner_table" style="--bs-table-bg: transparent !important;">
                                                                         <thead>
                                                                             <tr>
                                                                                 <th scope="col" style="width: 20%">Type</th>
@@ -1199,9 +1194,9 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="dataObject">
+                                        <div class="dataObject mb-3">
                                             <a data-bs-toggle='collapse' aria-expanded='false' href="#anesthesia_prioritization3" class="ObjectHeaderWrapper">
-                                                <ol class="breadcrumb objectHeaderMain objectHeaderColor">
+                                                <ol class="breadcrumb objectHeader objectHeaderColor">
                                                     <i class="bi bi-folder2 me-2" style="margin-top: -3px;"></i>
                                                     <li class="breadcrumb-item">DAD5</li>
                                                     <li class="breadcrumb-item">Observation</li>
@@ -1210,15 +1205,15 @@
                                                     <li><strong>Anæstesi prioritering</strong></li>
                                                 </ol>
                                             </a>
-                                            <div class="collapse m-3 objectBodyMain" id="anesthesia_prioritization3">
-                                                <div class="object_margin">
-                                                    <p class="table_view_hider" style="height: 1rem !important; margin: 0px !important;"></p>
-                                                    <div class="objectDescription alert alert-warning">
+                                            <div class="collapse mb-3 objectBodyWrapper" id="anesthesia_prioritization3">
+                                                <div class="objectBody">
+                                                    <p class="hidden" style="height: 1rem !important; margin: 0px !important;"></p>
+                                                    <div class="objectBodyDescription">
                                                         <p><strong>Anæstesi prioritering</strong></p>
-                                                        <p><p>Hvor akut var anæstesien? Vurderet ved prætilsynet.</p></p>
+                                                        <html><p>Hvor akut var anæstesien? Vurderet ved prætilsynet.</p></html>
                                                     </div>
-                                                    <table class="table table-bordered table-striped table-hover ">
-                                                        <thead>
+                                                    <table class="table">
+                                                        <thead class="main-thead">
                                                             <tr>
                                                                 <th scope="col" class="fst-italic th-attribute">Attribute</th>
                                                                 <th scope="col" class="fst-italic th-description">Description</th>
@@ -1226,12 +1221,12 @@
                                                                 <th scope="col" class="fst-italic th-required">Required</th>
                                                             </tr>
                                                         </thead>
-                                                        <tbody class="table-group-divider">
+                                                        <tbody class="main-tbody">
                                                             <tr>
                                                                 <th scope="row">ResultCode</th>
                                                                 <td scope="row"></td>
                                                                 <td scope="row">
-                                                                    <table class="table table-sm" style="--bs-table-bg: transparent !important;">
+                                                                    <table class="table table-sm inner_table" style="--bs-table-bg: transparent !important;">
                                                                         <thead>
                                                                             <tr>
                                                                                 <th scope="col" style="width: 20%">Type</th>
@@ -1270,9 +1265,9 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="dataObject">
+                                        <div class="dataObject mb-3">
                                             <a data-bs-toggle='collapse' aria-expanded='false' href="#best_achieved_laryngoscopy_grade4" class="ObjectHeaderWrapper">
-                                                <ol class="breadcrumb objectHeaderMain objectHeaderColor">
+                                                <ol class="breadcrumb objectHeader objectHeaderColor">
                                                     <i class="bi bi-folder2 me-2" style="margin-top: -3px;"></i>
                                                     <li class="breadcrumb-item">DAD5</li>
                                                     <li class="breadcrumb-item">Observation</li>
@@ -1281,15 +1276,15 @@
                                                     <li><strong>Laryngoskopigrad</strong></li>
                                                 </ol>
                                             </a>
-                                            <div class="collapse m-3 objectBodyMain" id="best_achieved_laryngoscopy_grade4">
-                                                <div class="object_margin">
-                                                    <p class="table_view_hider" style="height: 1rem !important; margin: 0px !important;"></p>
-                                                    <div class="objectDescription alert alert-warning">
+                                            <div class="collapse mb-3 objectBodyWrapper" id="best_achieved_laryngoscopy_grade4">
+                                                <div class="objectBody">
+                                                    <p class="hidden" style="height: 1rem !important; margin: 0px !important;"></p>
+                                                    <div class="objectBodyDescription">
                                                         <p><strong>Laryngoskopigrad</strong></p>
-                                                        <p><p>Bedst opnåede laryngoskopigrad</p></p>
+                                                        <html><p>Bedst opnåede laryngoskopigrad</p></html>
                                                     </div>
-                                                    <table class="table table-bordered table-striped table-hover ">
-                                                        <thead>
+                                                    <table class="table">
+                                                        <thead class="main-thead">
                                                             <tr>
                                                                 <th scope="col" class="fst-italic th-attribute">Attribute</th>
                                                                 <th scope="col" class="fst-italic th-description">Description</th>
@@ -1297,7 +1292,7 @@
                                                                 <th scope="col" class="fst-italic th-required">Required</th>
                                                             </tr>
                                                         </thead>
-                                                        <tbody class="table-group-divider">
+                                                        <tbody class="main-tbody">
                                                             <tr>
                                                                 <th scope="row">ResultCode</th>
                                                                 <td scope="row"><p>Kun relevant hvis Intubation = 3 forsøg eller flere uanset metode
@@ -1305,7 +1300,7 @@ Intubation opgivet</p>
 <p>ELLER</p>
 <p>Intubation=Intubation opgivet</p></td>
                                                                 <td scope="row">
-                                                                    <table class="table table-sm" style="--bs-table-bg: transparent !important;">
+                                                                    <table class="table table-sm inner_table" style="--bs-table-bg: transparent !important;">
                                                                         <thead>
                                                                             <tr>
                                                                                 <th scope="col" style="width: 20%">Type</th>
@@ -1344,9 +1339,9 @@ Intubation opgivet</p>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="dataObject">
+                                        <div class="dataObject mb-3">
                                             <a data-bs-toggle='collapse' aria-expanded='false' href="#blockade_sufficiency5" class="ObjectHeaderWrapper">
-                                                <ol class="breadcrumb objectHeaderMain objectHeaderColor">
+                                                <ol class="breadcrumb objectHeader objectHeaderColor">
                                                     <i class="bi bi-folder2 me-2" style="margin-top: -3px;"></i>
                                                     <li class="breadcrumb-item">DAD5</li>
                                                     <li class="breadcrumb-item">Observation</li>
@@ -1355,15 +1350,15 @@ Intubation opgivet</p>
                                                     <li><strong>Sufficiens af blokade</strong></li>
                                                 </ol>
                                             </a>
-                                            <div class="collapse m-3 objectBodyMain" id="blockade_sufficiency5">
-                                                <div class="object_margin">
-                                                    <p class="table_view_hider" style="height: 1rem !important; margin: 0px !important;"></p>
-                                                    <div class="objectDescription alert alert-warning">
+                                            <div class="collapse mb-3 objectBodyWrapper" id="blockade_sufficiency5">
+                                                <div class="objectBody">
+                                                    <p class="hidden" style="height: 1rem !important; margin: 0px !important;"></p>
+                                                    <div class="objectBodyDescription">
                                                         <p><strong>Sufficiens af blokade</strong></p>
-                                                        <p><p>Virkede blokaden sufficient? Hvis insufficiens af en blokade medførte, at det var nødvendigt at anvende generel anæstesi, sendes vv00003: nej.</p></p>
+                                                        <html><p>Virkede blokaden sufficient? Hvis insufficiens af en blokade medførte, at det var nødvendigt at anvende generel anæstesi, sendes vv00003: nej.</p></html>
                                                     </div>
-                                                    <table class="table table-bordered table-striped table-hover ">
-                                                        <thead>
+                                                    <table class="table">
+                                                        <thead class="main-thead">
                                                             <tr>
                                                                 <th scope="col" class="fst-italic th-attribute">Attribute</th>
                                                                 <th scope="col" class="fst-italic th-description">Description</th>
@@ -1371,12 +1366,12 @@ Intubation opgivet</p>
                                                                 <th scope="col" class="fst-italic th-required">Required</th>
                                                             </tr>
                                                         </thead>
-                                                        <tbody class="table-group-divider">
+                                                        <tbody class="main-tbody">
                                                             <tr>
                                                                 <th scope="row">ResultCode</th>
                                                                 <td scope="row"></td>
                                                                 <td scope="row">
-                                                                    <table class="table table-sm" style="--bs-table-bg: transparent !important;">
+                                                                    <table class="table table-sm inner_table" style="--bs-table-bg: transparent !important;">
                                                                         <thead>
                                                                             <tr>
                                                                                 <th scope="col" style="width: 20%">Type</th>
@@ -1405,9 +1400,9 @@ Intubation opgivet</p>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="dataObject">
+                                        <div class="dataObject mb-3">
                                             <a data-bs-toggle='collapse' aria-expanded='false' href="#nausea_at_discharge6" class="ObjectHeaderWrapper">
-                                                <ol class="breadcrumb objectHeaderMain objectHeaderColor">
+                                                <ol class="breadcrumb objectHeader objectHeaderColor">
                                                     <i class="bi bi-folder2 me-2" style="margin-top: -3px;"></i>
                                                     <li class="breadcrumb-item">DAD5</li>
                                                     <li class="breadcrumb-item">Observation</li>
@@ -1416,15 +1411,15 @@ Intubation opgivet</p>
                                                     <li><strong>Kvalme udskrivelse</strong></li>
                                                 </ol>
                                             </a>
-                                            <div class="collapse m-3 objectBodyMain" id="nausea_at_discharge6">
-                                                <div class="object_margin">
-                                                    <p class="table_view_hider" style="height: 1rem !important; margin: 0px !important;"></p>
-                                                    <div class="objectDescription alert alert-warning">
+                                            <div class="collapse mb-3 objectBodyWrapper" id="nausea_at_discharge6">
+                                                <div class="objectBody">
+                                                    <p class="hidden" style="height: 1rem !important; margin: 0px !important;"></p>
+                                                    <div class="objectBodyDescription">
                                                         <p><strong>Kvalme udskrivelse</strong></p>
-                                                        <p><p>Kvalme-score mindre end 15 minutter før udskrivelse og transport fra opvågningen</p></p>
+                                                        <html><p>Kvalme-score mindre end 15 minutter før udskrivelse og transport fra opvågningen</p></html>
                                                     </div>
-                                                    <table class="table table-bordered table-striped table-hover ">
-                                                        <thead>
+                                                    <table class="table">
+                                                        <thead class="main-thead">
                                                             <tr>
                                                                 <th scope="col" class="fst-italic th-attribute">Attribute</th>
                                                                 <th scope="col" class="fst-italic th-description">Description</th>
@@ -1432,26 +1427,26 @@ Intubation opgivet</p>
                                                                 <th scope="col" class="fst-italic th-required">Required</th>
                                                             </tr>
                                                         </thead>
-                                                        <tbody class="table-group-divider">
+                                                        <tbody class="main-tbody">
                                                             <tr>
                                                                 <th scope="row">ResultValue</th>
                                                                 <td scope="row"><p><em>Kun relevant hvis Observationssted = Centralt observationsafsnit
 ELLER
 Observationssted = Andet observationsafsnit</em></p></td>
                                                                 <td scope="row">
-                                                                    <table class="table table-sm" style="--bs-table-bg: transparent !important;">
+                                                                    <table class="table table-sm inner_table" style="--bs-table-bg: transparent !important;">
                                                                         <thead>
                                                                             <tr>
                                                                                 <th scope="col" style="width: 20%">Type</th>
-                                                                                <th scope="col">Min or Equal to</th>
                                                                                 <th scope="col">Max or Equal to</th>
+                                                                                <th scope="col">Min or Equal to</th>
                                                                             </tr>
                                                                         </thead>
                                                                         <tbody>
                                                                             <tr>
                                                                                 <td scope="row">Integer</td>
-                                                                                <td>0</td>
                                                                                 <td>10</td>
+                                                                                <td>0</td>
                                                                             </tr>
                                                                         </tbody>
                                                                     </table>
@@ -1463,9 +1458,9 @@ Observationssted = Andet observationsafsnit</em></p></td>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="dataObject">
+                                        <div class="dataObject mb-3">
                                             <a data-bs-toggle='collapse' aria-expanded='false' href="#nausea_on_arrival7" class="ObjectHeaderWrapper">
-                                                <ol class="breadcrumb objectHeaderMain objectHeaderColor">
+                                                <ol class="breadcrumb objectHeader objectHeaderColor">
                                                     <i class="bi bi-folder2 me-2" style="margin-top: -3px;"></i>
                                                     <li class="breadcrumb-item">DAD5</li>
                                                     <li class="breadcrumb-item">Observation</li>
@@ -1474,15 +1469,15 @@ Observationssted = Andet observationsafsnit</em></p></td>
                                                     <li><strong>Kvalme ankomst</strong></li>
                                                 </ol>
                                             </a>
-                                            <div class="collapse m-3 objectBodyMain" id="nausea_on_arrival7">
-                                                <div class="object_margin">
-                                                    <p class="table_view_hider" style="height: 1rem !important; margin: 0px !important;"></p>
-                                                    <div class="objectDescription alert alert-warning">
+                                            <div class="collapse mb-3 objectBodyWrapper" id="nausea_on_arrival7">
+                                                <div class="objectBody">
+                                                    <p class="hidden" style="height: 1rem !important; margin: 0px !important;"></p>
+                                                    <div class="objectBodyDescription">
                                                         <p><strong>Kvalme ankomst</strong></p>
-                                                        <p><p>Kvalme-score mindre end 15 minutter efter ankomst til opvågningen</p></p>
+                                                        <html><p>Kvalme-score mindre end 15 minutter efter ankomst til opvågningen</p></html>
                                                     </div>
-                                                    <table class="table table-bordered table-striped table-hover ">
-                                                        <thead>
+                                                    <table class="table">
+                                                        <thead class="main-thead">
                                                             <tr>
                                                                 <th scope="col" class="fst-italic th-attribute">Attribute</th>
                                                                 <th scope="col" class="fst-italic th-description">Description</th>
@@ -1490,26 +1485,26 @@ Observationssted = Andet observationsafsnit</em></p></td>
                                                                 <th scope="col" class="fst-italic th-required">Required</th>
                                                             </tr>
                                                         </thead>
-                                                        <tbody class="table-group-divider">
+                                                        <tbody class="main-tbody">
                                                             <tr>
                                                                 <th scope="row">ResultValue</th>
                                                                 <td scope="row"><p><em>Kun relevant hvis Observationssted = Centralt observationsafsnit
 ELLER
 Observationssted = Andet observationsafsnit</em></p></td>
                                                                 <td scope="row">
-                                                                    <table class="table table-sm" style="--bs-table-bg: transparent !important;">
+                                                                    <table class="table table-sm inner_table" style="--bs-table-bg: transparent !important;">
                                                                         <thead>
                                                                             <tr>
                                                                                 <th scope="col" style="width: 20%">Type</th>
-                                                                                <th scope="col">Min or Equal to</th>
                                                                                 <th scope="col">Max or Equal to</th>
+                                                                                <th scope="col">Min or Equal to</th>
                                                                             </tr>
                                                                         </thead>
                                                                         <tbody>
                                                                             <tr>
                                                                                 <td scope="row">Integer</td>
-                                                                                <td>0</td>
                                                                                 <td>10</td>
+                                                                                <td>0</td>
                                                                             </tr>
                                                                         </tbody>
                                                                     </table>
@@ -1521,9 +1516,9 @@ Observationssted = Andet observationsafsnit</em></p></td>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="dataObject">
+                                        <div class="dataObject mb-3">
                                             <a data-bs-toggle='collapse' aria-expanded='false' href="#observation_complications8" class="ObjectHeaderWrapper">
-                                                <ol class="breadcrumb objectHeaderMain objectHeaderColor">
+                                                <ol class="breadcrumb objectHeader objectHeaderColor">
                                                     <i class="bi bi-folder2 me-2" style="margin-top: -3px;"></i>
                                                     <li class="breadcrumb-item">DAD5</li>
                                                     <li class="breadcrumb-item">Observation</li>
@@ -1532,15 +1527,15 @@ Observationssted = Andet observationsafsnit</em></p></td>
                                                     <li><strong>Observations-komplikationer</strong></li>
                                                 </ol>
                                             </a>
-                                            <div class="collapse m-3 objectBodyMain" id="observation_complications8">
-                                                <div class="object_margin">
-                                                    <p class="table_view_hider" style="height: 1rem !important; margin: 0px !important;"></p>
-                                                    <div class="objectDescription alert alert-warning">
+                                            <div class="collapse mb-3 objectBodyWrapper" id="observation_complications8">
+                                                <div class="objectBody">
+                                                    <p class="hidden" style="height: 1rem !important; margin: 0px !important;"></p>
+                                                    <div class="objectBodyDescription">
                                                         <p><strong>Observations-komplikationer</strong></p>
-                                                        <p><p>Komplikationer opstået under opvågningen</p></p>
+                                                        <html><p>Komplikationer opstået under opvågningen</p></html>
                                                     </div>
-                                                    <table class="table table-bordered table-striped table-hover ">
-                                                        <thead>
+                                                    <table class="table">
+                                                        <thead class="main-thead">
                                                             <tr>
                                                                 <th scope="col" class="fst-italic th-attribute">Attribute</th>
                                                                 <th scope="col" class="fst-italic th-description">Description</th>
@@ -1548,12 +1543,12 @@ Observationssted = Andet observationsafsnit</em></p></td>
                                                                 <th scope="col" class="fst-italic th-required">Required</th>
                                                             </tr>
                                                         </thead>
-                                                        <tbody class="table-group-divider">
+                                                        <tbody class="main-tbody">
                                                             <tr>
                                                                 <th scope="row">ResultCode</th>
                                                                 <td scope="row"></td>
                                                                 <td scope="row">
-                                                                    <table class="table table-sm" style="--bs-table-bg: transparent !important;">
+                                                                    <table class="table table-sm inner_table" style="--bs-table-bg: transparent !important;">
                                                                         <thead>
                                                                             <tr>
                                                                                 <th scope="col" style="width: 20%">Type</th>
@@ -1612,9 +1607,9 @@ Observationssted = Andet observationsafsnit</em></p></td>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="dataObject">
+                                        <div class="dataObject mb-3">
                                             <a data-bs-toggle='collapse' aria-expanded='false' href="#pain_at_discharge9" class="ObjectHeaderWrapper">
-                                                <ol class="breadcrumb objectHeaderMain objectHeaderColor">
+                                                <ol class="breadcrumb objectHeader objectHeaderColor">
                                                     <i class="bi bi-folder2 me-2" style="margin-top: -3px;"></i>
                                                     <li class="breadcrumb-item">DAD5</li>
                                                     <li class="breadcrumb-item">Observation</li>
@@ -1623,15 +1618,15 @@ Observationssted = Andet observationsafsnit</em></p></td>
                                                     <li><strong>Smerter udskrivelse</strong></li>
                                                 </ol>
                                             </a>
-                                            <div class="collapse m-3 objectBodyMain" id="pain_at_discharge9">
-                                                <div class="object_margin">
-                                                    <p class="table_view_hider" style="height: 1rem !important; margin: 0px !important;"></p>
-                                                    <div class="objectDescription alert alert-warning">
+                                            <div class="collapse mb-3 objectBodyWrapper" id="pain_at_discharge9">
+                                                <div class="objectBody">
+                                                    <p class="hidden" style="height: 1rem !important; margin: 0px !important;"></p>
+                                                    <div class="objectBodyDescription">
                                                         <p><strong>Smerter udskrivelse</strong></p>
-                                                        <p><p>Smerte-score (NRS eller FLACC)  mindre end 15 minutter før udskrivelse og transport fra opvågningen</p></p>
+                                                        <html><p>Smerte-score (NRS eller FLACC)  mindre end 15 minutter før udskrivelse og transport fra opvågningen</p></html>
                                                     </div>
-                                                    <table class="table table-bordered table-striped table-hover ">
-                                                        <thead>
+                                                    <table class="table">
+                                                        <thead class="main-thead">
                                                             <tr>
                                                                 <th scope="col" class="fst-italic th-attribute">Attribute</th>
                                                                 <th scope="col" class="fst-italic th-description">Description</th>
@@ -1639,26 +1634,26 @@ Observationssted = Andet observationsafsnit</em></p></td>
                                                                 <th scope="col" class="fst-italic th-required">Required</th>
                                                             </tr>
                                                         </thead>
-                                                        <tbody class="table-group-divider">
+                                                        <tbody class="main-tbody">
                                                             <tr>
                                                                 <th scope="row">ResultValue</th>
                                                                 <td scope="row"><p><em>Kun relevant hvis Observationssted = Centralt observationsafsnit
 ELLER
 Observationssted = Andet observationsafsnit</em></p></td>
                                                                 <td scope="row">
-                                                                    <table class="table table-sm" style="--bs-table-bg: transparent !important;">
+                                                                    <table class="table table-sm inner_table" style="--bs-table-bg: transparent !important;">
                                                                         <thead>
                                                                             <tr>
                                                                                 <th scope="col" style="width: 20%">Type</th>
-                                                                                <th scope="col">Min or Equal to</th>
                                                                                 <th scope="col">Max or Equal to</th>
+                                                                                <th scope="col">Min or Equal to</th>
                                                                             </tr>
                                                                         </thead>
                                                                         <tbody>
                                                                             <tr>
                                                                                 <td scope="row">Integer</td>
-                                                                                <td>0</td>
                                                                                 <td>10</td>
+                                                                                <td>0</td>
                                                                             </tr>
                                                                         </tbody>
                                                                     </table>
@@ -1670,9 +1665,9 @@ Observationssted = Andet observationsafsnit</em></p></td>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="dataObject">
+                                        <div class="dataObject mb-3">
                                             <a data-bs-toggle='collapse' aria-expanded='false' href="#pain_on_arrival10" class="ObjectHeaderWrapper">
-                                                <ol class="breadcrumb objectHeaderMain objectHeaderColor">
+                                                <ol class="breadcrumb objectHeader objectHeaderColor">
                                                     <i class="bi bi-folder2 me-2" style="margin-top: -3px;"></i>
                                                     <li class="breadcrumb-item">DAD5</li>
                                                     <li class="breadcrumb-item">Observation</li>
@@ -1681,15 +1676,15 @@ Observationssted = Andet observationsafsnit</em></p></td>
                                                     <li><strong>Smerter ankomst</strong></li>
                                                 </ol>
                                             </a>
-                                            <div class="collapse m-3 objectBodyMain" id="pain_on_arrival10">
-                                                <div class="object_margin">
-                                                    <p class="table_view_hider" style="height: 1rem !important; margin: 0px !important;"></p>
-                                                    <div class="objectDescription alert alert-warning">
+                                            <div class="collapse mb-3 objectBodyWrapper" id="pain_on_arrival10">
+                                                <div class="objectBody">
+                                                    <p class="hidden" style="height: 1rem !important; margin: 0px !important;"></p>
+                                                    <div class="objectBodyDescription">
                                                         <p><strong>Smerter ankomst</strong></p>
-                                                        <p><p>Smerte-score (NRS eller FLACC) mindre end 15 minutter efter ankomst til opvågningen</p></p>
+                                                        <html><p>Smerte-score (NRS eller FLACC) mindre end 15 minutter efter ankomst til opvågningen</p></html>
                                                     </div>
-                                                    <table class="table table-bordered table-striped table-hover ">
-                                                        <thead>
+                                                    <table class="table">
+                                                        <thead class="main-thead">
                                                             <tr>
                                                                 <th scope="col" class="fst-italic th-attribute">Attribute</th>
                                                                 <th scope="col" class="fst-italic th-description">Description</th>
@@ -1697,26 +1692,26 @@ Observationssted = Andet observationsafsnit</em></p></td>
                                                                 <th scope="col" class="fst-italic th-required">Required</th>
                                                             </tr>
                                                         </thead>
-                                                        <tbody class="table-group-divider">
+                                                        <tbody class="main-tbody">
                                                             <tr>
                                                                 <th scope="row">ResultValue</th>
                                                                 <td scope="row"><p><em>Kun relevant hvis Observationssted = Centralt observationsafsnit
 ELLER
 Observationssted = Andet observationsafsnit</em></p></td>
                                                                 <td scope="row">
-                                                                    <table class="table table-sm" style="--bs-table-bg: transparent !important;">
+                                                                    <table class="table table-sm inner_table" style="--bs-table-bg: transparent !important;">
                                                                         <thead>
                                                                             <tr>
                                                                                 <th scope="col" style="width: 20%">Type</th>
-                                                                                <th scope="col">Min or Equal to</th>
                                                                                 <th scope="col">Max or Equal to</th>
+                                                                                <th scope="col">Min or Equal to</th>
                                                                             </tr>
                                                                         </thead>
                                                                         <tbody>
                                                                             <tr>
                                                                                 <td scope="row">Integer</td>
-                                                                                <td>0</td>
                                                                                 <td>10</td>
+                                                                                <td>0</td>
                                                                             </tr>
                                                                         </tbody>
                                                                     </table>
@@ -1728,9 +1723,9 @@ Observationssted = Andet observationsafsnit</em></p></td>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="dataObject">
+                                        <div class="dataObject mb-3">
                                             <a data-bs-toggle='collapse' aria-expanded='false' href="#temperature11" class="ObjectHeaderWrapper">
-                                                <ol class="breadcrumb objectHeaderMain objectHeaderColor">
+                                                <ol class="breadcrumb objectHeader objectHeaderColor">
                                                     <i class="bi bi-folder2 me-2" style="margin-top: -3px;"></i>
                                                     <li class="breadcrumb-item">DAD5</li>
                                                     <li class="breadcrumb-item">Observation</li>
@@ -1739,15 +1734,15 @@ Observationssted = Andet observationsafsnit</em></p></td>
                                                     <li><strong>Temperatur</strong></li>
                                                 </ol>
                                             </a>
-                                            <div class="collapse m-3 objectBodyMain" id="temperature11">
-                                                <div class="object_margin">
-                                                    <p class="table_view_hider" style="height: 1rem !important; margin: 0px !important;"></p>
-                                                    <div class="objectDescription alert alert-warning">
+                                            <div class="collapse mb-3 objectBodyWrapper" id="temperature11">
+                                                <div class="objectBody">
+                                                    <p class="hidden" style="height: 1rem !important; margin: 0px !important;"></p>
+                                                    <div class="objectBodyDescription">
                                                         <p><strong>Temperatur</strong></p>
-                                                        <p><p>Hvilken temperatur har patienten ved anæstesiens afslutning</p></p>
+                                                        <html><p>Hvilken temperatur har patienten ved anæstesiens afslutning</p></html>
                                                     </div>
-                                                    <table class="table table-bordered table-striped table-hover ">
-                                                        <thead>
+                                                    <table class="table">
+                                                        <thead class="main-thead">
                                                             <tr>
                                                                 <th scope="col" class="fst-italic th-attribute">Attribute</th>
                                                                 <th scope="col" class="fst-italic th-description">Description</th>
@@ -1755,12 +1750,12 @@ Observationssted = Andet observationsafsnit</em></p></td>
                                                                 <th scope="col" class="fst-italic th-required">Required</th>
                                                             </tr>
                                                         </thead>
-                                                        <tbody class="table-group-divider">
+                                                        <tbody class="main-tbody">
                                                             <tr>
                                                                 <th scope="row">ResultValue</th>
                                                                 <td scope="row"></td>
                                                                 <td scope="row">
-                                                                    <table class="table table-sm" style="--bs-table-bg: transparent !important;">
+                                                                    <table class="table table-sm inner_table" style="--bs-table-bg: transparent !important;">
                                                                         <thead>
                                                                             <tr>
                                                                                 <th scope="col" style="width: 20%">Type</th>
@@ -1785,34 +1780,33 @@ Observationssted = Andet observationsafsnit</em></p></td>
                                     </div>
                                     <div id="groupReport" class="groupReport"></div>
                                     <div id="groupReport" class="groupReport">
-                                        <div class="dataObject">
+                                        <div class="dataObject mb-3">
    <a data-bs-toggle="collapse" aria-expanded="false" href="#Organization" class="ObjectHeaderWrapper collapsed">
-      <ol class="breadcrumb objectHeaderMain objectHeaderColor">
-         <i class="bi bi-folder2 me-2"></i>
+      <ol class="breadcrumb objectHeader objectHeaderColor">
+         <i class="bi bi-folder2 me-2" style="margin-top: -3px;"></i>
          <li class="breadcrumb-item">DAD5</li>
          <li class="breadcrumb-item">Report</li>
          <li class="breadcrumb-item active">Organization</li>
          <li class="mx-2"> - </li>
          <li><strong>Organisation</strong></li>
          <span class="d-flex ms-auto align-content-center">
-            <div class="badge rounded-pill text-bg-danger ms-2 me-2 d-inline-flex align-items-center" style="margin-top: -3px;">
-                <i class="bi bi-exclamation-diamond me-1" style="margin-top: -2px;"></i>
+            <div class="badge text-bg-danger ms-2 me-2 d-inline-flex align-items-center">
+                <i class="bi bi-exclamation-diamond me-1"></i>
                 <span> Required</span>
             </div>
             </span>
       </ol>
    </a>
-   <div class="m-3 objectBodyMain collapse" id="Organization" style="">
-      <div class="object_margin">
-         <p class="table_view_hider" style="height: 1rem !important; margin: 0px !important;"></p>
-         <div class="objectDescription alert alert-warning">
+   <div class="mb-3 objectBodyWrapper collapse" id="Organization" style="">
+      <div class="objectBody">
+         <p class="hidden" style="height: 1rem !important; margin: 0px !important;"></p>
+         <div class="objectBodyDescription">
             <p><strong>Organisation</strong></p>
             <p></p>
             <p>Standard for all indberetninger. <br><br> Organisationen, der er ansvarlig for indberetning af patienten.</p>
-            <p></p>
          </div>
-         <table class="table table-bordered table-striped table-hover ">
-            <thead>
+         <table class="table">
+            <thead class="main-thead">
                <tr>
                   <th scope="col" class="fst-italic th-attribute">Attribute</th>
                   <th scope="col" class="fst-italic th-description">Description</th>
@@ -1820,12 +1814,12 @@ Observationssted = Andet observationsafsnit</em></p></td>
                   <th scope="col" class="fst-italic th-required">Required</th>
                </tr>
             </thead>
-            <tbody class="table-group-divider">
+            <tbody class="main-tbody">
                 <tr>
                     <th scope="row">OrganizationType</th>
                     <td scope="row">Typen af Identifier, som bliver indberettet.</td>
                     <td scope="row">
-                        <table class="table table-sm" style="--bs-table-bg: transparent !important;">
+                        <table class="table table-sm inner_table" style="--bs-table-bg: transparent !important;">
                             <thead>
                             <tr>
                                 <th scope="col" style="width: 20%">Type</th>
@@ -1868,17 +1862,16 @@ Observationssted = Andet observationsafsnit</em></p></td>
                         </table>
                     </td>
                     <td scope="row">
-                        <div class="badge rounded-pill text-bg-danger ms-2 me-2 d-inline-flex align-items-center" style="margin-top: -3px;">
-                            <i class="bi bi-exclamation-diamond me-1" style="margin-top: -2px;"></i>
+                        <div class="badge text-bg-danger ms-2 me-2 d-inline-flex align-items-center">
+                            <i class="bi bi-exclamation-diamond me-1"></i>
                             <span> Required</span>
                         </div>
                     </td>
-            </tbody>
                 <tr>
                     <th scope="row">Identifier</th>
                     <td scope="row">ID på den enkelte organisation, der er ansvarlig for indberetning af patienten. Typen af ID skal følge den indsendte OrganizationType.</td>
                     <td scope="row">
-                        <table class="table table-sm" style="--bs-table-bg: transparent !important;">
+                        <table class="table table-sm inner_table" style="--bs-table-bg: transparent !important;">
                             <thead>
                             <tr>
                                 <th scope="col" style="width: 20%">Type</th>
@@ -1894,8 +1887,8 @@ Observationssted = Andet observationsafsnit</em></p></td>
                         </table>                    
                     </td>
                     <td scope="row">
-                        <div class="badge rounded-pill text-bg-danger ms-2 me-2 d-inline-flex align-items-center" style="margin-top: -3px;">
-                            <i class="bi bi-exclamation-diamond me-1" style="margin-top: -2px;"></i>
+                        <div class="badge text-bg-danger ms-2 me-2 d-inline-flex align-items-center">
+                            <i class="bi bi-exclamation-diamond me-1"></i>
                             <span> Required</span>
                         </div>
                     </td>
@@ -1904,34 +1897,33 @@ Observationssted = Andet observationsafsnit</em></p></td>
       </div>
    </div>
 </div>
-                                        <div class="dataObject">
+                                        <div class="dataObject mb-3">
    <a data-bs-toggle="collapse" aria-expanded="false" href="#Patient" class="ObjectHeaderWrapper collapsed">
-      <ol class="breadcrumb objectHeaderMain objectHeaderColor">
-         <i class="bi bi-folder2 me-2"></i>
+      <ol class="breadcrumb objectHeader objectHeaderColor">
+         <i class="bi bi-folder2 me-2" style="margin-top: -3px;"></i>
          <li class="breadcrumb-item">DAD5</li>
          <li class="breadcrumb-item">Report</li>
          <li class="breadcrumb-item active">Patient</li>
          <li class="mx-2"> - </li>
          <li><strong>Patient</strong></li>
          <span class="d-flex ms-auto align-content-center">
-            <div class="badge rounded-pill text-bg-danger ms-2 me-2 d-inline-flex align-items-center" style="margin-top: -3px;">
-                <i class="bi bi-exclamation-diamond me-1" style="margin-top: -2px;"></i>
+            <div class="badge text-bg-danger ms-2 me-2 d-inline-flex align-items-center">
+                <i class="bi bi-exclamation-diamond me-1"></i>
                 <span> Required</span>
             </div>
             </span>
       </ol>
    </a>
-   <div class="m-3 objectBodyMain collapse" id="Patient" style="">
-      <div class="object_margin">
-         <p class="table_view_hider" style="height: 1rem !important; margin: 0px !important;"></p>
-         <div class="objectDescription alert alert-warning">
+   <div class="mb-3 objectBodyWrapper collapse" id="Patient" style="">
+      <div class="objectBody">
+         <p class="hidden" style="height: 1rem !important; margin: 0px !important;"></p>
+         <div class="objectBodyDescription">
             <p><strong>Patient</strong></p>
             <p></p>
             <p>Standard for all indberetninger. <br> <br> Patienten, som indberetningen vedrører.</p>
-            <p></p>
          </div>
-         <table class="table table-bordered table-striped table-hover ">
-            <thead>
+         <table class="table">
+            <thead class="main-thead">
                <tr>
                   <th scope="col" class="fst-italic th-attribute">Attribute</th>
                   <th scope="col" class="fst-italic th-description">Description</th>
@@ -1939,12 +1931,12 @@ Observationssted = Andet observationsafsnit</em></p></td>
                   <th scope="col" class="fst-italic th-required">Required</th>
                </tr>
             </thead>
-            <tbody class="table-group-divider">
+            <tbody class="main-tbody">
                 <tr>
                     <th scope="row">CivilRegistrationNumber</th>
                     <td scope="row">CPR nummer på patienten.</td>
                     <td scope="row">
-                        <table class="table table-sm" style="--bs-table-bg: transparent !important;">
+                        <table class="table table-sm inner_table" style="--bs-table-bg: transparent !important;">
                             <thead>
                             <tr>
                                 <th scope="col" style="width: 20%">Type</th>
@@ -1960,8 +1952,8 @@ Observationssted = Andet observationsafsnit</em></p></td>
                         </table>                    
                     </td>
                     <td scope="row">
-                        <div class="badge rounded-pill text-bg-danger ms-2 me-2 d-inline-flex align-items-center" style="margin-top: -3px;">
-                            <i class="bi bi-exclamation-diamond me-1" style="margin-top: -2px;"></i>
+                        <div class="badge text-bg-danger ms-2 me-2 d-inline-flex align-items-center">
+                            <i class="bi bi-exclamation-diamond me-1"></i>
                             <span> Required</span>
                         </div>
                     </td>
@@ -1978,8 +1970,8 @@ Observationssted = Andet observationsafsnit</em></p></td>
                 </div>
             </div>
         </main>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" crossorgigin="anonymous"></script>
-        <script src="js/rkkp.js" crossorgigin="anonymous"></script>
+        <script src="assets/js/bootstrap.bundle.min.js" crossorgigin="anonymous"></script>
+        <script src="assets/js/rkkp.js" crossorgigin="anonymous"></script>
         <script>
             
         // Bootstrap tooltips
